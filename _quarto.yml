@@ -1,0 +1,31 @@
+project:
+  type: default
+  output-dir: _site
+  render:
+    - index.qmd
+    - t0.qmd
+    - t1.qmd
+  resources:
+    - assets/
+lang: ca
+format:
+  revealjs:
+    theme: simple
+    css: assets/theme.css
+    width: 1280
+    height: 720
+    slide-level: 2
+    margin: 0.06
+    center: false
+    slide-number: c/t
+    transition: none
+    navigation-mode: linear
+    controls: true
+    progress: true
+    hash: true
+    history: true
+    menu: true
+    overview: true
+    footer: "GPI · Genètica · UAB"
+    include-after-body: assets/scripts.html
+    html-math-method: plain
