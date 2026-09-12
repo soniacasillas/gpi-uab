@@ -5,8 +5,15 @@ project:
     - index.qmd
     - t0.qmd
     - t1.qmd
+    - t2.qmd
+    - t3.qmd
+    - t4.qmd
+    - t5.qmd
+    - t6.qmd
+    - actualitzacions.qmd
   resources:
     - assets/
+    - questions/
 lang: ca
 format:
   revealjs:

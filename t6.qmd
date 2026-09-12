@@ -1,0 +1,275 @@
+---
+pagetitle: "GPI · Tema 6 · Variació genòmica i paleogenòmica"
+---
+
+## Variació genòmica i paleogenòmica {.cover #inici}
+
+::: {.eyebrow}
+GENÒMICA · TEMA 6 · 2026–27
+:::
+
+::: {.hero-title}
+Diversitat, associació<br>i genomes antics
+:::
+
+::: {.lead}
+Com descrivim la variació, reconstruïm la història i connectem genotip amb fenotip?
+:::
+
+::: {.cover-meta}
+Grau en Genètica · UAB<br>Material de Sònia Casillas
+:::
+
+## Preguntes que guien el tema
+
+::: {.quiz-grid}
+<div>Com mesurem diversitat?</div><div>Què és un haplotip?</div>
+<div>Per què decau el desequilibri de lligament?</div><div>Què prova una associació?</div>
+<div>Com detectem variants estructurals?</div><div>Com autentiquem DNA antic?</div>
+:::
+
+## De mutacions a variants poblacionals
+
+Una mutació neix en una molècula; una variant té una freqüència en una població. La deriva, la selecció, la migració i la recombinació en modifiquen la distribució.
+
+::: {.takeaway}
+La referència no és «l’al·lel normal»: és un sistema de coordenades i una seqüència de comparació.
+:::
+
+## Tipus de variació
+
+| Escala | Exemples | Evidència habitual |
+|---|---|---|
+| 1–49 pb | SNV, indel curt | pileup i haplotips locals |
+| ≥50 pb | deleció, inserció, duplicació, inversió | lectures discordants, split reads, profunditat |
+| cromosòmica | translocació, aneuploïdia | citogenètica, Hi-C, llarg abast |
+| repeticions | STR, VNTR, expansió | longitud de fragments o lectura llarga |
+
+## Catàlegs de diversitat humana
+
+HapMap va cartografiar haplotips comuns; 1000 Genomes va ampliar variants globals; els biobancs i cohorts actuals integren genomes i fenotips a una escala molt més gran.
+
+::: {.caption}
+All of Us va descriure el 2024 una versió amb **245.388 genomes clínics**, amb un 77% de participants de comunitats històricament infrarepresentades en recerca biomèdica. [All of Us Research Program (2024), *Nature*](https://doi.org/10.1038/s41586-023-06957-x).
+:::
+
+## Diversitat nucleotídica π {#pi}
+
+<div class="formula">π = mitjana de diferències per lloc entre parelles de seqüències</div>
+
+<div class="simulation">
+  <div class="control-row"><label for="pi-minor">Freqüència de l’al·lel minoritari: <output id="pi-minor-value">0,20</output></label><input id="pi-minor" type="range" min="0" max="0.5" step="0.01" value="0.2"></div>
+  <div class="meter"><div id="pi-meter"></div></div>
+  <p id="pi-summary" class="result-line"></p>
+  <p class="caption">Per a un lloc bial·lèlic, l’heterozigositat esperada és 2p(1−p). π resumeix molts llocs i depèn del mostreig.</p>
+</div>
+
+## Wooclap · On és màxima? {#wq-t6-01}
+
+::: {.question}
+En un lloc bial·lèlic, quan és màxima la probabilitat que dues còpies difereixin?
+:::
+
+::: {.answers}
+A. p = 0 · B. p = 0,01 · C. p = 0,5 · D. p = 1
+:::
+
+<div class="poll-slot" data-poll="T6-Q01"></div>
+
+## Haplotips
+
+Un haplotip és una combinació d’al·lels que viatgen junts en una mateixa còpia cromosòmica. El genotip no sempre revela quins al·lels són en **cis**.
+
+::: {.question}
+Aa Bb pot correspondre a AB/ab o Ab/aB. Quina dada ens permet fasejar?
+:::
+
+Famílies, lectures que connecten variants, panels de referència o assemblatges resolts per haplotip.
+
+## Desequilibri de lligament
+
+El LD mesura associació estadística entre al·lels de loci diferents. Reflecteix recombinació, deriva, història demogràfica, selecció i estructura poblacional.
+
+<div class="formula">r² = D² / [p<sub>A</sub>(1−p<sub>A</sub>)p<sub>B</sub>(1−p<sub>B</sub>)]</div>
+
+## Recombinació i decaïment del LD {#ld}
+
+<div class="simulation">
+  <div class="control-row"><label for="ld-generations">Generacions: <output id="ld-generations-value">20</output></label><input id="ld-generations" type="range" min="0" max="200" value="20"></div>
+  <div class="control-row"><label for="ld-recomb">Recombinació: <output id="ld-recomb-value">1%</output></label><input id="ld-recomb" type="range" min="0" max="0.1" step="0.005" value="0.01"></div>
+  <svg id="ld-plot" viewBox="0 0 1120 250" role="img" aria-label="Decaïment idealitzat del desequilibri de lligament"></svg>
+  <p id="ld-summary" class="result-line"></p>
+  <p class="caption">Model determinista Dₜ = D₀(1−r)ᵗ, sense deriva, selecció, mutació ni estructura.</p>
+</div>
+
+## GWAS: associar variants i fenotips
+
+::: {.flow}
+<div><strong>Cohort</strong><br>genotips + fenotip</div><div><strong>QC</strong><br>mostres i variants</div><div><strong>Model</strong><br>covariables i estructura</div><div><strong>Multiplicitat</strong><br>milions de proves</div><div><strong>Replicació</strong><br>altres cohorts</div>
+:::
+
+## Manhattan: senyal i llindar
+
+Cada punt és una prova. L’alçada és −log₁₀(p); la posició identifica una regió, però el punt més alt no ha de ser la variant causal.
+
+::: {.takeaway}
+Associació pot reflectir LD amb la causa, confusió o biaix. Cal seguiment funcional i replicació.
+:::
+
+## Wooclap · Interpretar un pic {#wq-t6-02}
+
+::: {.question}
+Un SNP és significatiu en un GWAS. Què podem concloure directament?
+:::
+
+::: {.answers}
+A. Causa el fenotip.  
+B. Està associat sota el model; pot marcar una regió en LD i requereix validació.  
+C. És l’única variant de la regió.
+:::
+
+<div class="poll-slot" data-poll="T6-Q02"></div>
+
+## Estructura poblacional
+
+Si ancestres i fenotips es distribueixen de manera desigual, variants que marquen ancestria poden semblar associades sense ser causals.
+
+::: {.question}
+Per què incloem components principals o models mixtos?
+:::
+
+Per reduir confusió per estructura i parentiu, sense convertir una categoria social en una essència genètica.
+
+## Variants estructurals
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">Nombre de còpies</p><p>Delecions, duplicacions i expansions.</p>
+:::
+::: {.card}
+<p class="card-title">Orientació</p><p>Inversions.</p>
+:::
+::: {.card}
+<p class="card-title">Posició</p><p>Insercions i translocacions.</p>
+:::
+:::
+
+## Evidències de SV
+
+| Patró | Què suggereix | Límit |
+|---|---|---|
+| profunditat | guany o pèrdua de còpia | confon mapatge i GC |
+| paired-end discordant | orientació/distància inesperada | resolució limitada |
+| split read | punt de trencament | necessita ancoratge únic |
+| lectura llarga | travessa l’esdeveniment | cobertura i error importen |
+| CGH/cariotip | canvi de dosi o escala gran | no sempre resol seqüència |
+
+## Mecanismes de formació
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">NAHR</p><p>Recombinació entre còpies repetides homòlogues; punts de trencament recurrents.</p>
+:::
+::: {.card}
+<p class="card-title">NHEJ i replicació</p><p>Unió de trencaments o canvis de motlle; patrons sovint no recurrents.</p>
+:::
+:::
+
+## Actualització · 1.019 genomes amb lectures llargues
+
+Un estudi de 26 poblacions del 1000 Genomes va descriure més de **100.000 SV bial·lèliques resoltes en seqüència** i va genotipar aproximadament **300.000 VNTR multial·lèlics**.
+
+::: {.caption}
+[Gustafson et al. (2025), *Nature*](https://doi.org/10.1038/s41586-025-09290-7). Mostra com la tecnologia redefineix el catàleg observable.
+:::
+
+## Selecció i adaptació humana
+
+Els senyals inclouen canvis de freqüència, haplotips llargs, diferenciació poblacional i desviacions de l’espectre de freqüències.
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">Pigmentació</p><p>Molts loci i pressions ambientals diverses.</p>
+:::
+::: {.card}
+<p class="card-title">Persistència de lactasa</p><p>Convergència reguladora i cultura.</p>
+:::
+::: {.card}
+<p class="card-title">Altitud</p><p>Adaptació local i, en alguns casos, introgressió.</p>
+:::
+:::
+
+## Introgressió arcaica
+
+Segments neandertals i denissovans en genomes actuals mostren encreuament entre llinatges. Alguns al·lels van ser eliminats; d’altres van contribuir a adaptació local.
+
+::: {.takeaway}
+Una fracció mitjana d’ancestria no diu quins segments té cada persona ni quin efecte tenen.
+:::
+
+## DNA antic: el repte
+
+::: {.flow}
+<div><strong>Poc DNA</strong><br>molècules curtes</div><div><strong>Dany</strong><br>desaminació als extrems</div><div><strong>Contaminació</strong><br>microbis i humans moderns</div><div><strong>Context</strong><br>mostra destructiva i ètica</div>
+:::
+
+## Autenticar una mostra antiga
+
+- Distribució curta de longituds.
+- Excés de C→T/G→A als extrems compatible amb dany.
+- Coherència entre biblioteques i laboratoris.
+- Estimacions de contaminació i controls negatius.
+- Procedència arqueològica i traçabilitat.
+
+## Wooclap · Dany o variant? {#wq-t6-03}
+
+::: {.question}
+Moltes C apareixen com T només als extrems de fragments antics. Quina hipòtesi cal provar primer?
+:::
+
+::: {.answers}
+A. Una adaptació recent. · B. Dany post mortem per desaminació. · C. Una duplicació cromosòmica.
+:::
+
+<div class="poll-slot" data-poll="T6-Q03"></div>
+
+## Genomes de fa 45.000 anys
+
+Genomes humans antics d’Europa han refinat el període de flux gènic neandertal i han mostrat poblacions primerenques sense descendència directa extensa avui.
+
+::: {.caption}
+[Sümer et al. (2025), *Nature*](https://doi.org/10.1038/s41586-024-08420-x). Les dates i genealogies són estimacions modelades, no lectures directes del passat.
+:::
+
+## Ètica i governança
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Poblacions actuals</p><p>Consentiment, privacitat, retorn de resultats, representació i ús secundari.</p>
+:::
+::: {.card}
+<p class="card-title">Restes humanes</p><p>Comunitats vinculades, permisos, destrucció de mostra, interpretació i repatriació.</p>
+:::
+:::
+
+## Connexió amb Adapta’t i PhyloGenome
+
+- **Adapta’t 6:** separeu senyal de selecció, variant candidata, mecanisme i evidència fenotípica.
+- **PhyloGenome 6:** relacioneu història de gens i espècies amb variació dins l’espècie.
+- Declareu població, mostra, referència, versió i límits de la inferència.
+
+## Recapitulació
+
+1. La diversitat depèn de freqüències, mostreig i història.
+2. LD és associació entre loci i decau amb recombinació sota models simples.
+3. Un GWAS localitza associacions, no causes automàtiques.
+4. Les lectures llargues amplien la variació estructural observable.
+5. El DNA antic necessita autenticació, context i governança.
+
+## Fonts i consulta {#fonts}
+
+- **Material de partida:** Sònia Casillas, *T6_Diapos*; Adapta’t 6 i PhyloGenome 6.
+- **Cohort diversa:** [All of Us Research Program (2024)](https://doi.org/10.1038/s41586-023-06957-x).
+- **Variació estructural:** [Gustafson et al. (2025)](https://doi.org/10.1038/s41586-025-09290-7).
+- **Genomes humans antics:** [Sümer et al. (2025)](https://doi.org/10.1038/s41586-024-08420-x).
+- **Pangenoma humà:** [Liao et al. (2023)](https://doi.org/10.1038/s41586-023-05896-x).

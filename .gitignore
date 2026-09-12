@@ -9,3 +9,6 @@ sources-private/
 
 /.quarto/
 **/*.quarto_ipynb
+# Local extraction and QA files
+tmp/
+sources-private/

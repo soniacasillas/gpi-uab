@@ -1,0 +1,99 @@
+---
+title: "Actualitzacions científiques"
+subtitle: "Canvis incorporats i radar setmanal de publicacions"
+format:
+  html:
+    theme: cosmo
+    css: assets/site.css
+    toc: true
+    toc-depth: 2
+    link-external-newwindow: true
+---
+
+[← Tornar als materials](index.html)
+
+La selecció distingeix els canvis curriculars ja incorporats de la vigilància bibliogràfica automàtica. Cada entrada explica on encaixa i quin matís aporta. La rellevància docent sempre s’ha de revisar abans de traslladar una novetat a classe.
+
+## Actualitzacions incorporades
+
+::: {.update}
+### Tema 1 · De la referència lineal al pangenoma
+
+El primer esborrany del pangenoma humà representa 94 haplotips de 47 individus, afegeix seqüència polimòrfica i redueix errors de detecció de variants respecte de GRCh38. S’ha afegit per separar referència, individu diploide i diversitat poblacional.
+
+<p class="meta">Liao et al. (2023), <em>Nature</em> · <a href="https://doi.org/10.1038/s41586-023-05896-x">doi:10.1038/s41586-023-05896-x</a></p>
+:::
+
+::: {.update}
+### Tema 2 · Les lectures llargues ja no són una sola categoria
+
+La comparació de protocols de RNA de lectura llarga mostra diferències de profunditat i biaix, i una identificació robusta d’isoformes principals. S’ha incorporat per ensenyar a comparar protocol i pregunta, no només marques comercials.
+
+<p class="meta">Amarasinghe et al. (2025), <em>Nature Methods</em> · <a href="https://doi.org/10.1038/s41592-025-02623-4">doi:10.1038/s41592-025-02623-4</a></p>
+:::
+
+::: {.update}
+### Tema 3 · Assemblatges humans gairebé complets i fasejats
+
+Un conjunt de 65 genomes humans, resolt en 130 haplotips, va completar de telòmer a telòmer un 39% dels cromosomes. L’exemple amplia T2T i permet discutir continuïtat, exactitud, completesa i fase per separat.
+
+<p class="meta">Logsdon et al. (2025), <em>Nature</em> · <a href="https://doi.org/10.1038/s41586-025-09140-6">doi:10.1038/s41586-025-09140-6</a> · article amb correcció vinculada</p>
+:::
+
+::: {.update}
+### Tema 4 · Isoformes completes i anotació dependent del teixit
+
+Els transcriptomes humans de lectura llarga mostren variació extensa d’isoformes entre teixits. S’ha afegit per explicar per què les unions locals de lectures curtes no sempre resolen el transcrit complet.
+
+<p class="meta">Glinos et al. (2022), <em>Nature</em> · <a href="https://doi.org/10.1038/s41586-022-05035-y">doi:10.1038/s41586-022-05035-y</a></p>
+:::
+
+::: {.update}
+### Tema 4 · ENCODE com a registre de candidats
+
+ENCODE fase III va integrar 5.992 experiments nous i va produir un registre de 926.535 elements cis-reguladors candidats humans. S’ha reformulat el llenguatge per distingir activitat bioquímica de funció causal.
+
+<p class="meta">ENCODE Project Consortium (2020), <em>Nature</em> · <a href="https://doi.org/10.1038/s41586-020-2493-4">doi:10.1038/s41586-020-2493-4</a></p>
+:::
+
+::: {.update}
+### Tema 5 · Comparació a escala de centenars de mamífers
+
+Zoonomia amplia la comparació multiespècie per estudiar restricció, acceleració i innovació reguladora. S’ha incorporat per substituir exemples aïllats per una lògica de mostreig filogenètic.
+
+<p class="meta">Zoonomia Consortium (2020), <em>Nature</em> · <a href="https://doi.org/10.1038/s41586-020-2876-6">doi:10.1038/s41586-020-2876-6</a></p>
+:::
+
+::: {.update}
+### Tema 6 · Cohorts més diverses
+
+All of Us va publicar una versió amb 245.388 genomes clínics; el 77% corresponia a comunitats històricament infrarepresentades. S’ha afegit per connectar potència, representació, governança i transportabilitat dels resultats.
+
+<p class="meta">All of Us Research Program (2024), <em>Nature</em> · <a href="https://doi.org/10.1038/s41586-023-06957-x">doi:10.1038/s41586-023-06957-x</a></p>
+:::
+
+::: {.update}
+### Tema 6 · Variació estructural a escala poblacional
+
+La seqüenciació llarga de 1.019 persones va revelar més de 100.000 variants estructurals bial·lèliques resoltes en seqüència i aproximadament 300.000 VNTR multial·lèlics. S’ha afegit per mostrar que el catàleg observable depèn de la tecnologia.
+
+<p class="meta">Gustafson et al. (2025), <em>Nature</em> · <a href="https://doi.org/10.1038/s41586-025-09290-7">doi:10.1038/s41586-025-09290-7</a></p>
+:::
+
+::: {.update}
+### Tema 6 · Genomes humans de fa uns 45.000 anys
+
+Nous genomes antics han refinat el període de flux gènic entre humans moderns i neandertals i han identificat poblacions primerenques amb poca continuïtat directa posterior.
+
+<p class="meta">Sümer et al. (2025), <em>Nature</em> · <a href="https://doi.org/10.1038/s41586-024-08420-x">doi:10.1038/s41586-024-08420-x</a></p>
+:::
+
+## Novetats de la setmana
+
+{{< include data/weekly-publications.md >}}
+
+## Com s’actualitza
+
+Cada dilluns, GitHub Actions consulta l’API pública d’Europe PMC amb cinc cerques alineades amb els temes 2–6, genera aquesta secció i torna a publicar el lloc. També es pot executar manualment des de la pestanya **Actions** del repositori.
+
+La selecció automàtica és un radar, no una revisió sistemàtica: ordena resultats recents, elimina duplicats i mostra DOI o fitxa d’Europe PMC. Abans d’incorporar un article a les diapositives cal comprovar el text complet, el disseny de l’estudi i la relació real amb els objectius del curs.

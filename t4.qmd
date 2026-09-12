@@ -1,0 +1,278 @@
+---
+pagetitle: "GPI · Tema 4 · Anotació i transcriptòmica"
+---
+
+## Anotació i transcriptòmica {.cover #inici}
+
+::: {.eyebrow}
+GENÒMICA · TEMA 4 · 2026–27
+:::
+
+::: {.hero-title}
+Del genoma<br>a l’activitat gènica
+:::
+
+::: {.lead}
+Com identifiquem gens, transcrits i elements reguladors, i com mesurem quan s’utilitzen?
+:::
+
+::: {.cover-meta}
+Grau en Genètica · UAB<br>Material de Sònia Casillas
+:::
+
+## Preguntes que guien el tema
+
+::: {.quiz-grid}
+<div>Quina evidència converteix una predicció en anotació?</div><div>Un gen equival a un transcrit?</div>
+<div>Què mesuren microarrays i RNA-seq?</div><div>Com comparem expressió entre mostres?</div>
+<div>Què vol dir «funcional»?</div><div>Per què el context cel·lular és imprescindible?</div>
+:::
+
+## Anotar és integrar evidències
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">Seqüència</p><p>ORF, codons, senyals d’splicing, promotors i dominis.</p>
+:::
+::: {.card}
+<p class="card-title">Homologia</p><p>Gens, proteïnes i regions conservades en altres espècies.</p>
+:::
+::: {.card}
+<p class="card-title">Expressió</p><p>cDNA, EST i lectures de RNA que delimiten exons i isoformes.</p>
+:::
+:::
+
+::: {.takeaway}
+Cap senyal aïllat prova tot el model d’un gen eucariota.
+:::
+
+## Descobriment ab initio
+
+Els algoritmes aprenen patrons de regions codificadores i no codificadores.
+
+| Senyal | Què suggereix | Limitació |
+|---|---|---|
+| ORF llarg | potencial codificador | pot aparèixer per atzar |
+| biaix de codons | ús compatible amb proteïna | depèn de l’espècie |
+| GT–AG i altres senyals | límits d’intró | no tots els senyals són canònics |
+| promotor/CpG | inici regulat | fortament dependent del context |
+
+## Wooclap · Una ORF és un gen? {#wq-t4-01}
+
+::: {.question}
+Trobem una ORF llarga en un genoma eucariota. Quina conclusió és defensable?
+:::
+
+::: {.answers}
+A. És segur que és un gen.  
+B. És una evidència candidata que cal combinar amb expressió, conservació o funció.  
+C. No pot ser un gen perquè conté exons.
+:::
+
+<div class="poll-slot" data-poll="T4-Q01"></div>
+
+## Homologia i transferència d’anotacions
+
+Una seqüència similar pot ajudar a localitzar un gen i suggerir-ne la funció. La transferència és més sòlida quan es conserven ortologia, dominis, estructura i context.
+
+::: {.takeaway}
+Similitud no implica automàticament la mateixa funció; les paralogies són una font clàssica d’error.
+:::
+
+## Del gen al transcriptoma
+
+El transcriptoma és el conjunt de molècules de RNA presents en una mostra, en un moment i condició determinats.
+
+::: {.flow}
+<div><strong>Gen</strong><br>locus genòmic</div><div><strong>Transcripció</strong><br>inici i processament</div><div><strong>Isoformes</strong><br>combinacions d’exons</div><div><strong>Abundància</strong><br>dependent del context</div>
+:::
+
+## Splicing alternatiu {#isoform}
+
+<div class="simulation">
+  <div class="control-row"><label for="isoform-mode">Context: <output id="isoform-mode-value">teixit A</output></label><input id="isoform-mode" type="range" min="0" max="2" step="1" value="0"></div>
+  <div id="isoform-view" class="haplotype-box" aria-live="polite"></div>
+  <p class="caption">Esquema sintètic: el mateix locus pot produir isoformes diferents; l’absència d’una isoforma en una mostra no prova absència universal.</p>
+</div>
+
+## EST i cDNA
+
+Els EST van permetre mostrejar extrems de cDNA i confirmar transcripció. Les col·leccions de cDNA complet aporten estructura d’isoformes, però depenen dels teixits i condicions mostrejats.
+
+::: {.question}
+Quin gen queda invisible si mai no mostregem el teixit on s’expressa?
+:::
+
+## Microarrays d’expressió
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Mesura</p>
+
+Hibridació de RNA/cDNA a sondes predefinides.
+:::
+::: {.card}
+<p class="card-title">Conseqüència</p>
+
+Només podem quantificar bé allò per a què hem dissenyat sondes; hi pot haver hibridació creuada i saturació.
+:::
+:::
+
+## RNA-seq
+
+::: {.flow}
+<div><strong>RNA</strong><br>selecció o depleció</div><div><strong>Biblioteca</strong><br>fragments i adaptadors</div><div><strong>Lectures</strong><br>curtes o llargues</div><div><strong>Assignació</strong><br>gen/transcrit</div><div><strong>Comptatge</strong><br>matriu mostres × gens</div>
+:::
+
+## Què aporta RNA-seq?
+
+- Expressió sense sondes predefinides.
+- Límits d’exons, unions d’splicing i transcrits nous.
+- Variants expressades i expressió específica d’al·lel.
+- Un rang dinàmic ampli, limitat pel mostreig i el protocol.
+
+## Lectures curtes i isoformes
+
+Una lectura que cobreix una unió confirma aquella connexió, però sovint no determina quina combinació completa d’exons pertany a la mateixa molècula.
+
+::: {.takeaway}
+Quantificar gens sol ser més fàcil que reconstruir i quantificar isoformes completes.
+:::
+
+## Lectures llargues de RNA: actualització
+
+Les lectures de molècules completes connecten exons distants. Un benchmark de cinc protocols va trobar que els mètodes de lectura llarga identificaven amb més robustesa les isoformes principals, tot mantenint diferències de profunditat i biaix entre protocols.
+
+::: {.caption}
+[Amarasinghe et al. (2025), *Nature Methods*](https://doi.org/10.1038/s41592-025-02623-4); [Glinos et al. (2022), *Nature*](https://doi.org/10.1038/s41586-022-05035-y).
+:::
+
+## Wooclap · Quina dada falta? {#wq-t4-02}
+
+::: {.question}
+Dues mostres tenen 1.000 i 2.000 lectures assignades al gen X. Podem afirmar que X s’expressa el doble?
+:::
+
+::: {.answers}
+A. Sí, sempre.  
+B. No; cal considerar profunditat de biblioteca, composició, rèpliques i incertesa.  
+C. Només si X té introns.
+:::
+
+<div class="poll-slot" data-poll="T4-Q02"></div>
+
+## Normalització: composició de la biblioteca {#normalization}
+
+<div class="simulation">
+  <div class="control-row"><label for="dominant-gene">Lectures d’un gen dominant a B: <output id="dominant-gene-value">20%</output></label><input id="dominant-gene" type="range" min="0" max="80" step="5" value="20"></div>
+  <svg id="normalization-plot" viewBox="0 0 1120 260" role="img" aria-label="Composició de dues biblioteques de RNA-seq"></svg>
+  <p id="normalization-summary" class="result-line"></p>
+  <p class="caption">Exemple composicional idealitzat. Comptes, CPM i mètodes robustos responen a supòsits diferents.</p>
+</div>
+
+## Disseny d’un experiment d’expressió
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Biologia</p>
+
+Rèpliques biològiques, aleatorització, sexe/edat/lot i definició del contrast.
+:::
+::: {.card}
+<p class="card-title">Mesura</p>
+
+Integritat del RNA, protocol, profunditat, controls i traçabilitat.
+:::
+:::
+
+## Expressió diferencial
+
+El model compara grups, estima variabilitat entre rèpliques i controla la multiplicitat de proves.
+
+::: {.question}
+Un canvi de 8× sense rèpliques és més convincent que un canvi de 1,5× consistent en moltes rèpliques?
+:::
+
+La magnitud sola no descriu la incertesa ni la reproductibilitat.
+
+## Navegadors genòmics
+
+Un navegador alinea capes d’evidència sobre coordenades comunes: gens, transcrits, conservació, variants, accessibilitat, ChIP-seq i contactes 3D.
+
+::: {.takeaway}
+Sempre cal registrar assemblatge, coordenades, versió de l’anotació i origen de cada pista.
+:::
+
+## Ontologia gènica
+
+Gene Ontology organitza anotacions en tres eixos:
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">Procés biològic</p><p>Objectiu al qual contribueix el producte.</p>
+:::
+::: {.card}
+<p class="card-title">Funció molecular</p><p>Activitat bioquímica.</p>
+:::
+::: {.card}
+<p class="card-title">Component cel·lular</p><p>On actua.</p>
+:::
+:::
+
+## RNA no codificador
+
+| Classe | Idea clau |
+|---|---|
+| rRNA/tRNA | maquinària de traducció |
+| snRNA/snoRNA | processament de RNA |
+| miRNA | regulació posttranscripcional |
+| lncRNA | grup heterogeni; funció específica requereix evidència |
+
+## De l’associació a la regulació
+
+::: {.flow}
+<div><strong>ATAC/DNase</strong><br>cromatina accessible</div><div><strong>ChIP-seq</strong><br>proteïna o marca</div><div><strong>RNA-seq</strong><br>resultat transcripcional</div><div><strong>3C/Hi-C</strong><br>contacte espacial</div><div><strong>Pertorbació</strong><br>causalitat</div>
+:::
+
+## ENCODE i els cCRE
+
+ENCODE fase III va integrar milers d’experiments i va crear un registre de **926.535 elements cis-reguladors candidats humans**. «Candidat» reflecteix evidència bioquímica, que no equival necessàriament a una funció causal en tots els contextos.
+
+::: {.caption}
+[ENCODE Project Consortium (2020), *Nature*](https://doi.org/10.1038/s41586-020-2493-4).
+:::
+
+## Wooclap · Què vol dir funcional? {#wq-t4-03}
+
+::: {.question}
+Una regió mostra cromatina oberta i unió d’un factor de transcripció. Què podem afirmar?
+:::
+
+::: {.answers}
+A. És essencial per a la supervivència.  
+B. Té activitat bioquímica compatible amb regulació; la funció causal requereix més evidència.  
+C. Codifica necessàriament una proteïna.
+:::
+
+<div class="poll-slot" data-poll="T4-Q03"></div>
+
+## Connexió amb els problemes i Adapta’t
+
+- **Problema 4A/4B:** distingiu intensitat, recompte, normalització i contrast.
+- **Problema ENCODE:** formuleu què mesura cada pista abans d’interpretar la figura.
+- **Adapta’t 4:** connecteu una hipòtesi adaptativa amb un mecanisme d’expressió o regulació comprovable.
+- **PhyloGenome 4:** reviseu quines evidències sustenten l’anotació dels gens comparats.
+
+## Recapitulació
+
+1. L’anotació és una hipòtesi sostinguda per evidències múltiples.
+2. El transcriptoma depèn de mostra, temps i protocol.
+3. RNA-seq produeix dades composicionals amb variabilitat biològica.
+4. Activitat bioquímica, associació i causalitat són nivells diferents.
+
+## Fonts i consulta {#fonts}
+
+- **Material de partida:** Sònia Casillas, *T4_Diapos*; Problemes 4A, 4B i ENCODE; Adapta’t 4 i PhyloGenome 4.
+- **Long-read transcriptomics:** [Glinos et al. (2022)](https://doi.org/10.1038/s41586-022-05035-y); [Amarasinghe et al. (2025)](https://doi.org/10.1038/s41592-025-02623-4).
+- **ENCODE fase III:** [ENCODE Project Consortium (2020)](https://doi.org/10.1038/s41586-020-2493-4).
+- **Gene Ontology:** [The Gene Ontology Consortium (2023)](https://doi.org/10.1093/genetics/iyad031).
