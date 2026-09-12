@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict');
+const {assemblyStats,coverageModel,repeatModel}=require('../assets/models.js');
+require('../assets/data.js');
+const m=assemblyStats(globalThis.GPI_DATA.contigsMb);
+assert.ok(Math.abs(m.total-188.1)<1e-9);assert.equal(m.n50,9.7);assert.equal(m.l50,8);assert.ok(Math.abs(m.cumulative-96.3)<1e-9);
+assert.deepEqual([assemblyStats([8,6,4,2]).n50,assemblyStats([14,4,2]).n50],[6,14]);
+assert.equal(assemblyStats([5,5]).l50,1);assert.equal(assemblyStats([7]).n50,7);
+assert.throws(()=>assemblyStats([]));assert.throws(()=>assemblyStats([0,2]));
+assert.equal(coverageModel(0).missingFraction,1);
+const c=coverageModel(3);assert.equal(c.N,60);assert.equal(c.depth.reduce((a,b)=>a+b,0),c.N*c.L);
+assert.deepEqual(c.depth,coverageModel(3).depth);
+assert.notDeepEqual(c.depth,coverageModel(3,43).depth);
+assert.equal(repeatModel(9).bridges,false);assert.equal(repeatModel(10).bridges,true);
+console.log('Models verificats: N50/L50, conservació de bases, llavors i llindar de repeticions.');
