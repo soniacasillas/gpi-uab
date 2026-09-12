@@ -85,6 +85,11 @@
 .reveal ol,.reveal ul { margin-left:1.25em; }
 .reveal li { margin-bottom:.5em; }
 .reveal #fonts { font-size:.86em; }
+.reveal .iso-row { display:flex; align-items:center; gap:8px; margin:24px 0; }
+.reveal .iso-row b { width:145px; font-size:.72em; }
+.reveal .exon { display:inline-flex; align-items:center; justify-content:center; min-width:72px; height:46px; padding:0 10px; color:white; background:var(--teal); border-radius:4px; font-size:.7em; font-weight:700; }
+.reveal .exon-2 { background:#2f728f; }.reveal .exon-3 { background:var(--orange); }.reveal .exon-4 { background:#6c5b7b; }
+.reveal .intron { width:38px; border-top:3px solid #80939b; }.reveal .join { color:#80939b; }
 .reveal .footer { font-size:13px!important; color:#526574!important; }
 .reveal .slide-number { font-family:inherit; background:transparent; color:#526574; }
 @media print { .reveal .control-row { display:none; } .reveal .poll-slot { display:none; } }
