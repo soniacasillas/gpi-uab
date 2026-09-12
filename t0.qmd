@@ -1,0 +1,531 @@
+---
+pagetitle: "GPI · Presentació de l’assignatura"
+---
+
+## Genòmica, proteòmica i interactòmica {.cover #inici}
+
+::: {.eyebrow}
+GRAUS EN GENÈTICA, BIOLOGIA I MICROBIOLOGIA · 2026–27
+:::
+
+::: {.hero-title}
+De la seqüència<br>a la funció
+:::
+
+::: {.lead}
+Una assignatura per interpretar genomes, transcriptomes, proteomes i les relacions que els connecten.
+:::
+
+::: {.cover-meta}
+Universitat Autònoma de Barcelona<br>
+Presentació de l’assignatura
+:::
+
+::: {.notes}
+Material de partida: T0_Diapos_202627. Aquesta versió reorganitza el contingut per fer visible el fil de l’assignatura. No incorpora preguntes Wooclap perquè la professora no les ha demanat per a la introducció.
+:::
+
+## Professorat
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">Sònia Casillas</p>
+
+**Part I: Genòmica**
+
+Departament de Genètica i de Microbiologia  
+Institut de Biotecnologia i de Biomedicina  
+[sonia.casillas@uab.cat](mailto:sonia.casillas@uab.cat)
+:::
+
+::: {.card}
+<p class="card-title">Iris Sarmiento</p>
+
+**Part I: Genòmica**
+
+Departament de Genètica i de Microbiologia  
+Institut de Biotecnologia i de Biomedicina  
+[Iris.Sarmiento@uab.cat](mailto:Iris.Sarmiento@uab.cat)
+:::
+
+::: {.card}
+<p class="card-title">Javier García</p>
+
+**Part II: Proteòmica**
+
+Departament de Bioquímica i de Biologia Molecular  
+Institut de Biotecnologia i de Biomedicina  
+[javier.garcia.pardo@uab.cat](mailto:javier.garcia.pardo@uab.cat)
+:::
+:::
+
+::: {.notes}
+Els despatxos no s’han incorporat perquè el text extret de la presentació original no en contenia la ubicació. Es poden afegir quan es confirmi la dada.
+:::
+
+## Objectius formatius
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Estructura i diversitat</p>
+
+Comprendre l’estructura, la diversitat i la complexitat dels genomes, transcriptomes i proteomes.
+:::
+
+::: {.card}
+<p class="card-title">Informació biològica</p>
+
+Reconèixer el caràcter funcional, històric i evolutiu de la informació genètica.
+:::
+
+::: {.card}
+<p class="card-title">Variabilitat</p>
+
+Interpretar la naturalesa, el significat i les conseqüències de la variabilitat intraespecífica i interespecífica.
+:::
+
+::: {.card}
+<p class="card-title">Mètodes i aplicacions</p>
+
+Conèixer els mètodes experimentals i computacionals de la genòmica, la transcriptòmica i la proteòmica.
+:::
+:::
+
+## Dotze temes, un mateix fil
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Part I · Genòmica</p>
+
+1. Genomes: estructura i funció
+2. Estratègies de seqüenciació
+3. Seqüenciació i assemblatge
+4. Anotació i transcriptòmica
+5. Evolució del genoma
+6. Variació genòmica i paleogenòmica
+:::
+
+::: {.card}
+<p class="card-title">Part II · Proteòmica i interactòmica</p>
+
+7. Introducció i conceptes bàsics
+8. Diversitat del proteoma
+9. Tècniques d’anàlisi
+10. Proteòmica quantitativa
+11. Proteòmica estructural i funcional
+12. Interactòmica
+:::
+:::
+
+## Aprendre fent
+
+::: {.hero-title}
+Veure ajuda a entendre.<br>Fer obliga a decidir.
+:::
+
+::: {.lead}
+Les classes aporten conceptes i criteris. Els problemes i els projectes els converteixen en decisions sobre dades reals.
+:::
+
+::: {.caption}
+La presentació original expressava aquesta filosofia amb la cita atribuïda a Confuci: «m’ho van explicar i ho vaig oblidar; ho vaig veure i ho vaig entendre; ho vaig fer i ho vaig aprendre».
+:::
+
+## El ritme de treball
+
+::: {.flow}
+<div><strong>Abans de classe</strong><br>Lectura o problema breu al Moodle.</div>
+<div><strong>A l’aula</strong><br>Explicació, preguntes, trencaclosques i estudi de casos.</div>
+<div><strong>Durant el tema</strong><br>Aplicació al genoma assignat i contrast amb altres espècies.</div>
+<div><strong>Al final</strong><br>Integració de resultats en els projectes.</div>
+:::
+
+::: {.notes}
+Les metodologies de la font són classe expositiva, trencaclosques, estudi de casos, problemes setmanals, PhyloGenome i Adapta’t. La diapositiva fa explícita la relació temporal entre elles.
+:::
+
+## Problemes setmanals
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Treball individual</p>
+
+Els qüestionaris del Moodle guien l’exploració de bases de dades, el càlcul i la interpretació.
+:::
+
+::: {.card}
+<p class="card-title">Abans de la sessió</p>
+
+Cal lliurar-los abans de la sessió de problemes corresponent. A classe es comparen estratègies i resultats.
+:::
+:::
+
+::: {.takeaway}
+El qüestionari deixa constància de la resposta. La sessió serveix per entendre per què és defensable.
+:::
+
+## PhyloGenome: un genoma que creix amb el curs
+
+El grup tria una espècie amb un genoma seqüenciat i publicat. Cada tema afegeix una capa d’anàlisi.
+
+::: {.timeline}
+<div><strong>1</strong>Context, mida i composició</div>
+<div><strong>2</strong>Estratègia de seqüenciació</div>
+<div><strong>3</strong>Assemblatge i qualitat</div>
+<div><strong>4</strong>Anotació i expressió</div>
+<div><strong>5</strong>Comparació i evolució</div>
+<div><strong>6</strong>Variació i integració</div>
+:::
+
+::: {.caption}
+Més informació: [phylogenome.omicsuab.org](https://phylogenome.omicsuab.org/) · Joc en línia: [phylogenome.onrender.com](https://phylogenome.onrender.com/)
+:::
+
+::: {.takeaway}
+Sessió de joc: **divendres 2 d’octubre, de 17 a 22 h, espai SiS**. L’edició 2026–27 incorpora **206 cartes** i tres dinàmiques de joc.
+:::
+
+## PhyloGenome: metodologia i lliurament
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Treball en grup</p>
+
+Grups de tres o quatre. Cada grup investiga un projecte genoma a partir de l’article principal i de bases de dades genòmiques.
+:::
+
+::: {.card}
+<p class="card-title">Evidència setmanal</p>
+
+Cada lliurament respon les preguntes de la guia. A la sessió de problemes el grup exposa i revisa els resultats.
+:::
+:::
+
+::: {.takeaway}
+Inscripcions el dia de presentació. Entrega final prevista: **20 de novembre de 2026**. El treball complet inclou el document, la carta del joc i una presentació oral d’un fragment.
+:::
+
+::: {.notes}
+La data i l’estructura provenen de T0 i de PhyloGenome_0. Caldrà confirmar-les si canvia el calendari del Campus Virtual. La guia actual indica que l’espècie i l’article s’han de validar perquè no es repeteixin entre grups.
+:::
+
+## Adapta’t: una pregunta evolutiva compartida
+
+::: {.hero-title}
+Quins gens humans mostren senyals d’adaptació recent?
+:::
+
+El projecte connecta més de deu docents de tres departaments. Cada grup estudia un gen candidat des de perspectives complementàries.
+
+<span class="pill">freqüències poblacionals</span>
+<span class="pill">estructura del gen</span>
+<span class="pill">expressió</span>
+<span class="pill">funció molecular</span>
+<span class="pill">selecció natural</span>
+<span class="pill">proteoformes</span>
+
+::: {.caption}
+Recurs del projecte: [PopHumanScan](https://pophumanscan.uab.cat/)
+:::
+
+## Adapta’t: integració al primer semestre
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">Bioinformàtica</p>
+
+Freqüències nucleotídiques, anotació per homologia, ortòlegs, paràlegs i reconstrucció filogenètica.
+:::
+
+::: {.card}
+<p class="card-title">Genòmica i transcriptòmica</p>
+
+Localització, estructura gènica i transcripcional, expressió, funció i selecció natural.
+:::
+
+::: {.card}
+<p class="card-title">Genètica humana i proteòmica</p>
+
+Variabilitat, implicacions mèdiques, proteoformes, estructura i treball crític amb un article científic.
+:::
+:::
+
+## Adapta’t: del curs a la divulgació
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Primer semestre</p>
+
+Treball en grup. Inscripcions fins al **18 de setembre** i una entrega al final de la part de Genòmica. Els temes 4 i 6 aporten les anàlisis principals.
+:::
+
+::: {.card}
+<p class="card-title">Segon semestre</p>
+
+Tallers de comunicació científica, infografies, activitats interactives i fabricació digital. Presentació al públic general i a alumnat de batxillerat.
+:::
+:::
+
+::: {.caption}
+Informació general: [adaptat.omicsuab.org](https://adaptat.omicsuab.org/) · Inscripcions al segon semestre fins al **16 de desembre** i reconeixement de **2 ECTS**, segons el material original.
+:::
+
+## Avaluació
+
+| Activitat | Modalitat | Pes |
+|---|---:|---:|
+| Problemes setmanals de genòmica | individual, setmanal | 10% |
+| Projecte PhyloGenome | grup, lliuraments parcials i final | 10% |
+| Seminaris de proteòmica | grup, un disseny experimental per seminari | 10% |
+| Projecte Adapta’t | grup, diversos formats | 10% |
+| Examen de genòmica | individual | 25% |
+| Examen de proteòmica | individual | 35% |
+
+::: {.caption}
+Avaluació continuada: 40%. Avaluació final: 60%. Problemes setmanals i seminaris: participació mínima del 50%. PhyloGenome i Adapta’t: obligatoris. Exàmens: nota mínima de 4, recuperables per separat; la millora de nota inclou tota la matèria i implica renunciar a les qualificacions anteriors.
+:::
+
+::: {.notes}
+La taula i les condicions reconstrueixen T0, diapositiva 16. Confirmar al Campus Virtual que la guia docent publicada manté aquestes regles abans d’impartir la sessió.
+:::
+
+## Lectures i recursos
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Lectura guiada</p>
+
+Les referències citades a les diapositives formen part del material del tema. Les notes indiquen què aporta cada font.
+:::
+
+::: {.card}
+<p class="card-title">Consulta</p>
+
+El Moodle conté llibres bàsics i complementaris de genòmica i proteòmica. Les bases de dades s’obren des de les activitats.
+:::
+:::
+
+## D’on venen «genoma» i «genòmica»?
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Genoma · 1920</p>
+
+Hans Winkler va usar *Genom* per designar el conjunt haploide de cromosomes. El terme combina l’arrel de **gen** amb una terminació inspirada en **cromosoma**.
+:::
+
+::: {.card}
+<p class="card-title">Genòmica · 1986</p>
+
+Thomas H. Roderick va proposar *genomics* com a nom d’una disciplina i d’una revista dedicades a estudiar genomes complets.
+:::
+:::
+
+::: {.caption}
+La definició moderna inclou estructura, funció, variació i evolució dels genomes.
+:::
+
+## Fites de la genòmica {#fites}
+
+<div class="simulation">
+  <div class="control-row"><label for="milestone-year">Any: <output id="milestone-year-value">2001</output></label><input id="milestone-year" type="range" min="1977" max="2025" step="1" value="2001"></div>
+  <div id="milestone-detail" class="takeaway" aria-live="polite"></div>
+</div>
+
+::: {.caption}
+Selecció didàctica. Distingeix el primer genoma complet conegut del primer genoma d’un organisme de vida lliure.
+:::
+
+::: {.notes}
+Fonts: Sanger et al. (1977), Fleischmann et al. (1995), International Human Genome Sequencing Consortium (2001), Nurk et al. (2022), Liao et al. (2023) i Blaxter et al. (2025).
+:::
+
+## Del genoma de referència al pangenoma
+
+::: {.research-numbers}
+<div><strong>3,055 Gb</strong><span>T2T-CHM13, autosomes i X sense buits</span></div>
+<div><strong>94</strong><span>haplotips al primer esborrany del pangenoma humà</span></div>
+<div><strong>47</strong><span>individus ancestralment diversos</span></div>
+:::
+
+Una referència lineal facilita les coordenades. Un pangenoma representa camins alternatius i redueix el biaix envers una sola seqüència.
+
+::: {.caption}
+[Nurk et al. (2022)](https://doi.org/10.1126/science.abj6987) · [Liao et al. (2023)](https://doi.org/10.1038/s41586-023-05896-x)
+:::
+
+## El boom dels projectes genoma
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">Espècies model</p>
+
+Ratolí, pollastre, ximpanzé, gos i molts altres organismes connecten mecanismes conservats amb fenotips.
+:::
+
+::: {.card}
+<p class="card-title">Poblacions humanes</p>
+
+All of Us i altres cohorts combinen genoma, salut i exposicions. La representació de poblacions diverses condiciona què podem inferir.
+:::
+
+::: {.card}
+<p class="card-title">Biodiversitat</p>
+
+VGP, Darwin Tree of Life, i5K, B10K i l’Earth BioGenome Project coordinen genomes de referència per tot l’arbre de la vida.
+:::
+:::
+
+## Earth BioGenome Project
+
+::: {.hero-title}
+Uns 1,9 milions de taxons eucariotes descrits
+:::
+
+El projecte coordina xarxes regionals i taxonòmiques per produir genomes de referència, dades obertes i estàndards comuns.
+
+::: {.takeaway}
+La fase II transforma els pilots en producció coordinada. La dada crítica ja no és només «tenir una seqüència», sinó conèixer-ne la qualitat, la procedència i les metadades.
+:::
+
+::: {.caption}
+[Earth BioGenome Project](https://www.earthbiogenome.org/) · [Blaxter et al. (2025)](https://doi.org/10.3389/fsci.2025.1514835) · [Recomanacions d’assemblatge, versió 4 (2026)](https://www.earthbiogenome.org/report-on-assembly-recommendations)
+:::
+
+## Per què seqüenciar la vida?
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">Reconstruir</p>
+
+Inferir la història evolutiva i els canvis que han generat biodiversitat.
+:::
+
+::: {.card}
+<p class="card-title">Descobrir</p>
+
+Identificar funcions, innovacions biològiques i interaccions amb l’ambient.
+:::
+
+::: {.card}
+<p class="card-title">Conservar</p>
+
+Mesurar diversitat, consanguinitat i adaptació per prendre decisions de conservació.
+:::
+:::
+
+## Aplicacions de la genòmica
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">Salut</p>
+
+Genòmica del càncer, diagnòstic, farmacogenòmica i epidemiologia genòmica.
+:::
+
+::: {.card}
+<p class="card-title">Poblacions</p>
+
+GWAS, història demogràfica, origen de poblacions i variació humana.
+:::
+
+::: {.card}
+<p class="card-title">Biosfera</p>
+
+Millora animal i vegetal, vigilància de patògens i genòmica de la conservació.
+:::
+:::
+
+## De la visió de 2011 a la de 2020
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">2011</p>
+
+La genòmica avançava des de l’estructura del genoma cap a la biologia del genoma, la malaltia i la medicina.
+:::
+
+::: {.card}
+<p class="card-title">2020–2030</p>
+
+El NHGRI posa l’èmfasi en dades complexes, recursos sostenibles, diversitat, ciència oberta, formació, salut i implicacions socials.
+:::
+:::
+
+::: {.caption}
+[Green et al. (2011)](https://doi.org/10.1038/nature09764) · [Green et al. (2020)](https://doi.org/10.1038/s41586-020-2817-4)
+:::
+
+## Quatre àrees per a la genòmica humana
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Principis i valors</p>
+
+Diversitat, rigor, reproductibilitat, ciència oberta i intercanvi responsable de dades.
+:::
+
+::: {.card}
+<p class="card-title">Fonaments</p>
+
+Estructura i funció del genoma, dades, mètodes i recursos sostenibles.
+:::
+
+::: {.card}
+<p class="card-title">Barreres</p>
+
+Representació desigual, formació, integració clínica i interpretació de variants.
+:::
+
+::: {.card}
+<p class="card-title">Projectes convincents</p>
+
+Variació intraindividual, predicció genotip-fenotip i interaccions entre genòmica, societat i ambient.
+:::
+:::
+
+## Prediccions per al 2030
+
+::: {.quiz-grid}
+<div>Models predictius que integrin genoma, epigenoma i transcriptoma.</div>
+<div>Estudis humans que superin descriptors poblacionals basats en categories socials històriques.</div>
+<div>Ús clínic rutinari de la informació genòmica.</div>
+<div>Menys variants de significat incert gràcies a evidència funcional i poblacional.</div>
+<div>Beneficis distribuïts entre poblacions diverses.</div>
+<div>Teràpies curatives basades en modificacions genòmiques per desenes de malalties.</div>
+:::
+
+::: {.question}
+Quina predicció necessita el canvi científic més gran? Quina depèn sobretot d’un canvi social o institucional?
+:::
+
+::: {.notes}
+Activitat de debat, sense Wooclap. Les deu prediccions completes són a la visió estratègica del NHGRI. Aquesta diapositiva en selecciona sis i les parafraseja per facilitar la discussió.
+:::
+
+## Com treballarem aquesta part
+
+::: {.timeline}
+<div><strong>T1</strong>Què conté un genoma?</div>
+<div><strong>T2</strong>Com el seqüenciem?</div>
+<div><strong>T3</strong>Com el reconstruïm?</div>
+<div><strong>T4</strong>Com l’anotem i mesurem?</div>
+<div><strong>T5</strong>Com ha evolucionat?</div>
+<div><strong>T6</strong>Com varia entre individus?</div>
+:::
+
+::: {.takeaway}
+Cada tema aporta una resposta parcial. PhyloGenome obliga a connectar-les en un cas real.
+:::
+
+## Fonts principals
+
+- **Material docent:** Sònia Casillas, *T0_Diapos_202627* i guies actualitzades de PhyloGenome.
+- **Seqüència humana completa:** [Nurk et al. (2022)](https://doi.org/10.1126/science.abj6987).
+- **Pangenoma humà:** [Liao et al. (2023)](https://doi.org/10.1038/s41586-023-05896-x).
+- **Earth BioGenome Project:** [Blaxter et al. (2025)](https://doi.org/10.3389/fsci.2025.1514835).
+- **Visió estratègica:** [Green et al. (2020)](https://doi.org/10.1038/s41586-020-2817-4).
+
+::: {.caption}
+Fonts web revisades el 12 de setembre de 2026. Les dates administratives s’han mantingut d’acord amb el material 2026–27 i s’han d’actualitzar si canvia el calendari del Campus Virtual.
+:::

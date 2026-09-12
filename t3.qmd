@@ -1,0 +1,320 @@
+---
+pagetitle: "GPI · Assemblatge de genomes"
+---
+
+## Assemblatge de genomes {.cover #inici}
+
+::: {.eyebrow}
+GENÒMICA · TEMA 3 · 2026–27
+:::
+
+::: {.hero-title}
+Cobertura, continuïtat<br>i repeticions
+:::
+
+::: {.lead}
+Quina evidència necessitem per confiar en un assemblatge?
+:::
+
+::: {.cover-meta}
+Grau en Genètica · UAB<br>
+Material de Sònia Casillas · Materials interactius
+:::
+
+::: {.notes}
+Font principal: T3_Diapos.pptx, diapositives 7–18. Extensió científica: Logsdon et al., 2025. Navegació amb les fletxes; O per a vista general, S per a notes. Els controls interactius es poden utilitzar amb teclat.
+:::
+
+## Una predicció abans de començar {#prediccio}
+
+::: {.eyebrow}
+PENSA INDIVIDUALMENT · DISCUTEIX · TORNA A RESPONDRE
+:::
+
+Una repetició idèntica de **8 kb** continua sense resoldre amb lectures de **150 pb** i una cobertura de **30×**.
+
+::: {.question}
+Passar a 100× garanteix resoldre-la?
+:::
+
+::: {.answers}
+A. Sí, perquè a 100× totes les regions queden resoltes.
+
+B. No: més lectures curtes poden mantenir l’ambigüitat.
+
+C. Sí, si augmenta l’N50 de l’assemblatge.
+:::
+
+<div class="poll-slot" data-poll="T3-Q1"></div>
+
+::: {.notes}
+Resposta prevista: B. No atribuïm el problema exclusivament a la cobertura. En aquest cas les còpies són idèntiques i falta informació que les connecti als flancs únics. Una major cobertura pot millorar el mostreig, però no garanteix aquesta connexió. Les preguntes són noves, preparades per traslladar a Wooclap, i no recullen respostes locals.
+:::
+
+## Cobertura mitjana i bases observades {#cobertura}
+
+<div class="formula">C = N · L / G</div>
+
+<div class="simulation" id="coverage-widget">
+  <div class="control-row"><label for="coverage">Cobertura mitjana: <output id="coverage-value">3×</output></label><input id="coverage" type="range" min="0" max="12" step="0.5" value="3"><button id="resample" type="button">Nou mostreig</button></div>
+  <svg id="coverage-plot" viewBox="0 0 1120 230" role="img" aria-label="Profunditat de lectura al llarg d’un genoma circular simulat"></svg>
+  <div class="metrics" id="coverage-summary" aria-live="polite"></div>
+  <p class="caption">N: lectures · L: longitud de lectura · G: mida del genoma. Exemple sintètic: G = 10.000 pb, L = 500 pb.</p>
+  <p class="caption">Model ideal: inicis uniformes i independents, genoma circular i lectures sense errors. Fracció esperada de bases no observades ≈ e<sup>−C</sup>. No és la probabilitat que el genoma sencer estigui complet.</p>
+</div>
+
+::: {.notes}
+Font conceptual: Ekblom i Wolf (2014), doi:10.1111/eva.12178. La simulació calcula la profunditat per base; no executa cap assemblador. El genoma circular evita efectes de vora. A C=3, aproximadament el 5% de bases queden sense observar sota l’aproximació de Poisson. Canviar la llavor mostra variabilitat entre mostreigs. Una cobertura mitjana elevada no demostra correcció, absència de biaix ni resolució de repeticions.
+:::
+
+## Una lectura que connecta els dos flancs {#repeticions}
+
+<p>Dues còpies idèntiques de R tenen <strong>flancs únics diferents</strong>.</p>
+
+<div class="simulation" id="repeat-widget">
+  <div class="control-row"><label for="read-length">Longitud de lectura: <output id="read-value">2 kb</output></label><input id="read-length" type="range" min="2" max="12" step="1" value="2"></div>
+  <svg id="repeat-plot" viewBox="0 0 1120 270" role="img" aria-label="Dues còpies repetides de 8 kb amb flancs únics i una lectura centrada en cadascuna"></svg>
+  <p class="result-line" id="repeat-summary" aria-live="polite"></p>
+  <p class="caption">Esquema idealitzat: R = 8 kb; ancoratge mínim assumit = 1 kb a cada flanc. Lectures centrades deliberadament sobre R, sense errors.</p>
+</div>
+
+::: {.notes}
+Fonts: T3, diapositives 15–18; NHGRI, Long-Read DNA Sequencing. En aquest esquema, L≥10 kb permet connectar els dos flancs perquè la lectura està centrada. Una lectura llarga real no sempre cau a la posició adequada; també importa el mostreig. El llindar d’1 kb és una convenció del model, no una regla universal d’assemblatge. No simulem errors, heterozigosi, graf d’assemblatge ni assemblatge de novo. Hi ha altres fonts d’informació de llarg abast.
+:::
+
+## N50 i L50, pas a pas {#n50}
+
+<p>Ordenem els contigs de més llarg a més curt i acumulem la longitud fins al <strong>50% de l’assemblatge</strong>.</p>
+
+<div class="simulation" id="n50-widget">
+  <div class="control-row"><label for="n50-step">Contigs acumulats: <output id="n50-step-value">1</output></label><input id="n50-step" type="range" min="1" max="24" value="1"><button id="n50-threshold" type="button">Arribar al 50%</button></div>
+  <svg id="n50-plot" viewBox="0 0 1120 300" role="img" aria-label="Longitud acumulada dels 24 contigs de l’exemple original"></svg>
+  <div id="n50-summary" class="metrics" aria-live="polite"></div>
+  <p class="caption">Dades de T3, diapositiva 9. Total assemblat: 188,1 Mb. Llindar: 94,05 Mb. Aquesta suma no és necessàriament la mida real del genoma.</p>
+</div>
+
+::: {.notes}
+N50=9,7 Mb, L50=8: els 7 primers sumen 86,6 Mb, i amb el vuitè arribem a 96,3 Mb. Conservar explícitament la distinció entre longitud i nombre. Font addicional: NCBI Datasets, Genome assembly report. L50 és el nombre mínim de contigs ordenats que permet arribar a la meitat del total. Les barres mostren longitud acumulada; cada segment és un contig, no una posició genòmica. Les dades apareixen a assets/data.js.
+:::
+
+## Un N50 més alt pot amagar un error {#n50-limit}
+
+<p>Dos assemblatges sintètics sumen <strong>20 Mb</strong>. A B hem unit dues peces sense evidència.</p>
+
+<div class="comparison-row"><strong>A · 8 + 6 + 4 + 2 Mb</strong><div class="contig-strip"><span style="flex:8">8</span><span style="flex:6">6</span><span style="flex:4">4</span><span style="flex:2">2</span></div><p>N50 = 6 Mb · L50 = 2</p></div>
+<div class="comparison-row"><strong>B · 14 + 4 + 2 Mb</strong><div class="contig-strip"><span class="suspect" style="flex:14">14 · unió incorrecta</span><span style="flex:4">4</span><span style="flex:2">2</span></div><p>N50 = 14 Mb · L50 = 1</p></div>
+
+::: {.takeaway}
+L’N50 descriu la continuïtat. Cal avaluar també l’exactitud, la completesa i la contaminació.
+:::
+
+::: {.notes}
+Cas inventat per a docència, no dades experimentals. Una concatenació artificial augmenta l’N50 encara que empitjori l’assemblatge. La longitud total es manté. Fonts: T3 diapositives 9–10 i 30; Ekblom i Wolf (2014). No confondre N50 de contigs amb N50 de scaffolds ni N50 amb NG50, que usa una mida de genoma estimada independentment.
+:::
+
+## Genomes gairebé complets: un exemple de 2025 {#recerca}
+
+::: {.research-numbers}
+<div><strong>65</strong><span>genomes humans</span></div>
+<div><strong>130</strong><span>assemblatges d’haplotips</span></div>
+<div><strong>39%</strong><span>dels cromosomes complets de telòmer a telòmer</span></div>
+:::
+
+El treball resol regions complexes i variants estructurals que resultaven difícils de caracteritzar.
+
+::: {.question}
+Què voldries saber, a més de l’N50, abans d’utilitzar un d’aquests assemblatges?
+:::
+
+::: {.caption}
+Logsdon et al. (2025), *Nature* 644, 430–441. [Article i dades](https://doi.org/10.1038/s41586-025-09140-6). Cal llegir-lo amb la correcció vinculada. El 39% es refereix als cromosomes, no als individus.
+:::
+
+::: {.notes}
+Extensió de les diapositives 23–25, que ja inclouen T2T. No presentar aquest estudi com l’última fita absoluta. L’abstract informa de 65 genomes diversos, 130 assemblatges resolts per haplotip i un 39% de cromosomes T2T. Publicat el 23 de juliol de 2025, amb correcció del 26 d’agost de 2025. Preguntar per exactitud de bases, validació estructural, completesa, contaminació, fase i regions no resoltes. La xifra de continuïtat de l’article no és necessària per a aquesta diapositiva.
+:::
+
+## Auditoria del genoma del vostre equip {#missio}
+
+::: {.eyebrow}
+PROPOSTA DE CONNEXIÓ AMB PHYLOGENOME · 5 MINUTS
+:::
+
+Per a l’assemblatge que esteu estudiant:
+
+1. Identifiqueu-ne l’**accessió i la versió**.
+2. Distingiu les mesures de **contigs** i de **scaffolds**.
+3. Formuleu una limitació que pugui afectar una conclusió biològica.
+
+::: {.takeaway}
+«Amb aquestes dades podem afirmar…<br>Per comprovar… encara necessitem…»
+:::
+
+::: {.caption}
+No afegeix cap lliurament ni modifica la rúbrica.
+:::
+
+::: {.notes}
+Enllaç pedagògic proposat, pendent de revisar la guia actual de PhyloGenome. ProjecteGenoma.pdf correspon al curs 2021/22 i s’ha consultat només com a context històric. No assumir que tots els grups disposen de dades equivalents. Si no hi ha l’N50 de contigs, cal registrar-ho com a informació absent, no substituir-lo pel de scaffolds. La discussió pot alimentar el treball ja existent.
+:::
+
+## Una decisió amb evidències {#sortida}
+
+<p>Un assemblatge té un N50 alt, però moltes regions esperades no hi apareixen.</p>
+
+::: {.question}
+Quina conclusió és defensable?
+:::
+
+::: {.answers}
+A. Les regions absents s’han perdut en l’evolució.
+
+B. L’assemblatge és complet perquè l’N50 és alt.
+
+C. Cal contrastar l’absència amb les lectures i altres evidències.
+:::
+
+<div class="poll-slot" data-poll="T3-Q3"></div>
+
+::: {.notes}
+Resposta prevista: C. És una pregunta de transferència conceptual. Es pot demanar una justificació de dues frases. Font: T3, diapositiva 30 (Baker 2012). L’absència d’una regió a l’assemblatge pot tenir causes tècniques o biològiques; aquestes dades no permeten distingir-les.
+:::
+
+
+## De lectures a contigs
+
+Un assemblador busca compatibilitats entre fragments i representa camins possibles. Un **contig** és una seqüència contínua sense buits; no és necessàriament un cromosoma.
+
+::: {.flow}
+<div><strong>Lectures</strong><br>seqüència + qualitat</div><div><strong>Relacions</strong><br>solapaments o k-mers</div><div><strong>Graf</strong><br>camins compatibles</div><div><strong>Contigs</strong><br>seqüències consens</div>
+:::
+
+## Dos paradigmes d’assemblatge
+
+| Paradigma | Nodes/arestes | Fortalesa | Punt crític |
+|---|---|---|---|
+| overlap-layout-consensus | lectures i solapaments | lectures llargues | cost de comparar solapaments |
+| graf de De Bruijn | k-mers i adjacències | moltes lectures curtes | elecció de *k* i repeticions |
+
+::: {.takeaway}
+El graf fa visible l’ambigüitat: un assemblatge lineal n’escull o en trenca un camí.
+:::
+
+## Wooclap · L’efecte de k {#wq-t3-02}
+
+::: {.question}
+En un graf de De Bruijn, què pot passar si augmentem massa *k* amb cobertura limitada?
+:::
+
+::: {.answers}
+A. Sempre desapareixen tots els errors.  
+B. El graf es pot fragmentar perquè falten k-mers observats.  
+C. Totes les repeticions esdevenen més llargues.
+:::
+
+<div class="poll-slot" data-poll="T3-Q02"></div>
+
+## Errors i seqüència consens
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Error aleatori</p>
+
+La redundància permet estimar una base consens si els errors són prou independents.
+:::
+::: {.card}
+<p class="card-title">Error sistemàtic</p>
+
+Pot persistir amb molta cobertura si depèn del context o del mètode.
+:::
+:::
+
+## De contigs a scaffolds
+
+Les parelles de lectures, lectures llargues, mapes òptics i Hi-C poden ordenar i orientar contigs.
+
+::: {.question}
+Què representa una sèrie de N en un scaffold?
+:::
+
+Una distància estimada sense seqüència resolta; no és evidència que la regió no existeixi.
+
+## Assemblatge jeràrquic i whole-genome shotgun
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Jeràrquic</p>
+
+Un mapa físic de clons grans divideix el problema abans de seqüenciar. Va ser clau al Projecte Genoma Humà.
+:::
+::: {.card}
+<p class="card-title">WGS</p>
+
+Es fragmenta tot el genoma i les relacions es recuperen computacionalment.
+:::
+:::
+
+## Més enllà dels contigs
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">Mapes òptics</p><p>Patrons en molècules molt llargues validen estructura.</p>
+:::
+::: {.card}
+<p class="card-title">Hi-C</p><p>Contactes tridimensionals ajuden a assignar contigs a cromosomes.</p>
+:::
+::: {.card}
+<p class="card-title">Dades parentals</p><p>Els marcadors heretats ajuden a separar haplotips.</p>
+:::
+:::
+
+## T2T i assemblatges diploides
+
+L’assemblatge T2T-CHM13 va resoldre una seqüència humana pràcticament sense buits per als autosomes i X. El repte següent és obtenir cromosomes complets i **fasejats** de molts individus.
+
+::: {.takeaway}
+Completesa, fase i diversitat són dimensions diferents.
+:::
+
+## Una auditoria en quatre dimensions
+
+| Dimensió | Pregunta | Evidència possible |
+|---|---|---|
+| continuïtat | quantes peces? | N50/NG50, nombre de contigs |
+| completesa | hi són els elements esperats? | BUSCO, k-mers, regions telomèriques |
+| exactitud | les bases i unions són correctes? | QV, lectures, mapes, Hi-C |
+| contaminació | tot pertany a la mostra? | cobertura, composició, taxonomia |
+
+## NCBI Assembly: llegir la fitxa
+
+Comproveu l’accessió i la versió, el nivell declarat, la mida total, contig i scaffold N50, gaps i estadístiques d’anotació.
+
+::: {.caption}
+Una fitxa de base de dades és una descripció del producte i del procés, no un certificat universal de qualitat.
+:::
+
+## Connexió amb Problema 3A i 3B
+
+1. Recalculeu les mètriques abans d’interpretar-les.
+2. Compareu assemblatges amb la mateixa definició.
+3. Expliqueu quin tipus d’error no detecta la mètrica.
+4. Relacioneu la limitació amb una conclusió biològica concreta.
+
+## Recapitulació del tema
+
+- Cobertura descriu mostreig; longitud i informació de llarg abast resolen ambigüitats.
+- N50 mesura continuïtat, no exactitud.
+- Un scaffold pot contenir buits i unions inferides.
+- La qualitat depèn de l’ús que farem de l’assemblatge.
+
+## Fonts i consulta {#fonts}
+
+- **Material de partida:** Sònia Casillas, *T3_Diapos*; Problema 3A, Problema 3B i PhyloGenome 3.
+- **Definicions de mètriques:** [NCBI Datasets · Genome assembly report](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/reference-docs/data-reports/genome-assembly/).
+- **Cobertura i avaluació:** [Ekblom i Wolf (2014)](https://doi.org/10.1111/eva.12178).
+- **Lectures llargues:** [NHGRI · Long-Read DNA Sequencing](https://www.genome.gov/genetics-glossary/Long-Read-DNA-Sequencing).
+- **Ampliació científica:** [Logsdon et al. (2025)](https://doi.org/10.1038/s41586-025-09140-6).
+
+::: {.caption}
+Fonts web consultades el 10 de setembre de 2026. Els esquemes i la simulació són didàctics. Les preguntes encara no estan vinculades a cap sessió Wooclap.
+:::

@@ -1,0 +1,294 @@
+---
+pagetitle: "GPI · Tema 2 · Seqüenciació de genomes"
+---
+
+## Seqüenciació de genomes {.cover #inici}
+
+::: {.eyebrow}
+GENÒMICA · TEMA 2 · 2026–27
+:::
+
+::: {.hero-title}
+De la molècula<br>a les lectures
+:::
+
+::: {.lead}
+Com transformem DNA en dades i com escollim la tecnologia adequada?
+:::
+
+::: {.cover-meta}
+Grau en Genètica · UAB<br>Material de Sònia Casillas
+:::
+
+## Preguntes que guien el tema
+
+::: {.quiz-grid}
+<div>Per què es fragmenta el DNA?</div><div>Què aporta una genoteca?</div>
+<div>Com funciona la terminació de cadena?</div><div>Què comparteixen les tecnologies NGS?</div>
+<div>Quin compromís hi ha entre longitud i exactitud?</div><div>Quina plataforma respon millor cada pregunta?</div>
+:::
+
+## De la mostra a la seqüència
+
+::: {.flow}
+<div><strong>1 · DNA</strong><br>Extracció i control de qualitat</div>
+<div><strong>2 · Genoteca</strong><br>Fragmentació i adaptadors</div>
+<div><strong>3 · Senyal</strong><br>Òptic, químic o elèctric</div>
+<div><strong>4 · Lectures</strong><br>Bases i qualitats</div>
+<div><strong>5 · Anàlisi</strong><br>Mapatge o assemblatge</div>
+:::
+
+::: {.takeaway}
+La tecnologia condiciona quines preguntes podem respondre i quins errors hem de modelar.
+:::
+
+## Genoteques clonals: la idea original
+
+El DNA genòmic es fragmenta, s’insereix en vectors i es manté en cèl·lules hoste.
+
+| Vector | Insert típic | Ús històric |
+|---|---:|---|
+| Plàsmid | < 10 kb | fragments petits |
+| Fàg/còsmid | 10–45 kb | genoteques genòmiques |
+| BAC | 100–300 kb | mapatge i seqüenciació jeràrquica |
+
+::: {.notes}
+Conserva la distinció de les diapositives originals entre genoteca i seqüenciació. Avui moltes genoteques de seqüenciació no impliquen clonatge cel·lular.
+:::
+
+## Cobertura d’una genoteca {#library}
+
+<div class="formula">P = 1 − (1 − a/b)<sup>N</sup> ≈ 1 − e<sup>−R</sup></div>
+
+<div class="simulation">
+  <div class="control-row"><label for="lib-r">Redundància R: <output id="lib-r-value">3×</output></label><input id="lib-r" type="range" min="0.1" max="10" step="0.1" value="3"></div>
+  <div class="meter"><div id="lib-meter"></div></div>
+  <p id="lib-summary" class="result-line"></p>
+  <p class="caption">Model de mostreig aleatori i independent. No incorpora biaixos de clonatge ni regions impossibles de representar.</p>
+</div>
+
+## Wooclap · Què garanteix una genoteca? {#wq-t2-01}
+
+::: {.question}
+Una genoteca té una probabilitat calculada del 95% de contenir una regió. Què significa?
+:::
+
+::: {.answers}
+A. La regió és present amb certesa.  
+B. En repeticions de l’experiment, aproximadament el 95% de genoteques la contindrien.  
+C. El 95% de les bases de cada clon són correctes.
+:::
+
+<div class="poll-slot" data-poll="T2-Q01"></div>
+
+## Sanger: terminació de cadena
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Reacció</p>
+
+Polimerasa, motlle, primer, dNTP i una fracció de ddNTP marcats.
+:::
+::: {.card}
+<p class="card-title">Lectura</p>
+
+L’electroforesi capil·lar separa fragments per mida i el fluoròfor identifica la base terminal.
+:::
+:::
+
+::: {.takeaway}
+Cada pic del cromatograma és una inferència a partir d’un senyal, no una observació directa d’una lletra.
+:::
+
+## Qualitat Phred {#phred}
+
+<div class="formula">Q = −10 log<sub>10</sub>(P<sub>error</sub>)</div>
+
+<div class="simulation">
+  <div class="control-row"><label for="phred-q">Qualitat: <output id="phred-q-value">Q30</output></label><input id="phred-q" type="range" min="5" max="50" value="30"></div>
+  <p id="phred-summary" class="result-line"></p>
+  <p class="caption">La qualitat és logarítmica: augmentar 10 punts divideix per deu la probabilitat d’error estimada.</p>
+</div>
+
+## Wooclap · Q20 i Q30 {#wq-t2-02}
+
+::: {.question}
+Quantes vegades és menor la probabilitat d’error de Q30 que la de Q20?
+:::
+
+::: {.answers}
+A. 1,5 · B. 3 · C. 10 · D. 100
+:::
+
+<div class="poll-slot" data-poll="T2-Q02"></div>
+
+## La seqüenciació massiva
+
+Les tecnologies de segona generació van substituir moltes reaccions independents per milions de molècules llegides en paral·lel.
+
+::: {.flow}
+<div><strong>Fragmentar</strong><br>mida compatible</div><div><strong>Afegir adaptadors</strong><br>ancoratge i índexs</div><div><strong>Amplificar</strong><br>quan cal</div><div><strong>Llegir cicles</strong><br>senyal per base</div>
+:::
+
+## Tres mecanismes històrics
+
+| Plataforma | Senyal | Idea que cal retenir |
+|---|---|---|
+| 454 | llum de pirofosfat | homopolímers alteren intensitat |
+| SOLiD | lligació fluorescent | codificació en espai de colors |
+| Ion Torrent | canvi de pH | detecció electrònica, sense càmera |
+
+::: {.caption}
+Context històric del material original. Ajuda a separar el mecanisme de detecció de la política comercial d’una plataforma.
+:::
+
+## Illumina: síntesi reversible
+
+1. Els fragments s’uneixen a una flow cell.
+2. L’amplificació en pont crea clústers.
+3. S’incorpora una base fluorescent bloquejada per cicle.
+4. Es registra la imatge, es desbloqueja i es repeteix.
+
+::: {.question}
+Per què calen clústers?
+:::
+
+Per sumar el senyal de moltes còpies de la mateixa molècula fins que sigui detectable.
+
+## Paired-end i índexs
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Paired-end</p>
+
+Llegim els dos extrems del mateix fragment. Coneixem aproximadament orientació i distància.
+:::
+::: {.card}
+<p class="card-title">Multiplexació</p>
+
+Els índexs identifiquen mostres barrejades en una mateixa cursa.
+:::
+:::
+
+::: {.takeaway}
+La longitud del fragment aporta informació de llarg abast encara que cada lectura sigui curta.
+:::
+
+## PacBio HiFi: consens circular
+
+Una molècula circularitzada es llegeix diverses vegades. El consens combina passades independents de la mateixa molècula.
+
+::: {.research-numbers}
+<div><strong>llarga</strong><span>lectura de molècula única</span></div>
+<div><strong>consens</strong><span>diverses passades</span></div>
+<div><strong>fase</strong><span>variants en un mateix haplotip</span></div>
+:::
+
+## Oxford Nanopore: corrent elèctric
+
+El DNA travessa un nanoporus i altera un corrent iònic. Un model tradueix el senyal temporal a seqüència.
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">Temps real</p><p>La lectura es pot analitzar mentre es genera.</p>
+:::
+::: {.card}
+<p class="card-title">Lectures molt llargues</p><p>Poden travessar repeticions i variants estructurals.</p>
+:::
+::: {.card}
+<p class="card-title">Senyal ric</p><p>Pot conservar informació sobre modificacions de bases.</p>
+:::
+:::
+
+## Lectura curta o llarga? {#tech-selector}
+
+<div class="simulation">
+  <div class="control-row"><label for="tech-priority">Prioritat: <output id="tech-priority-value">cost per base</output></label><input id="tech-priority" type="range" min="0" max="2" step="1" value="0"></div>
+  <div id="tech-cards" class="grid-3"></div>
+  <p class="caption">Comparació qualitativa per discutir disseny experimental; rendiment i costos canvien amb instruments i protocols.</p>
+</div>
+
+## Wooclap · Escollir tecnologia {#wq-t2-03}
+
+::: {.question}
+Voleu resoldre una expansió repetitiva de 20 kb. Quina propietat prioritzareu?
+:::
+
+::: {.answers}
+A. Moltes lectures de 100 pb · B. Lectures que travessin la repetició i els flancs · C. Només més índexs de mostra
+:::
+
+<div class="poll-slot" data-poll="T2-Q03"></div>
+
+## Disseny: començar per la pregunta
+
+| Pregunta | Evidència prioritària | Risc principal |
+|---|---|---|
+| variants petites en cohort gran | exactitud i cost per mostra | biaix de referència |
+| assemblatge de novo | longitud, cobertura i fase | repeticions/heterozigosi |
+| isoformes completes | lectures de RNA llargues | profunditat i quantificació |
+| brot infecciós | rapidesa i logística | contaminació i mostreig |
+| metagenoma | profunditat + longitud | barreja d’espècies |
+
+## Estratègies híbrides
+
+Lectures llargues poden construir l’esquelet; lectures molt exactes, dades de pares, Hi-C o mapes òptics poden corregir, fasejar i ordenar.
+
+::: {.takeaway}
+«Híbrid» no vol dir millor per definició: cada font de dades ha de resoldre una limitació identificada.
+:::
+
+## Cas actual · del genoma lineal al pangenoma
+
+El primer esborrany del pangenoma humà va combinar **94 haplotips de 47 individus**, va afegir seqüència polimòrfica i va reduir errors de detecció de variants petites respecte de GRCh38.
+
+::: {.caption}
+[Liao et al. (2023), *Nature*](https://doi.org/10.1038/s41586-023-05896-x). L’exemple connecta tecnologia, assemblatge, fase i biaix de referència.
+:::
+
+## Aplicació: vigilància d’un brot
+
+::: {.question}
+Heu de seqüenciar mostres en un hospital amb resposta el mateix dia. Quins tres criteris posaríeu al plec de condicions?
+:::
+
+::: {.answers}
+Temps fins al resultat · sensibilitat · controls · portabilitat · cost · capacitat d’actualitzar l’anàlisi.
+:::
+
+::: {.notes}
+Connecta els exemples originals d’Ebola i SARS-CoV-2 amb una decisió generalitzable.
+:::
+
+## Connexió amb els problemes i PhyloGenome
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Problemes del tema 2</p>
+
+Feu explícits el senyal, la longitud, l’error i la unitat que es compara.
+:::
+::: {.card}
+<p class="card-title">PhyloGenome</p>
+
+Registreu tecnologia, tipus de lectures i conseqüències per a l’assemblatge del genoma triat.
+:::
+:::
+
+## Recapitulació
+
+1. Una genoteca és una representació mostrejada de la mostra.
+2. Cada tecnologia converteix un senyal físic en bases i qualitats.
+3. La cobertura no substitueix la longitud ni elimina els biaixos.
+4. La pregunta biològica determina el disseny.
+
+## Fonts i consulta {#fonts}
+
+- **Material de partida:** Sònia Casillas, *T2_Diapos*; Problema 2A, Problema 2PGH i Exercise GPI Tema 2.
+- **Pangenoma humà:** [Liao et al. (2023)](https://doi.org/10.1038/s41586-023-05896-x).
+- **RNA de lectura llarga:** [Glinos et al. (2022)](https://doi.org/10.1038/s41586-022-05035-y).
+- **Comparació actual de protocols:** [Amarasinghe et al. (2025), *Nature Methods*](https://doi.org/10.1038/s41592-025-02623-4).
+
+::: {.caption}
+Les prestacions comercials varien. Les comparacions quantitatives s’han de vincular a versió, química, protocol i data.
+:::

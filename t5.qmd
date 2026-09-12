@@ -1,0 +1,235 @@
+---
+pagetitle: "GPI · Tema 5 · Evolució del genoma"
+---
+
+## Evolució del genoma {.cover #inici}
+
+::: {.eyebrow}
+GENÒMICA · TEMA 5 · 2026–27
+:::
+
+::: {.hero-title}
+Seqüència, selecció<br>i innovació
+:::
+
+::: {.lead}
+Com reconstruïm els processos que han transformat genomes i funcions?
+:::
+
+::: {.cover-meta}
+Grau en Genètica · UAB<br>Material de Sònia Casillas
+:::
+
+## Preguntes que guien el tema
+
+::: {.quiz-grid}
+<div>Mutació és igual a substitució?</div><div>Per què les distàncies observades se saturen?</div>
+<div>Què compara dN/dS?</div><div>Com distingim ortologia i paralogia?</div>
+<div>Què passa després d’una duplicació?</div><div>Què aporta la sintènia?</div>
+:::
+
+## Mutació, deriva i selecció
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">Mutació</p><p>Genera variants noves en individus.</p>
+:::
+::: {.card}
+<p class="card-title">Deriva</p><p>Canvia freqüències per mostreig, sobretot en poblacions petites.</p>
+:::
+::: {.card}
+<p class="card-title">Selecció</p><p>Relaciona variants amb diferències de supervivència o reproducció.</p>
+:::
+:::
+
+::: {.takeaway}
+Una substitució és una diferència que s’ha fixat entre llinatges; no tota mutació hi arriba.
+:::
+
+## Teoria neutral
+
+Si moltes substitucions són selectivament neutres, la seva taxa de fixació pot aproximar la taxa de mutació neutral.
+
+::: {.question}
+Neutral vol dir que la seqüència no té cap funció?
+:::
+
+No necessàriament: descriu l’efecte d’una variant concreta sobre l’aptitud en un context.
+
+## El rellotge molecular
+
+::: {.flow}
+<div><strong>Canvis</strong><br>diferències acumulades</div><div><strong>Taxa</strong><br>model i calibratge</div><div><strong>Temps</strong><br>estimació amb incertesa</div>
+:::
+
+La taxa varia entre gens, llinatges i tipus de canvi. Un rellotge és un model que cal comprovar i calibrar.
+
+## Saturació: diferències ocultes {#jc}
+
+<div class="formula">d = −3/4 ln(1 − 4p/3)</div>
+
+<div class="simulation">
+  <div class="control-row"><label for="jc-p">Diferències observades p: <output id="jc-p-value">0,10</output></label><input id="jc-p" type="range" min="0" max="0.74" step="0.01" value="0.10"></div>
+  <svg id="jc-plot" viewBox="0 0 1120 270" role="img" aria-label="Diferència observada i distància corregida de Jukes-Cantor"></svg>
+  <p id="jc-summary" class="result-line"></p>
+  <p class="caption">Jukes–Cantor assumeix freqüències de bases i taxes de canvi iguals; és un model didàctic, no universal.</p>
+</div>
+
+## Wooclap · Per què corregim? {#wq-t5-01}
+
+::: {.question}
+Per què la proporció observada de diferències subestima canvis antics?
+:::
+
+::: {.answers}
+A. Una mateixa posició pot haver canviat més d’una vegada.  
+B. El DNA antic sempre és més curt.  
+C. Totes les mutacions són deletèries.
+:::
+
+<div class="poll-slot" data-poll="T5-Q01"></div>
+
+## Sinònimes i no sinònimes
+
+| Mesura | Canvi | Interpretació inicial |
+|---|---|---|
+| dS | no altera l’aminoàcid | aproximació a canvi neutral |
+| dN | altera l’aminoàcid | exposat a restriccions funcionals |
+| dN/dS | compara taxes per lloc | senyal mitjà del model i del conjunt analitzat |
+
+## Interpretar dN/dS
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">ω < 1</p><p>Selecció purificadora o restricció funcional.</p>
+:::
+::: {.card}
+<p class="card-title">ω ≈ 1</p><p>Compatible amb neutralitat sota el model.</p>
+:::
+::: {.card}
+<p class="card-title">ω > 1</p><p>Evidència de selecció positiva quan el contrast estadístic és adequat.</p>
+:::
+:::
+
+## Wooclap · Un valor mitjà {#wq-t5-02}
+
+::: {.question}
+Un gen té dN/dS = 0,2. Podem descartar selecció positiva en qualsevol codó i branca?
+:::
+
+::: {.answers}
+A. Sí. · B. No, el valor mitjà pot amagar episodis locals. · C. Només si el gen té introns.
+:::
+
+<div class="poll-slot" data-poll="T5-Q02"></div>
+
+## Exemple: FOXP2
+
+FOXP2 va ser un cas influent per discutir canvis en una proteïna relacionada amb parla i llenguatge. El relat causal simple s’ha de substituir per comparacions filogenètiques, proves funcionals i prudència sobre el fenotip.
+
+::: {.takeaway}
+Una signatura evolutiva localitza una hipòtesi; no reconstrueix per si sola un caràcter complex.
+:::
+
+## Conservació i elements ultraconservats
+
+La conservació entre espècies pot revelar restricció en exons i elements no codificadors. L’absència de conservació detectable no prova absència de funció.
+
+::: {.question}
+Quins llinatges i quina distància evolutiva necessitem per detectar la restricció que ens interessa?
+:::
+
+## Genòmica comparada a escala de mamífers
+
+Els recursos Zoonomia i altres alineaments multiespècie permeten estudiar restricció, acceleració, innovació reguladora i conservació amb centenars de genomes.
+
+::: {.caption}
+[Zoonomia Consortium (2020), *Nature*](https://doi.org/10.1038/s41586-020-2876-6) i col·lecció especial de *Science* (2023).
+:::
+
+## Homologia: relació evolutiva
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Ortòlegs</p><p>Descendeixen d’un gen ancestral separat per especiació.</p>
+:::
+::: {.card}
+<p class="card-title">Paràlegs</p><p>Descendeixen d’una duplicació dins la història de la família.</p>
+:::
+:::
+
+::: {.takeaway}
+«Percentatge d’identitat» és una mesura; ortologia i paralogia són hipòtesis sobre la història.
+:::
+
+## Wooclap · Arbre de gens i d’espècies {#wq-t5-03}
+
+::: {.question}
+Dos gens d’espècies diferents són els més semblants entre si. Són necessàriament ortòlegs?
+:::
+
+::: {.answers}
+A. Sí. · B. No; cal reconciliar l’arbre de gens amb especiacions, duplicacions i pèrdues. · C. Només si tenen la mateixa longitud.
+:::
+
+<div class="poll-slot" data-poll="T5-Q03"></div>
+
+## Després d’una duplicació
+
+::: {.flow}
+<div><strong>Duplicació</strong><br>redundància inicial</div><div><strong>Pèrdua</strong><br>pseudogenització</div><div><strong>Partició</strong><br>subfuncionalització</div><div><strong>Innovació</strong><br>neofuncionalització</div><div><strong>Dosi</strong><br>retenció conjunta</div>
+:::
+
+## Famílies multigèniques
+
+Duplicacions en tàndem, duplicacions segmentàries, retrotransposició i duplicacions de genoma sencer creen patrons diferents d’ordre, introns i sintènia.
+
+::: {.question}
+Quina evidència distingiria una retrocòpia d’una duplicació genòmica local?
+:::
+
+## Sintènia i reordenaments
+
+La sintènia conserva blocs de gens entre genomes. Inversions, translocacions, fusions i fissions alteren orientació i veïnatge.
+
+::: {.takeaway}
+La seqüència local respon «s’assemblen?»; la sintènia afegeix «ocupen una posició evolutivament coherent?».
+:::
+
+## Duplicació del genoma sencer
+
+Després d’una WGD, molts duplicats es perden i alguns es retenen. Les proporcions d’edat de duplicats i els blocs de sintènia ajuden a inferir l’esdeveniment.
+
+::: {.question}
+Un genoma amb el doble de gens demostra una WGD recent?
+:::
+
+No: cal un patró coordinat en moltes famílies i regions.
+
+## Connexió amb PhyloGenome
+
+1. Definiu el conjunt d’homòlegs i la regla d’inclusió.
+2. Separeu arbre de gens i arbre d’espècies.
+3. Cerqueu duplicacions, pèrdues i branques conflictives.
+4. Relacioneu una conclusió amb l’alineament i el model.
+
+## Connexió amb els problemes 5A–5C
+
+- Diferència observada i distància corregida no són intercanviables.
+- Un dN/dS global pot ocultar heterogeneïtat.
+- La funció no s’ha de transferir només pel millor hit.
+- La sintènia pot resoldre relacions ambigües.
+
+## Recapitulació
+
+1. Els models tradueixen diferències en hipòtesis sobre processos.
+2. La selecció s’infereix amb contrasts i supòsits explícits.
+3. Homologia descriu història, no grau de semblança.
+4. Duplicacions i reordenaments transformen l’arquitectura genòmica.
+
+## Fonts i consulta {#fonts}
+
+- **Material de partida:** Sònia Casillas, *T5_Diapos*; Problemes 5A–5C i PhyloGenome 5.
+- **Genomes de mamífers:** [Zoonomia Consortium (2020)](https://doi.org/10.1038/s41586-020-2876-6).
+- **Models de selecció:** [Yang (2007), *Molecular Biology and Evolution*](https://doi.org/10.1093/molbev/msm088).
+- **Duplicació gènica:** [Conant, Birchler i Pires (2014), *Nature Reviews Genetics*](https://doi.org/10.1038/nrg3684).

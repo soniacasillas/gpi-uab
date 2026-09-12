@@ -1,0 +1,67 @@
+---
+title: "Genòmica, Proteòmica i Interactòmica"
+subtitle: "Materials de Genòmica · Grau en Genètica · UAB"
+format:
+  html:
+    theme: cosmo
+    css: assets/site.css
+    toc: false
+    link-external-newwindow: true
+---
+
+Aquest repositori acompanya les diapositives de classe amb prototips interactius, simulacions puntuals, preguntes per a Wooclap i una selecció de novetats científiques. Els materials són una base editable per a l’actualització progressiva de l’assignatura.
+
+## Presentacions interactives
+
+::: {.topic-grid}
+::: {.topic-card}
+### [Presentació de l’assignatura](t0.html)
+
+Organització, activitats, avaluació i projectes.
+:::
+::: {.topic-card}
+### [Tema 1 · Genomes](t1.html)
+
+Referències, mida, complexitat, repeticions i pangenomes.
+:::
+::: {.topic-card}
+### [Tema 2 · Seqüenciació](t2.html)
+
+Genoteques, senyals, qualitats i selecció de tecnologies.
+:::
+::: {.topic-card}
+### [Tema 3 · Assemblatge](t3.html)
+
+Cobertura, grafs, repeticions, N50 i qualitat.
+:::
+::: {.topic-card}
+### [Tema 4 · Transcriptòmica](t4.html)
+
+Anotació, RNA-seq, isoformes i regulació.
+:::
+::: {.topic-card}
+### [Tema 5 · Evolució](t5.html)
+
+Models, selecció, homologia, duplicacions i sintènia.
+:::
+::: {.topic-card}
+### [Tema 6 · Variació](t6.html)
+
+Diversitat, LD, GWAS, variació estructural i paleogenòmica.
+:::
+::: {.topic-card .news-card}
+### [Actualitzacions científiques](actualitzacions.html)
+
+Canvis incorporats i selecció setmanal de publicacions.
+:::
+:::
+
+## Recursos docents
+
+- [Banc complet de preguntes Wooclap](questions/wooclap-gpi-t1-t6.xlsx)
+- [Preguntes en format llegible](questions/)
+- Tecles de les presentacions: fletxes per avançar, **O** per a la vista general i **S** per a les notes del professorat.
+
+::: {.callout-note}
+Les simulacions són models didàctics i expliciten els seus supòsits. Les xifres i publicacions amb data es documenten a la pàgina d’actualitzacions.
+:::

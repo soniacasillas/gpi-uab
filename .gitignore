@@ -1,0 +1,14 @@
+.quarto/
+_site/
+node_modules/
+test-results/
+sources-private/
+*.pptx
+*.pdf
+*.zip
+
+/.quarto/
+**/*.quarto_ipynb
+# Local extraction and QA files
+tmp/
+sources-private/
