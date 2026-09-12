@@ -1,0 +1,712 @@
+---
+pagetitle: "GPI · Tema 1 · Genomes nuclears eucariotes"
+---
+
+## Introducció als genomes {.cover #inici}
+
+::: {.eyebrow}
+GENÒMICA · TEMA 1 · 2026–27
+:::
+
+::: {.hero-title}
+Genomes nuclears<br>eucariotes
+:::
+
+::: {.lead}
+Què vol dir tenir un genoma seqüenciat, quant DNA conté i com s’organitza?
+:::
+
+::: {.cover-meta}
+Grau en Genètica · UAB<br>
+Material de Sònia Casillas
+:::
+
+## Preguntes que guien el tema
+
+::: {.quiz-grid}
+<div>Quin va ser el primer genoma seqüenciat?</div>
+<div>Quantes espècies tenen un genoma disponible?</div>
+<div>La mida del genoma indica la complexitat?</div>
+<div>El nombre de gens indica la complexitat?</div>
+<div>Quina fracció del genoma és repetitiva?</div>
+<div>Què representa una referència genòmica?</div>
+:::
+
+::: {.notes}
+Les preguntes provenen de les diapositives 2 i 3, que eren ocultes a la versió original. Aquí funcionen com a objectius de la sessió.
+:::
+
+## Fites de la seqüenciació
+
+::: {.timeline}
+<div><strong>1977</strong>Virus ΦX174<br>5.386 nt</div>
+<div><strong>1995</strong>*H. influenzae*<br>1,83 Mb</div>
+<div><strong>1996</strong>*S. cerevisiae*<br>12 Mb</div>
+<div><strong>1998</strong>*C. elegans*<br>100 Mb</div>
+<div><strong>2000</strong>*D. melanogaster*<br>180 Mb</div>
+<div><strong>2001</strong>Humà<br>aprox. 3.000 Mb</div>
+:::
+
+::: {.takeaway}
+«Primer genoma» necessita un criteri: virus, organisme de vida lliure, eucariota o humà.
+:::
+
+## Wooclap · Primer genoma {#wq01}
+
+::: {.question}
+Quina resposta és correcta?
+:::
+
+::: {.answers}
+A. El primer genoma complet va ser el d’*H. influenzae* el 1995.
+
+B. ΦX174 va ser el primer genoma complet el 1977. *H. influenzae* va ser el primer d’un organisme de vida lliure.
+
+C. El genoma humà va ser el primer genoma eucariota complet.
+:::
+
+<div class="poll-slot" data-poll="T1-Q01"></div>
+
+::: {.notes}
+Resposta: B. Tipus Wooclap: opció múltiple. Fer emergir la importància de definir la unitat biològica. Font: Sanger et al. (1977) i Fleischmann et al. (1995).
+:::
+
+## La diversitat que ja podem comparar
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">Eucariotes actuals</p>
+
+Plantes, fongs, protists, animals i espècies model aporten genomes amb arquitectures molt diferents.
+:::
+
+::: {.card}
+<p class="card-title">Patògens i agroalimentació</p>
+
+Els genomes ajuden a estudiar virulència, resistència, domesticació i caràcters quantitatius.
+:::
+
+::: {.card}
+<p class="card-title">Espècies extingides</p>
+
+Neandertals, denissovans, mamuts, moes i altres genomes antics permeten provar hipòtesis evolutives.
+:::
+:::
+
+::: {.notes}
+Conserva els grups i exemples de les diapositives 5–7 sense mantenir llistes exhaustives difícils de llegir. Es poden recuperar exemples oralment o a les notes.
+:::
+
+## Per què prioritzem un genoma?
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Coneixement previ</p>
+
+Espècies model amb eines experimentals i fenotips ben descrits.
+:::
+
+::: {.card}
+<p class="card-title">Salut</p>
+
+Patògens, vectors i espècies que ajuden a interpretar el genoma humà.
+:::
+
+::: {.card}
+<p class="card-title">Producció</p>
+
+Espècies d’interès agroalimentari i biotecnològic.
+:::
+
+::: {.card}
+<p class="card-title">Posició evolutiva</p>
+
+Llinatges que omplen un buit filogenètic o permeten una comparació crítica.
+:::
+:::
+
+## Wooclap · Una decisió de priorització {#wq02}
+
+::: {.question}
+Només podeu finançar un dels quatre genomes. Quin criteri defensaríeu primer?
+:::
+
+::: {.answers}
+Voteu una opció i escriviu una dada que necessitaríeu abans de decidir: coneixement previ, salut, producció o posició evolutiva.
+:::
+
+<div class="poll-slot" data-poll="T1-Q02"></div>
+
+::: {.notes}
+Tipus Wooclap: enquesta seguida de pregunta oberta. No hi ha una resposta universal. Avaluar si la justificació connecta una pregunta científica amb el taxó i amb la viabilitat de generar una referència de qualitat.
+:::
+
+## Què aporta un genoma de referència?
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Inventari i organització</p>
+
+Gens, regions reguladores, repeticions, variants i ordre cromosòmic.
+:::
+
+::: {.card}
+<p class="card-title">Comparació</p>
+
+Conservació, innovació, sintènia, evolució de seqüència i associació amb fenotips.
+:::
+:::
+
+::: {.takeaway}
+Un genoma complet genera hipòtesis. Les anotacions i les comparacions aporten la interpretació biològica.
+:::
+
+## Quantes espècies tenen el genoma seqüenciat? {#wq03}
+
+::: {.question}
+Abans de consultar cap base de dades, tria l’ordre de magnitud.
+:::
+
+::: {.answers}
+A. Desenes · B. Centenars · C. Milers · D. Centenars de milers
+:::
+
+<div class="poll-slot" data-poll="T1-Q03"></div>
+
+::: {.notes}
+La pregunta original de Vevox es conserva, però la resposta depèn de què comptem. GOLD registra organismes i projectes, mentre que GoaT compta taxons eucariotes amb assemblatge. Revelar aquesta ambigüitat després del vot.
+:::
+
+## Comptar genomes exigeix definir què comptem
+
+::: {.research-numbers}
+<div><strong>636.682</strong><span>projectes de seqüenciació a GOLD</span></div>
+<div><strong>531.936</strong><span>organismes registrats a GOLD</span></div>
+<div><strong>252.270</strong><span>projectes amb dades a GenBank</span></div>
+:::
+
+Un projecte pot no tenir un assemblatge públic. Una espècie pot tenir moltes soques, individus, versions o assemblatges.
+
+::: {.caption}
+Instantània de [JGI GOLD v.10](https://gold.jgi.doe.gov/), consultada el 12 de setembre de 2026. Les xifres canvien.
+:::
+
+## Tres recursos, tres preguntes
+
+| Recurs | Pregunta útil | Unitat principal |
+|---|---|---|
+| [GOLD](https://gold.jgi.doe.gov/) | Quins projectes existeixen i en quin estat? | projectes, organismes, mostres |
+| [NCBI Datasets](https://www.ncbi.nlm.nih.gov/datasets/) | Quins assemblatges i anotacions puc descarregar? | taxó, assemblatge, anotació |
+| [GoaT](https://goat.genomehubs.org/) | Quina cobertura té l’arbre eucariota i què està planificat? | taxó, estat, mètriques, projecte |
+
+::: {.takeaway}
+Una xifra sense filtre, data i unitat no respon «quantes espècies tenen el genoma seqüenciat».
+:::
+
+## NCBI Datasets: de l’espècie a l’assemblatge
+
+::: {.flow}
+<div><strong>1 · Cerca</strong><br>Nom científic i rang taxonòmic.</div>
+<div><strong>2 · Filtra</strong><br>Nivell, referència, anotació i data.</div>
+<div><strong>3 · Compara</strong><br>Mida, cromosomes, contigs i accés.</div>
+<div><strong>4 · Cita</strong><br>Accessió i versió de l’assemblatge.</div>
+:::
+
+::: {.caption}
+Aquest flux substitueix la seqüència de captures de pantalla de les diapositives 17–25. L’enllaç viu evita que la interfície quedi obsoleta.
+:::
+
+## Problema 1A · La unitat correcta
+
+::: {.question}
+Quan filtreu *Bacteria* i «Reference», què heu comptat?
+:::
+
+::: {.answers}
+Taxons, espècies, assemblatges, projectes o versions d’assemblatge?
+:::
+
+::: {.takeaway}
+Anoteu sempre el filtre, la data de consulta i el nom exacte de la columna.
+:::
+
+::: {.caption}
+Connexió directa amb Problema_1A: recompte de genomes procariòtics de referència i comprovació del genoma del cavall.
+:::
+
+## GoaT: genomes sobre un arbre
+
+GoaT combina taxonomia, mides estimades, assemblatges públics i objectius de projectes coordinats.
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Resum taxonòmic</p>
+
+Permet comparar classes, ordres, famílies, gèneres i espècies.
+:::
+
+::: {.card}
+<p class="card-title">Estat del projecte</p>
+
+Separa absència de dades, seqüenciació prevista, assemblatge disponible i qualitat cromosòmica.
+:::
+:::
+
+::: {.caption}
+[Challis et al. (2023)](https://doi.org/10.1093/nar/gkac1010) descriu el model de dades i l’API de GoaT.
+:::
+
+## Projectes coordinats
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">Earth BioGenome Project</p>
+
+Marc global per als eucariotes descrits.
+:::
+
+::: {.card}
+<p class="card-title">Projectes afiliats</p>
+
+VGP, Darwin Tree of Life, European Reference Genome Atlas i xarxes taxonòmiques.
+:::
+
+::: {.card}
+<p class="card-title">Dades regionals</p>
+
+GoaT ajuda a identificar buits, solapaments i espècies que ja tenen un projecte actiu.
+:::
+:::
+
+## DNA nuclear eucariota
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Molècules lineals</p>
+
+Cada cromosoma té telòmers i un centròmer. Després de la replicació conté dues cromàtides germanes.
+:::
+
+::: {.card}
+<p class="card-title">Cromatina</p>
+
+El DNA s’associa amb proteïnes i adopta nivells d’organització que canvien durant el cicle cel·lular.
+:::
+:::
+
+::: {.takeaway}
+La seqüència és una dimensió del genoma. La seva organització física condiciona replicació, expressió i segregació.
+:::
+
+## Què vol dir «genoma seqüenciat»?
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Referència haploide</p>
+
+Una representació de cada cromosoma diferent. En humans: 22 autosomes i un cromosoma sexual, aproximadament 3,1 Gb.
+:::
+
+::: {.card}
+<p class="card-title">Genoma diploide individual</p>
+
+Dos haplotips per autosoma i dos cromosomes sexuals. En conjunt, aproximadament 6,2 Gb abans de considerar redundància i variació.
+:::
+:::
+
+::: {.notes}
+Actualitza la diapositiva 30. Evitar dir que un genoma humà «complet» equival simplement a 46 cromosomes, perquè una referència i un individu diploide responen preguntes diferents.
+:::
+
+## Una referència o molts haplotips? {#referencia}
+
+<div class="simulation">
+  <div class="control-row"><label for="reference-copies">Haplotips representats: <output id="reference-copies-value">1</output></label><input id="reference-copies" type="range" min="1" max="12" step="1" value="1"></div>
+  <div id="reference-paths" class="haplotype-box" aria-label="Camins d'haplotips simplificats"></div>
+  <div id="reference-summary" class="metrics" aria-live="polite"></div>
+</div>
+
+::: {.caption}
+Esquema conceptual. El pangenoma humà de 2023 inclou 94 haplotips de 47 individus i usa representacions en graf.
+:::
+
+## Wooclap · Què representa la referència? {#wq04}
+
+::: {.question}
+Una referència humana de 3,1 Gb conté tot el DNA d’una persona diploide?
+:::
+
+::: {.answers}
+A. Sí, perquè inclou 46 cromosomes.
+
+B. No. Representa una còpia de cada cromosoma diferent i no tota la variació de l’individu.
+
+C. No, perquè només conté els exons.
+:::
+
+<div class="poll-slot" data-poll="T1-Q04"></div>
+
+::: {.notes}
+Resposta: B. Tipus: opció múltiple. Enllaçar amb la distinció entre referència lineal, assemblatge diploide resolt per haplotip i pangenoma.
+:::
+
+## La mida dels genomes ocupa més de cinc ordres de magnitud
+
+<div class="simulation">
+  <div class="control-row"><label for="genome-size">Mida haploide: <output id="genome-size-value">3,16 Gb</output></label><input id="genome-size" type="range" min="-250" max="221" step="1" value="50"></div>
+  <div class="meter"><div id="genome-size-bar"></div></div>
+  <div id="genome-size-summary" class="metrics" aria-live="polite"></div>
+</div>
+
+::: {.caption}
+Escala logarítmica aproximada, de 3 Mb a 162 Gb. La longitud usa 0,34 nm per parell de bases.
+:::
+
+## Un nou rècord del valor C
+
+::: {.research-numbers}
+<div><strong>160,45 Gb</strong><span>*Tmesipteris oblanceolata*, valor 1C</span></div>
+<div><strong>&gt;50×</strong><span>la mida del genoma humà</span></div>
+<div><strong>2024</strong><span>mesura publicada a *iScience*</span></div>
+:::
+
+El rècord anterior, *Paris japonica*, tenia 148,89 Gb. Totes dues són plantes amb una organització corporal menys complexa que la humana.
+
+::: {.caption}
+[Fernández et al. (2024)](https://doi.org/10.1016/j.isci.2024.109889)
+:::
+
+## Paradoxa del valor C
+
+::: {.hero-title}
+La mida del genoma no prediu la complexitat de l’organisme.
+:::
+
+L’expansió de DNA repetitiu, la poliploïdia i les diferències en la taxa d’eliminació de DNA generen genomes molt diferents.
+
+::: {.takeaway}
+El valor C descriu quant DNA hi ha en un nucli haploide. No diu quants gens hi ha ni quina fracció és funcional en un context concret.
+:::
+
+## Wooclap · Xile i tomàquet {#wq05}
+
+::: {.question}
+El genoma del xile és quatre vegades més gran que el del tomàquet. Quina hipòtesi és més plausible?
+:::
+
+::: {.answers}
+A. El xile és quatre vegades més complex.
+
+B. El xile té quatre vegades més gens codificadors.
+
+C. El xile conté molta més seqüència repetitiva.
+:::
+
+<div class="poll-slot" data-poll="T1-Q05"></div>
+
+::: {.notes}
+Resposta: C. Pregunta original conservada i simplificada. Demanar quina dada permetria provar la hipòtesi: anotació de repeticions per classes i comparació amb la mida total.
+:::
+
+## La compactació canvia entre genomes
+
+<div class="simulation">
+  <div class="control-row"><label for="repeat-fraction">Fracció repetitiva: <output id="repeat-fraction-value">44%</output></label><input id="repeat-fraction" type="range" min="0" max="90" step="1" value="44"></div>
+  <div class="composition"><div id="repeat-part">DNA repetitiu 44%</div><div id="other-part">Altres seqüències 56%</div></div>
+</div>
+
+::: {.takeaway}
+Dos genomes amb un nombre semblant de gens poden tenir mides molt diferents si canvien introns, regions intergèniques i repeticions.
+:::
+
+::: {.notes}
+L’eina explora una composició hipotètica. No presenta el 44% com una xifra universal. A la referència humana GRCh38, RepeatMasker identifica aproximadament aquesta fracció amb biblioteques concretes; altres mètodes i assemblatges recuperen més seqüència repetitiva.
+:::
+
+## Repeticions i RepeatMasker
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Què detecta</p>
+
+Elements transposables, repeticions simples, DNA satèl·lit i altres famílies definides a les biblioteques.
+:::
+
+::: {.card}
+<p class="card-title">Què cal documentar</p>
+
+Versió de l’assemblatge, biblioteca, paràmetres i percentatge emmascarat per classe.
+:::
+:::
+
+::: {.caption}
+[RepeatMasker Genomic Datasets](https://www.repeatmasker.org/genomicDatasets/RMGenomicDatasets.html) permet comparar paisatges de repeticions. La fracció detectada depèn del mètode.
+:::
+
+## Problema 1B · De picograms a gigabases
+
+<div class="simulation">
+  <div class="control-row"><label for="cvalue-pg">Contingut 1C: <output id="cvalue-pg-value">3,50 pg</output></label><input id="cvalue-pg" type="range" min="1" max="10" step="0.01" value="3.50"></div>
+  <div id="cvalue-answer" class="takeaway" aria-live="polite"></div>
+</div>
+
+::: {.caption}
+La guia usa 1 pg ≈ 978 Mb. Les bases de dades poden mostrar diverses mesures per espècie. Cal revisar mètode, teixit, estàndard i ploidia.
+:::
+
+## Wooclap · Conversió del valor C {#wq06}
+
+::: {.question}
+Si el koala té un valor 1C de 3,50 pg, quina mida aproximada té el genoma haploide?
+:::
+
+::: {.answers}
+Resposta numèrica en Gb. Tolerància recomanada: 3,40–3,45 Gb.
+:::
+
+<div class="poll-slot" data-poll="T1-Q06"></div>
+
+::: {.notes}
+Resposta: 3,423 Gb amb el factor 0,978 Gb/pg. Tipus Wooclap: numèrica. Connexió amb Problema_1B.
+:::
+
+## Paradoxa del valor G
+
+::: {.hero-title}
+El nombre de gens codificadors tampoc prediu la complexitat.
+:::
+
+El genoma humà té **19.442 gens codificadors de proteïnes** segons les estadístiques generals de GENCODE 50. El recompte canvia amb la versió i amb la definició de gen.
+
+::: {.caption}
+[GENCODE 50, estadístiques humanes](https://www.gencodegenes.org/human/stats.html), consultat el 12 de setembre de 2026.
+:::
+
+## Gens, transcrits i proteïnes no són la mateixa unitat
+
+::: {.research-numbers}
+<div><strong>19.442</strong><span>gens codificadors a l’estadística general</span></div>
+<div><strong>278.455</strong><span>transcrits codificadors anotats</span></div>
+<div><strong>172.117</strong><span>traduccions diferents</span></div>
+:::
+
+Splicing alternatiu, promotors alternatius, edició d’RNA i modificacions posttraduccionals amplien els productes possibles. Els gens d’RNA i la regulació també contribueixen al fenotip.
+
+::: {.notes}
+GENCODE 50 mostra 19.442 gens codificadors a «General stats» i 20.107 entrades de biotip protein_coding al detall. Cal mantenir el valor junt amb la definició i la versió. No equiparar una traducció anotada amb una proteïna demostrada experimentalment.
+:::
+
+## Wooclap · Quina afirmació és defensable? {#wq07}
+
+::: {.question}
+Una espècie té 35.000 gens codificadors i una altra en té 20.000. Què podem concloure?
+:::
+
+::: {.answers}
+A. La primera és més complexa.
+
+B. La primera produeix exactament 15.000 proteïnes més.
+
+C. El recompte de gens, tot sol, no permet ordenar la complexitat.
+:::
+
+<div class="poll-slot" data-poll="T1-Q07"></div>
+
+::: {.notes}
+Resposta: C. Demanar una variable addicional que voldrien comparar: isoformes, regulació, tipus cel·lulars, xarxes d’interacció o història evolutiva.
+:::
+
+## Elements del genoma nuclear eucariota
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">Gens</p>
+
+Exons, introns, UTR, promotors i gens que produeixen RNA funcional.
+:::
+
+::: {.card}
+<p class="card-title">Regulació</p>
+
+Enhancers, silencers, aïlladors, cromatina i arquitectura tridimensional.
+:::
+
+::: {.card}
+<p class="card-title">Repeticions</p>
+
+Elements transposables, duplicacions, satèl·lits i repeticions simples.
+:::
+:::
+
+::: {.takeaway}
+En el genoma humà, els exons codificadors ocupen una fracció petita. «No codificador» no equival a «sense funció».
+:::
+
+## Organització al llarg d’un cromosoma
+
+::: {.flow}
+<div><strong>Regió rica en gens</strong><br>Transcripció freqüent i cromatina més accessible.</div>
+<div><strong>Regió intergènica</strong><br>Elements reguladors, repeticions i variants.</div>
+<div><strong>Centròmer</strong><br>Satèl·lits i funció de segregació.</div>
+<div><strong>Telòmer</strong><br>Protecció dels extrems cromosòmics.</div>
+:::
+
+::: {.notes}
+Conserva els conceptes de les diapositives 43 i 44. L’esquema no implica que tots els cromosomes comparteixin el mateix paisatge ni que les categories siguin excloents.
+:::
+
+## Del mapa GPS al navegador genòmic
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Mapa</p>
+
+Latitud i longitud identifiquen un lloc. L’escala determina quin context veiem.
+:::
+
+::: {.card}
+<p class="card-title">Genoma</p>
+
+Assemblatge, cromosoma i interval identifiquen una regió. Les pistes afegeixen anotacions i dades experimentals.
+:::
+:::
+
+::: {.takeaway}
+Una coordenada sense versió d’assemblatge pot apuntar a una seqüència diferent.
+:::
+
+## Zoom genòmic {#browser}
+
+<div class="simulation browser-sim">
+  <div class="control-row"><label for="browser-zoom">Zoom: <output id="browser-zoom-value">1×</output></label><input id="browser-zoom" type="range" min="1" max="8" step="1" value="1"></div>
+  <div class="browser-window"><div id="browser-track"><span class="gene g1"></span><span class="gene g2"></span><span class="repeat r1"></span><span class="gene g3"></span><span class="repeat r2"></span></div></div>
+  <p class="caption">Pista sintètica. El zoom canvia el context visual, no la seqüència.</p>
+</div>
+
+## Wooclap · Coordenades reproduïbles {#wq08}
+
+::: {.question}
+Quina descripció permet tornar a la mateixa regió?
+:::
+
+::: {.answers}
+A. Cromosoma 3, prop d’un gen llarg.
+
+B. chr3:4.544.933 en qualsevol genoma humà.
+
+C. GRCh38, chr3:4.544.900–4.545.100, amb la pista i versió d’anotació indicades.
+:::
+
+<div class="poll-slot" data-poll="T1-Q08"></div>
+
+::: {.notes}
+Resposta: C. Tipus: opció múltiple. Conservar el paral·lelisme GPS de la diapositiva 45 i afegir la versió d’assemblatge com a requisit de reproductibilitat.
+:::
+
+## Pràctica amb navegadors
+
+::: {.grid-3}
+::: {.card}
+<p class="card-title">[NCBI Genome Data Viewer](https://www.ncbi.nlm.nih.gov/genome/gdv/)</p>
+
+Assemblatges NCBI i anotacions vinculades.
+:::
+
+::: {.card}
+<p class="card-title">[Ensembl](https://www.ensembl.org/)</p>
+
+Comparació, gens, variants i genòmica comparada.
+:::
+
+::: {.card}
+<p class="card-title">[UCSC Genome Browser](https://genome.ucsc.edu/)</p>
+
+Gran col·lecció de pistes i sessions compartibles.
+:::
+:::
+
+::: {.caption}
+FlyBase/JBrowse continua sent útil per a *Drosophila*. Els enllaços substitueixen captures que canvien amb la interfície.
+:::
+
+## PhyloGenome · Fitxa tècnica del vostre genoma
+
+Per al genoma escollit pel grup, registreu:
+
+1. espècie, varietat o soca i posició taxonòmica;
+2. article principal, accessió i versió de l’assemblatge;
+3. mida, nombre de cromosomes, gens, densitat gènica i fracció repetitiva;
+4. comparació amb espècies del mateix grup;
+5. criteri que podria haver justificat prioritzar-ne la seqüenciació.
+
+::: {.caption}
+Connexió amb PhyloGenome_1. La fitxa forma part del treball existent i no afegeix un lliurament.
+:::
+
+## Problema 1C · Una fotografia que caduca
+
+GoaT demana consultar percentatges, recomptes i estats que canvien amb cada nova publicació.
+
+::: {.takeaway}
+La resposta correcta inclou el valor, la consulta exacta i la data. Si el recompte canvia, la resposta antiga pot haver estat correcta en el seu moment.
+:::
+
+::: {.caption}
+Problema_1C explora el resum de GoaT, subespècies de *Mus musculus*, valor C i projectes regionals.
+:::
+
+## Recapitulació a Wooclap {#recap}
+
+::: {.quiz-grid}
+<div><strong>1.</strong> Diferència entre projecte, organisme, taxó i assemblatge.</div>
+<div><strong>2.</strong> Referència haploide, genoma diploide i pangenoma.</div>
+<div><strong>3.</strong> Paradoxes dels valors C i G.</div>
+<div><strong>4.</strong> Versió i coordenades en un navegador genòmic.</div>
+:::
+
+<div class="poll-slot" data-poll="T1-RECAP"></div>
+
+::: {.notes}
+El banc questions/t1-wooclap.md conté vuit preguntes de recapitulació amb resposta i retroacció. Es poden agrupar en un únic qüestionari Wooclap de final de classe.
+:::
+
+## Idees que cal recordar
+
+::: {.grid-2}
+::: {.card}
+<p class="card-title">Disponibilitat</p>
+
+«Seqüenciat» pot significar projecte iniciat, assemblatge dipositat o referència cromosòmica. Cal especificar-ho.
+:::
+
+::: {.card}
+<p class="card-title">Mida</p>
+
+El valor C varia enormement i reflecteix sobretot expansió i pèrdua de seqüència, no una escala de complexitat.
+:::
+
+::: {.card}
+<p class="card-title">Gens</p>
+
+El recompte depèn de l’anotació i no resumeix la diversitat de transcrits, proteïnes ni regulació.
+:::
+
+::: {.card}
+<p class="card-title">Coordenades</p>
+
+Assemblatge, cromosoma, interval i versió fan reproduïble una observació al navegador.
+:::
+:::
+
+## Fonts principals
+
+- **Material docent:** Sònia Casillas, *T1_Diapos*; *Problema_1A–1C*; *PhyloGenome_1*.
+- **Bases de dades:** [JGI GOLD](https://gold.jgi.doe.gov/), [NCBI Datasets](https://www.ncbi.nlm.nih.gov/datasets/), [GoaT](https://goat.genomehubs.org/), [Animal Genome Size Database](https://www.genomesize.com/).
+- **Genoma humà complet:** [Nurk et al. (2022)](https://doi.org/10.1126/science.abj6987).
+- **Pangenoma humà:** [Liao et al. (2023)](https://doi.org/10.1038/s41586-023-05896-x).
+- **Genoma eucariota més gran mesurat:** [Fernández et al. (2024)](https://doi.org/10.1016/j.isci.2024.109889).
+- **Anotació humana:** [GENCODE 50](https://www.gencodegenes.org/human/stats.html).
+
+::: {.caption}
+Fonts web revisades el 12 de setembre de 2026. Les dades de bases de dades dinàmiques s’han de tornar a consultar abans de cada curs.
+:::
