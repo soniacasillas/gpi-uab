@@ -3,8 +3,10 @@ name: Preview Quarto slides on GitHub Pages
 on:
   push:
     branches:
-      - feature/t0-t1-interactive
+      - main
   workflow_dispatch:
+  schedule:
+    - cron: "15 6 * * 1"
 
 permissions:
   contents: read
@@ -24,6 +26,9 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Update weekly publication radar
+        run: python scripts/update_publications.py
 
       - name: Render presentations
         run: quarto render
