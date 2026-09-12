@@ -1,0 +1,989 @@
+[
+  {
+    "topic": 1,
+    "code": "T1-Q01",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Quina afirmació sobre els primers genomes és correcta?",
+    "correct": "2",
+    "choices": [
+      "H. influenzae va ser el primer genoma complet",
+      "ΦX174 va ser el primer genoma complet; H. influenzae, el primer organisme de vida lliure",
+      "El genoma humà va ser el primer eucariota complet"
+    ]
+  },
+  {
+    "topic": 1,
+    "code": "T1-Q02",
+    "phase": "Durant la classe",
+    "type": "Poll",
+    "title": "Només podeu finançar un genoma. Quin criteri defensaríeu primer?",
+    "correct": "",
+    "choices": [
+      "Coneixement previ",
+      "Salut",
+      "Producció",
+      "Posició evolutiva"
+    ]
+  },
+  {
+    "topic": 1,
+    "code": "T1-Q03",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Quin ordre de magnitud descriu millor el nombre d’espècies amb algun assemblatge genòmic?",
+    "correct": "4",
+    "choices": [
+      "Desenes",
+      "Centenars",
+      "Milers",
+      "Centenars de milers"
+    ]
+  },
+  {
+    "topic": 1,
+    "code": "T1-Q04",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Una referència humana d’uns 3,1 Gb conté tot el DNA d’una persona diploide?",
+    "correct": "2",
+    "choices": [
+      "Sí, inclou 46 cromosomes",
+      "No, representa una còpia de cada cromosoma diferent i no tota la variació",
+      "No, només conté exons"
+    ]
+  },
+  {
+    "topic": 1,
+    "code": "T1-Q05",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "El genoma del xile és molt més gran que el del tomàquet. Quina hipòtesi és més plausible?",
+    "correct": "3",
+    "choices": [
+      "És proporcionalment més complex",
+      "Té proporcionalment més gens codificadors",
+      "Conté molta més seqüència repetitiva"
+    ]
+  },
+  {
+    "topic": 1,
+    "code": "T1-Q06",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Si el valor 1C és 3,50 pg, quina mida haploide aproximada correspon?",
+    "correct": "2",
+    "choices": [
+      "0,35 Gb",
+      "3,42 Gb",
+      "35 Gb",
+      "342 Mb"
+    ]
+  },
+  {
+    "topic": 1,
+    "code": "T1-Q07",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Una espècie té 35.000 gens codificadors i una altra 20.000. Què podem concloure?",
+    "correct": "3",
+    "choices": [
+      "La primera és més complexa",
+      "La primera produeix exactament 15.000 proteïnes més",
+      "El recompte sol no permet ordenar la complexitat"
+    ]
+  },
+  {
+    "topic": 1,
+    "code": "T1-Q08",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Quina descripció permet tornar a la mateixa regió?",
+    "correct": "3",
+    "choices": [
+      "Cromosoma 3 prop d’un gen llarg",
+      "chr3:4.544.933 en qualsevol genoma",
+      "GRCh38 chr3:4.544.900–4.545.100 amb versió d’anotació"
+    ]
+  },
+  {
+    "topic": 1,
+    "code": "T1-R01",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Quina és la mida aproximada d’una referència haploide humana?",
+    "correct": "3",
+    "choices": [
+      "30 Mb",
+      "300 Mb",
+      "3.100 Mb",
+      "31.000 Mb"
+    ]
+  },
+  {
+    "topic": 1,
+    "code": "T1-R02",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Quin ordre de magnitud descriu els gens humans codificadors?",
+    "correct": "2",
+    "choices": [
+      "2.000",
+      "20.000",
+      "200.000",
+      "2.000.000"
+    ]
+  },
+  {
+    "topic": 1,
+    "code": "T1-R03",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Quina afirmació descriu millor la fracció repetitiva humana?",
+    "correct": "2",
+    "choices": [
+      "És exactament 44% amb qualsevol mètode",
+      "És elevada però depèn d’assemblatge i mètode",
+      "No hi ha DNA repetitiu funcional"
+    ]
+  },
+  {
+    "topic": 1,
+    "code": "T1-R04",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Podem usar un únic percentatge mitjà de repeticions per predir qualsevol planta?",
+    "correct": "2",
+    "choices": [
+      "Cert",
+      "Fals"
+    ]
+  },
+  {
+    "topic": 1,
+    "code": "T1-R05",
+    "phase": "Recapitulació",
+    "type": "Matching",
+    "title": "Associa tasca i recurs",
+    "correct": "",
+    "choices": [
+      "Estat d’un projecte --- GOLD",
+      "Assemblatge i anotació --- NCBI Datasets",
+      "Cobertura taxonòmica EBP --- GoaT",
+      "Mida 1C animal --- Animal Genome Size Database"
+    ]
+  },
+  {
+    "topic": 1,
+    "code": "T1-R06",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Quina equivalència aproxima la conversió del valor C?",
+    "correct": "2",
+    "choices": [
+      "1 pg = 0,978 Mb",
+      "1 pg = 978 Mb",
+      "1 pg = 978 Gb",
+      "1 pg = 9,78 kb"
+    ]
+  },
+  {
+    "topic": 1,
+    "code": "T1-R07",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Una seqüència no apareix a la referència lineal. Què podem concloure?",
+    "correct": "2",
+    "choices": [
+      "No existeix en cap individu",
+      "Pot ser variació absent o regió no resolta; cal contrastar",
+      "És necessàriament no funcional"
+    ]
+  },
+  {
+    "topic": 1,
+    "code": "T1-R08",
+    "phase": "Recapitulació",
+    "type": "OpenQuestion",
+    "title": "Què canviaries de la teva idea inicial sobre «tenir un genoma seqüenciat»?",
+    "correct": "",
+    "choices": []
+  },
+  {
+    "topic": 2,
+    "code": "T2-Q01",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Una genoteca té P=95% de contenir una regió. Què significa?",
+    "correct": "2",
+    "choices": [
+      "La conté amb certesa",
+      "En repeticions, aproximadament el 95% la contindrien",
+      "El 95% de bases de cada clon són correctes"
+    ]
+  },
+  {
+    "topic": 2,
+    "code": "T2-Q02",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Quantes vegades és menor P(error) de Q30 que de Q20?",
+    "correct": "3",
+    "choices": [
+      "1,5",
+      "3",
+      "10",
+      "100"
+    ]
+  },
+  {
+    "topic": 2,
+    "code": "T2-Q03",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Per resoldre una expansió repetitiva de 20 kb, quina propietat prioritzem?",
+    "correct": "2",
+    "choices": [
+      "Moltes lectures de 100 pb",
+      "Lectures que travessin repetició i flancs",
+      "Més índexs de mostra"
+    ]
+  },
+  {
+    "topic": 2,
+    "code": "T2-Q04",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Què detecta directament Ion Torrent?",
+    "correct": "2",
+    "choices": [
+      "Fluorescència",
+      "Canvi de pH per incorporació",
+      "Pas pel nanoporus",
+      "Lligació en espai de colors"
+    ]
+  },
+  {
+    "topic": 2,
+    "code": "T2-Q05",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Per què Illumina crea clústers?",
+    "correct": "2",
+    "choices": [
+      "Per allargar cada fragment",
+      "Per sumar senyal de còpies clonals",
+      "Per eliminar adaptadors"
+    ]
+  },
+  {
+    "topic": 2,
+    "code": "T2-Q06",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Què aporta paired-end?",
+    "correct": "2",
+    "choices": [
+      "Dues mostres diferents",
+      "Dos extrems del mateix fragment i distància aproximada",
+      "Dues bases per cicle"
+    ]
+  },
+  {
+    "topic": 2,
+    "code": "T2-Q07",
+    "phase": "Durant la classe",
+    "type": "Poll",
+    "title": "Quin criteri condiciona més el vostre disseny?",
+    "correct": "",
+    "choices": [
+      "Cost per mostra",
+      "Temps fins al resultat",
+      "Longitud",
+      "Exactitud",
+      "Portabilitat"
+    ]
+  },
+  {
+    "topic": 2,
+    "code": "T2-Q08",
+    "phase": "Durant la classe",
+    "type": "OpenQuestion",
+    "title": "Per a vigilància d’un brot, escriu tres criteris de selecció de tecnologia.",
+    "correct": "",
+    "choices": []
+  },
+  {
+    "topic": 2,
+    "code": "T2-R01",
+    "phase": "Recapitulació",
+    "type": "Sorting",
+    "title": "Ordena el flux general de seqüenciació",
+    "correct": "",
+    "choices": [
+      "Extracció i QC",
+      "Preparació de genoteca",
+      "Generació del senyal",
+      "Basecalling",
+      "Anàlisi"
+    ]
+  },
+  {
+    "topic": 2,
+    "code": "T2-R02",
+    "phase": "Recapitulació",
+    "type": "Matching",
+    "title": "Associa plataforma i senyal",
+    "correct": "",
+    "choices": [
+      "Sanger --- terminació fluorescent",
+      "Illumina --- síntesi reversible",
+      "Ion Torrent --- protons",
+      "Nanopore --- corrent iònic"
+    ]
+  },
+  {
+    "topic": 2,
+    "code": "T2-R03",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Què aconsegueix el consens circular HiFi?",
+    "correct": "2",
+    "choices": [
+      "Multiplexar mostres",
+      "Combinar diverses passades de la mateixa molècula",
+      "Crear clústers en pont"
+    ]
+  },
+  {
+    "topic": 2,
+    "code": "T2-R04",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Més cobertura garanteix resoldre una repetició més llarga que les lectures?",
+    "correct": "2",
+    "choices": [
+      "Sí",
+      "No"
+    ]
+  },
+  {
+    "topic": 3,
+    "code": "T3-Q01",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Passar de 30× a 100× garanteix resoldre una repetició idèntica de 8 kb amb lectures de 150 pb?",
+    "correct": "2",
+    "choices": [
+      "Sí",
+      "No, pot mantenir-se l’ambigüitat",
+      "Sí, si puja N50"
+    ]
+  },
+  {
+    "topic": 3,
+    "code": "T3-Q02",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Què pot passar si augmentem massa k amb cobertura limitada?",
+    "correct": "2",
+    "choices": [
+      "Desapareixen tots els errors",
+      "El graf es fragmenta perquè falten k-mers",
+      "Totes les repeticions s’allarguen"
+    ]
+  },
+  {
+    "topic": 3,
+    "code": "T3-Q03",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "N50 alt però falten regions esperades. Quina conclusió és defensable?",
+    "correct": "3",
+    "choices": [
+      "S’han perdut evolutivament",
+      "És complet per definició",
+      "Cal contrastar absència amb lectures i altres evidències"
+    ]
+  },
+  {
+    "topic": 3,
+    "code": "T3-Q04",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Què és un contig?",
+    "correct": "1",
+    "choices": [
+      "Una seqüència contínua sense buits",
+      "Un cromosoma complet",
+      "Una parella de lectures"
+    ]
+  },
+  {
+    "topic": 3,
+    "code": "T3-Q05",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Què indiquen N en un scaffold?",
+    "correct": "2",
+    "choices": [
+      "Bases confirmades com N",
+      "Un buit de seqüència estimat",
+      "Contaminació segura"
+    ]
+  },
+  {
+    "topic": 3,
+    "code": "T3-Q06",
+    "phase": "Durant la classe",
+    "type": "Poll",
+    "title": "Quina dimensió auditaríeu primer per al vostre ús?",
+    "correct": "",
+    "choices": [
+      "Continuïtat",
+      "Completesa",
+      "Exactitud",
+      "Contaminació",
+      "Fase"
+    ]
+  },
+  {
+    "topic": 3,
+    "code": "T3-Q07",
+    "phase": "Durant la classe",
+    "type": "OpenQuestion",
+    "title": "Escriu una limitació de l’assemblatge del vostre projecte que pugui afectar una conclusió biològica.",
+    "correct": "",
+    "choices": []
+  },
+  {
+    "topic": 3,
+    "code": "T3-Q08",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Un N50 més alt implica sempre un assemblatge millor?",
+    "correct": "2",
+    "choices": [
+      "Sí",
+      "No, pot ocultar unions incorrectes"
+    ]
+  },
+  {
+    "topic": 3,
+    "code": "T3-R01",
+    "phase": "Recapitulació",
+    "type": "Sorting",
+    "title": "Ordena el càlcul de N50",
+    "correct": "",
+    "choices": [
+      "Ordenar contigs de més llarg a més curt",
+      "Calcular longitud total",
+      "Acumular longituds",
+      "Identificar el contig que creua el 50%"
+    ]
+  },
+  {
+    "topic": 3,
+    "code": "T3-R02",
+    "phase": "Recapitulació",
+    "type": "Matching",
+    "title": "Associa dada i funció",
+    "correct": "",
+    "choices": [
+      "Lectura llarga --- travessar repeticions",
+      "Hi-C --- ordenar a escala cromosòmica",
+      "Mapa òptic --- validar estructura",
+      "Dades parentals --- fasejar haplotips"
+    ]
+  },
+  {
+    "topic": 3,
+    "code": "T3-R03",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Quina mètrica usa una mida esperada del genoma independent?",
+    "correct": "2",
+    "choices": [
+      "N50",
+      "NG50",
+      "L50"
+    ]
+  },
+  {
+    "topic": 3,
+    "code": "T3-R04",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Una cobertura mitjana de 30× implica 30 lectures a cada base?",
+    "correct": "2",
+    "choices": [
+      "Sí",
+      "No"
+    ]
+  },
+  {
+    "topic": 4,
+    "code": "T4-Q01",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Trobem una ORF llarga en un eucariota. Quina conclusió és defensable?",
+    "correct": "2",
+    "choices": [
+      "És segur que és un gen",
+      "És una evidència candidata que cal combinar",
+      "No pot ser un gen"
+    ]
+  },
+  {
+    "topic": 4,
+    "code": "T4-Q02",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "1.000 i 2.000 lectures al gen X impliquen expressió doble?",
+    "correct": "2",
+    "choices": [
+      "Sí sempre",
+      "Cal considerar biblioteca, composició, rèpliques i incertesa",
+      "Només si té introns"
+    ]
+  },
+  {
+    "topic": 4,
+    "code": "T4-Q03",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Cromatina oberta i unió d’un factor: què podem afirmar?",
+    "correct": "2",
+    "choices": [
+      "És essencial",
+      "Activitat compatible amb regulació; causalitat requereix més evidència",
+      "Codifica proteïna"
+    ]
+  },
+  {
+    "topic": 4,
+    "code": "T4-Q04",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Quina limitació principal té un microarray?",
+    "correct": "1",
+    "choices": [
+      "Només mesura sondes predefinides",
+      "No pot comparar mostres",
+      "No produeix cap senyal quantitatiu"
+    ]
+  },
+  {
+    "topic": 4,
+    "code": "T4-Q05",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Què aporta una lectura llarga de RNA?",
+    "correct": "1",
+    "choices": [
+      "Connecta exons distants de la mateixa molècula",
+      "Elimina la necessitat de rèpliques",
+      "Mesura directament proteïna"
+    ]
+  },
+  {
+    "topic": 4,
+    "code": "T4-Q06",
+    "phase": "Durant la classe",
+    "type": "Poll",
+    "title": "Quina evidència reforçaria més un nou model de gen?",
+    "correct": "",
+    "choices": [
+      "RNA-seq",
+      "Homologia",
+      "Domini proteic",
+      "Pertorbació funcional",
+      "Combinació d’evidències"
+    ]
+  },
+  {
+    "topic": 4,
+    "code": "T4-Q07",
+    "phase": "Durant la classe",
+    "type": "OpenQuestion",
+    "title": "Formula un contrast d’expressió amb grups, rèpliques i variable resposta.",
+    "correct": "",
+    "choices": []
+  },
+  {
+    "topic": 4,
+    "code": "T4-Q08",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Un transcrit no detectat en una mostra no existeix a l’espècie?",
+    "correct": "2",
+    "choices": [
+      "Cert",
+      "Fals"
+    ]
+  },
+  {
+    "topic": 4,
+    "code": "T4-R01",
+    "phase": "Recapitulació",
+    "type": "Sorting",
+    "title": "Ordena un flux RNA-seq",
+    "correct": "",
+    "choices": [
+      "Preparar RNA",
+      "Crear biblioteca",
+      "Seqüenciar",
+      "Assignar lectures",
+      "Modelar comptes"
+    ]
+  },
+  {
+    "topic": 4,
+    "code": "T4-R02",
+    "phase": "Recapitulació",
+    "type": "Matching",
+    "title": "Associa assaig i evidència",
+    "correct": "",
+    "choices": [
+      "RNA-seq --- transcripció",
+      "ATAC-seq --- accessibilitat",
+      "ChIP-seq --- ocupació o marca",
+      "Hi-C --- contacte 3D"
+    ]
+  },
+  {
+    "topic": 4,
+    "code": "T4-R03",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Quin eix no pertany a Gene Ontology?",
+    "correct": "4",
+    "choices": [
+      "Procés biològic",
+      "Funció molecular",
+      "Component cel·lular",
+      "Cromosoma ancestral"
+    ]
+  },
+  {
+    "topic": 4,
+    "code": "T4-R04",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Activitat bioquímica equival sempre a funció causal?",
+    "correct": "2",
+    "choices": [
+      "Sí",
+      "No"
+    ]
+  },
+  {
+    "topic": 5,
+    "code": "T5-Q01",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Per què p observada subestima canvis antics?",
+    "correct": "1",
+    "choices": [
+      "Una posició pot canviar més d’una vegada",
+      "El DNA antic és curt",
+      "Totes les mutacions són deletèries"
+    ]
+  },
+  {
+    "topic": 5,
+    "code": "T5-Q02",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "dN/dS=0,2 descarta selecció positiva en qualsevol codó o branca?",
+    "correct": "2",
+    "choices": [
+      "Sí",
+      "No, la mitjana pot amagar episodis locals",
+      "Només si hi ha introns"
+    ]
+  },
+  {
+    "topic": 5,
+    "code": "T5-Q03",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Dos gens d’espècies diferents són els més semblants. Són necessàriament ortòlegs?",
+    "correct": "2",
+    "choices": [
+      "Sí",
+      "No, cal reconciliar arbres, duplicacions i pèrdues",
+      "Només si tenen igual longitud"
+    ]
+  },
+  {
+    "topic": 5,
+    "code": "T5-Q04",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Neutral vol dir sense funció?",
+    "correct": "2",
+    "choices": [
+      "Sí",
+      "No, descriu l’efecte sobre aptitud en un context"
+    ]
+  },
+  {
+    "topic": 5,
+    "code": "T5-Q05",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Què suggereix dN/dS < 1?",
+    "correct": "1",
+    "choices": [
+      "Selecció purificadora",
+      "Selecció positiva segura",
+      "Cap restricció"
+    ]
+  },
+  {
+    "topic": 5,
+    "code": "T5-Q06",
+    "phase": "Durant la classe",
+    "type": "Poll",
+    "title": "Quina evidència reforça més una inferència d’ortologia?",
+    "correct": "",
+    "choices": [
+      "Identitat",
+      "Arbre de gens",
+      "Sintènia",
+      "Distribució taxonòmica",
+      "Combinació"
+    ]
+  },
+  {
+    "topic": 5,
+    "code": "T5-Q07",
+    "phase": "Durant la classe",
+    "type": "OpenQuestion",
+    "title": "Escriu una predicció que distingiria subfuncionalització de neofuncionalització.",
+    "correct": "",
+    "choices": []
+  },
+  {
+    "topic": 5,
+    "code": "T5-Q08",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "El doble de gens demostra una duplicació completa recent?",
+    "correct": "2",
+    "choices": [
+      "Sí",
+      "No, cal un patró coordinat"
+    ]
+  },
+  {
+    "topic": 5,
+    "code": "T5-R01",
+    "phase": "Recapitulació",
+    "type": "Matching",
+    "title": "Associa relació i origen",
+    "correct": "",
+    "choices": [
+      "Ortologia --- especiació",
+      "Paralogia --- duplicació",
+      "Pseudogenització --- pèrdua de funció",
+      "Neofuncionalització --- funció nova"
+    ]
+  },
+  {
+    "topic": 5,
+    "code": "T5-R02",
+    "phase": "Recapitulació",
+    "type": "Sorting",
+    "title": "Ordena una inferència de rellotge molecular",
+    "correct": "",
+    "choices": [
+      "Alinear homòlegs",
+      "Escollir model",
+      "Comprovar rellotge",
+      "Calibrar",
+      "Estimar temps"
+    ]
+  },
+  {
+    "topic": 5,
+    "code": "T5-R03",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Què afegeix la sintènia a la similitud local?",
+    "correct": "1",
+    "choices": [
+      "Context de posició i veïnatge",
+      "Una taxa de mutació directa",
+      "Expressió proteica"
+    ]
+  },
+  {
+    "topic": 5,
+    "code": "T5-R04",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Una signatura de selecció prova per si sola el mecanisme fenotípic?",
+    "correct": "2",
+    "choices": [
+      "Sí",
+      "No"
+    ]
+  },
+  {
+    "topic": 6,
+    "code": "T6-Q01",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Quan és màxima l’heterozigositat d’un lloc bial·lèlic?",
+    "correct": "3",
+    "choices": [
+      "p=0",
+      "p=0,01",
+      "p=0,5",
+      "p=1"
+    ]
+  },
+  {
+    "topic": 6,
+    "code": "T6-Q02",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Un SNP significatiu en un GWAS què prova directament?",
+    "correct": "2",
+    "choices": [
+      "Causa el fenotip",
+      "Associació sota el model; pot marcar una regió en LD",
+      "És l’única variant"
+    ]
+  },
+  {
+    "topic": 6,
+    "code": "T6-Q03",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "C→T als extrems de fragments antics suggereix primer:",
+    "correct": "2",
+    "choices": [
+      "Adaptació",
+      "Dany post mortem per desaminació",
+      "Duplicació"
+    ]
+  },
+  {
+    "topic": 6,
+    "code": "T6-Q04",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Aa Bb determina si els haplotips són AB/ab o Ab/aB?",
+    "correct": "2",
+    "choices": [
+      "Sí",
+      "No, cal fase"
+    ]
+  },
+  {
+    "topic": 6,
+    "code": "T6-Q05",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Quina evidència localitza millor el punt de trencament d’una SV?",
+    "correct": "1",
+    "choices": [
+      "Split reads",
+      "Color del cromosoma",
+      "Mitjana de GC global"
+    ]
+  },
+  {
+    "topic": 6,
+    "code": "T6-Q06",
+    "phase": "Durant la classe",
+    "type": "Poll",
+    "title": "Quin risc és més crític en una anàlisi poblacional?",
+    "correct": "",
+    "choices": [
+      "Estructura",
+      "Biaix de referència",
+      "Mostreig",
+      "Privacitat",
+      "Tots depenen del cas"
+    ]
+  },
+  {
+    "topic": 6,
+    "code": "T6-Q07",
+    "phase": "Durant la classe",
+    "type": "OpenQuestion",
+    "title": "Escriu una evidència que distingiria associació de causalitat en un locus GWAS.",
+    "correct": "",
+    "choices": []
+  },
+  {
+    "topic": 6,
+    "code": "T6-Q08",
+    "phase": "Durant la classe",
+    "type": "MCQ",
+    "title": "Més LD implica necessàriament que dos loci són físicament molt propers?",
+    "correct": "2",
+    "choices": [
+      "Sí",
+      "No, també depèn d’història i selecció"
+    ]
+  },
+  {
+    "topic": 6,
+    "code": "T6-R01",
+    "phase": "Recapitulació",
+    "type": "Matching",
+    "title": "Associa patró i evidència",
+    "correct": "",
+    "choices": [
+      "Deleció --- menys profunditat",
+      "Inversió --- orientació discordant",
+      "Punt de trencament --- split read",
+      "Expansió llarga --- lectura que la travessa"
+    ]
+  },
+  {
+    "topic": 6,
+    "code": "T6-R02",
+    "phase": "Recapitulació",
+    "type": "Sorting",
+    "title": "Ordena un GWAS",
+    "correct": "",
+    "choices": [
+      "Definir cohort i fenotip",
+      "QC",
+      "Model amb covariables",
+      "Corregir multiplicitat",
+      "Replicar"
+    ]
+  },
+  {
+    "topic": 6,
+    "code": "T6-R03",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Quin patró ajuda a autenticar DNA antic?",
+    "correct": "1",
+    "choices": [
+      "Fragments curts i dany terminal",
+      "Només Q30",
+      "Absència total de microbis"
+    ]
+  },
+  {
+    "topic": 6,
+    "code": "T6-R04",
+    "phase": "Recapitulació",
+    "type": "MCQ",
+    "title": "Una fracció mitjana d’ancestria arcaica descriu els mateixos segments en tothom?",
+    "correct": "2",
+    "choices": [
+      "Sí",
+      "No"
+    ]
+  }
+]
