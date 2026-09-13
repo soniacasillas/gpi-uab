@@ -96,4 +96,4 @@ Nous genomes antics han refinat el període de flux gènic entre humans moderns 
 
 Cada dilluns, GitHub Actions consulta l’API pública d’Europe PMC amb cinc cerques alineades amb els temes 2–6, genera aquesta secció i torna a publicar el lloc. També es pot executar manualment des de la pestanya **Actions** del repositori.
 
-La selecció automàtica és un radar, no una revisió sistemàtica: ordena resultats recents, elimina duplicats i mostra DOI o fitxa d’Europe PMC. Abans d’incorporar un article a les diapositives cal comprovar el text complet, el disseny de l’estudi i la relació real amb els objectius del curs.
+La selecció automàtica és un radar, no una revisió sistemàtica: ordena resultats recents, elimina duplicats i mostra DOI o fitxa d’Europe PMC. Cada entrada incorpora un resum breu de dues frases, generat prudentment a partir del títol, el tipus d’estudi i les metadades de l’abstract. Abans d’incorporar un article a les diapositives cal comprovar el text complet, el disseny de l’estudi i la relació real amb els objectius del curs.

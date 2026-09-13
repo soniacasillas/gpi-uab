@@ -11,6 +11,7 @@ project:
     - t5.qmd
     - t6.qmd
     - actualitzacions.qmd
+    - questions/index.qmd
   resources:
     - assets/
     - questions/
