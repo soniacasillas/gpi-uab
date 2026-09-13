@@ -14,7 +14,9 @@ La portada de GitHub Pages és <https://soniacasillas.github.io/gpi-uab/>. Des d
 - `questions/wooclap-gpi-t1-t6.xlsx`: 76 preguntes en el format d’importació de Wooclap.
 - `questions/t1-wooclap.md`–`t6-wooclap.md`: banc llegible amb respostes per al professorat.
 - `questions/index.qmd`: portada web del banc de preguntes.
-- `actualitzacions.qmd`: registre de canvis científics i radar setmanal.
+- `actualitzacions.qmd`: registre de canvis científics i índex dels butlletins setmanals.
+- `updates/`: un butlletí immutable per setmana, identificat per la data.
+- `destacades.qmd`: selecció acumulativa de les actualitzacions més rellevants per a l’assignatura.
 - `scripts/update_publications.py`: consulta reproductible a Europe PMC.
 
 ## Generació local
@@ -30,9 +32,9 @@ Les sortides es creen a `_site`. Les tecles de Reveal.js són: fletxes per naveg
 
 ## Publicació i actualització setmanal
 
-El workflow `.github/workflows/pages.yml` publica automàticament la branca `main` a GitHub Pages. També s’executa cada dilluns a les 06:15 UTC i es pot llançar manualment des d’**Actions**. Abans de renderitzar, actualitza `data/weekly-publications.md` mitjançant l’API d’Europe PMC.
+El workflow `.github/workflows/pages.yml` publica automàticament la branca `main` a GitHub Pages. També s’executa cada dilluns a les 06:15 UTC i es pot llançar manualment des d’**Actions**. Abans de renderitzar, actualitza `data/weekly-publications.md`, crea `updates/AAAA-MM-DD.qmd`, regenera l’índex i desa aquests canvis a `main`. El missatge del commit automàtic inclou `[skip ci]` per evitar un bucle de desplegaments.
 
-El radar automàtic és una preselecció per títol i data. Cada article rep un resum automàtic de dues frases basat en el títol, el tipus d’estudi i les metadades de l’abstract. La incorporació d’un article a classe requereix revisió científica docent.
+El radar automàtic és una preselecció per títol i data. Cada article rep un resum extractiu de 3–4 frases de l’abstract en anglès. Els recursos complementaris es detecten en fonts científiques de confiança mitjançant coincidència de DOI o títol, i també es poden incorporar a `data/related-resources.json`. Les actualitzacions destacades es decideixen de manera conservadora a `data/highlights.json` i s’acumulen a `data/highlighted-publications.json`; no cal que cada setmana n’hi hagi cap.
 
 ## Wooclap
 

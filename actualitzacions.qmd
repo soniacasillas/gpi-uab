@@ -90,10 +90,12 @@ Nous genomes antics han refinat el període de flux gènic entre humans moderns 
 
 ## Novetats de la setmana
 
-{{< include data/weekly-publications.md >}}
+[⭐ Veure les actualitzacions destacades](destacades.html)
+
+{{< include data/weekly-index.md >}}
 
 ## Com s’actualitza
 
-Cada dilluns, GitHub Actions consulta l’API pública d’Europe PMC amb cinc cerques alineades amb els temes 2–6, genera aquesta secció i torna a publicar el lloc. També es pot executar manualment des de la pestanya **Actions** del repositori.
+Cada dilluns, GitHub Actions consulta l’API pública d’Europe PMC amb cinc cerques alineades amb els temes 2–6, crea un butlletí datat, conserva els butlletins anteriors al repositori i torna a publicar el lloc. També es pot executar manualment des de la pestanya **Actions** del repositori.
 
-La selecció automàtica és un radar, no una revisió sistemàtica: ordena resultats recents, elimina duplicats i mostra DOI o fitxa d’Europe PMC. Cada entrada incorpora un resum breu de dues frases, generat prudentment a partir del títol, el tipus d’estudi i les metadades de l’abstract. Abans d’incorporar un article a les diapositives cal comprovar el text complet, el disseny de l’estudi i la relació real amb els objectius del curs.
+La selecció automàtica és un radar, no una revisió sistemàtica: ordena resultats recents, elimina duplicats i mostra DOI o fitxa d’Europe PMC. Cada entrada incorpora un resum en anglès de 3–4 frases seleccionades de l’abstract. Quan existeix un recurs divulgatiu o didàctic inequívocament vinculat a l’article —com una notícia, un *explainer* o un podcast— també es mostra sota **Related material**. Abans d’incorporar un article a les diapositives cal comprovar el text complet, el disseny de l’estudi i la relació real amb els objectius del curs.
