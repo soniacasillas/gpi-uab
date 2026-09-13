@@ -1,0 +1,53 @@
+---
+title: "Preguntes Wooclap"
+subtitle: "Banc d’activitats dels temes 1–6"
+format:
+  html:
+    theme: cosmo
+    css: ../assets/site.css
+    toc: false
+    link-external-newwindow: true
+---
+
+[← Tornar als materials](../index.html)
+
+El banc conté **76 preguntes**: 16 del tema 1 i 12 de cadascun dels temes 2–6. Els codis `Q` identifiquen activitats distribuïdes durant la classe i els codis `R`, preguntes de recapitulació.
+
+::: {.topic-grid}
+::: {.topic-card}
+### [Tema 1](https://github.com/soniacasillas/gpi-uab/blob/main/questions/t1-wooclap.md)
+
+Genomes, referències, mida i complexitat.
+:::
+::: {.topic-card}
+### [Tema 2](https://github.com/soniacasillas/gpi-uab/blob/main/questions/t2-wooclap.md)
+
+Genoteques i tecnologies de seqüenciació.
+:::
+::: {.topic-card}
+### [Tema 3](https://github.com/soniacasillas/gpi-uab/blob/main/questions/t3-wooclap.md)
+
+Assemblatge, cobertura, repeticions i qualitat.
+:::
+::: {.topic-card}
+### [Tema 4](https://github.com/soniacasillas/gpi-uab/blob/main/questions/t4-wooclap.md)
+
+Anotació, expressió i regulació.
+:::
+::: {.topic-card}
+### [Tema 5](https://github.com/soniacasillas/gpi-uab/blob/main/questions/t5-wooclap.md)
+
+Evolució, selecció, homologia i sintènia.
+:::
+::: {.topic-card}
+### [Tema 6](https://github.com/soniacasillas/gpi-uab/blob/main/questions/t6-wooclap.md)
+
+Variació, GWAS i paleogenòmica.
+:::
+:::
+
+## Importació
+
+[Descarrega l’Excel complet per importar-lo a Wooclap](wooclap-gpi-t1-t6.xlsx){.btn .btn-primary}
+
+L’Excel segueix la plantilla institucional facilitada: una fila per pregunta i les columnes `Type`, `Title`, `Correct` i `Choice`. Els enunciats inclouen el codi del tema per facilitar-ne l’organització després de la importació.
