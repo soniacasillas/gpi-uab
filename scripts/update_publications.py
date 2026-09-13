@@ -25,7 +25,7 @@ OUT = Path(__file__).resolve().parents[1] / "data" / "weekly-publications.md"
 
 def fetch(query: str, start: dt.date, end: dt.date) -> list[dict]:
     dated = f'({query}) AND FIRST_PDATE:[{start.isoformat()} TO {end.isoformat()}] NOT SRC:PPR'
-    params = urllib.parse.urlencode({"query": dated, "format": "json", "pageSize": 25, "sort": "CITED desc"})
+    params = urllib.parse.urlencode({"query": dated, "format": "json", "resultType": "core", "pageSize": 25, "sort": "CITED desc"})
     req = urllib.request.Request(f"{API}?{params}", headers={"User-Agent": "gpi-uab-teaching-radar/1.0"})
     with urllib.request.urlopen(req, timeout=30) as response:
         return json.load(response).get("resultList", {}).get("result", [])
@@ -35,6 +35,31 @@ def link_for(p: dict) -> str:
         return "https://doi.org/" + urllib.parse.quote(p["doi"], safe="/()")
     ident = p.get("pmcid") or p.get("pmid") or p.get("id")
     return f"https://europepmc.org/article/{urllib.parse.quote(p.get('source','MED'))}/{urllib.parse.quote(str(ident))}"
+
+def clean_markup(value: str) -> str:
+    return re.sub(r'<[^>]+>', '', html.unescape(value or '')).strip()
+
+RELEVANCE = {
+    "Tema 2 · Seqüenciació": "Permet discutir com el protocol, la longitud, l’exactitud i la preparació de mostra condicionen les dades que obtenim.",
+    "Tema 3 · Assemblatge": "Aporta un cas recent per avaluar continuïtat, completesa, fase i validació d’un assemblatge.",
+    "Tema 4 · Anotació i transcriptòmica": "Connecta amb la interpretació de transcrits, isoformes o elements reguladors i amb els límits de cada tipus d’evidència.",
+    "Tema 5 · Evolució genòmica": "Ofereix un exemple per relacionar comparació de genomes, història evolutiva i inferència funcional.",
+    "Tema 6 · Variació i paleogenòmica": "Permet examinar com el mostreig i la tecnologia afecten la detecció de variació i la inferència sobre poblacions o fenotips.",
+}
+
+def automatic_summary(paper: dict, topic: str) -> str:
+    """Return two cautious, non-extractive sentences from title and metadata."""
+    raw_title = clean_markup(paper.get('title', 'aquest problema')).rstrip('.')
+    evidence = (paper.get('abstractText') or '').lower()
+    if any(x in evidence for x in ('systematic review', 'we review', 'this review')):
+        action = "sintetitza la literatura sobre"
+    elif any(x in evidence for x in ('we benchmark', 'we compared', 'we compare', 'comparative evaluation')):
+        action = "compara mètodes o dades per estudiar"
+    elif any(x in evidence for x in ('we present', 'we developed', 'we develop', 'we introduce')):
+        action = "presenta un mètode o recurs centrat en"
+    else:
+        action = "analitza"
+    return f"L’article {action} «{html.escape(raw_title)}». {RELEVANCE[topic]}"
 
 def main() -> None:
     end = dt.date.today(); start = end - dt.timedelta(days=8)
@@ -61,17 +86,20 @@ def main() -> None:
             lines += ["No s’han recuperat publicacions noves amb aquesta consulta.", ""]
             continue
         for paper in selected:
-            raw_title=re.sub(r'<[^>]+>', '', paper.get('title','Sense títol'))
+            raw_title=clean_markup(paper.get('title','Sense títol'))
             title=html.escape(raw_title).replace('\n',' ').strip()
             authors=html.escape(paper.get('authorString','Autoria no disponible')).rstrip('. ')
-            journal=html.escape(paper.get('journalTitle','Revista no disponible'))
+            nested_journal=paper.get('journalInfo',{}).get('journal',{}).get('title')
+            journal=html.escape(paper.get('journalTitle') or nested_journal or 'Revista no disponible')
             year=html.escape(str(paper.get('pubYear','')))
             lines.append(f"- [{title}]({link_for(paper)}) — {authors}. *{journal}* ({year}).")
+            lines.append(f"  **Resum automàtic:** {automatic_summary(paper, topic)}")
             total += 1
         lines.append("")
-    lines += [f"S’han recuperat **{total}** referències no duplicades. Les cerques són públiques a `scripts/update_publications.py`.", ""]
+    lines += [f"S’han recuperat **{total}** referències no duplicades. Els resums es generen automàticament a partir del títol, el tipus d’estudi i les metadades de l’abstract; cal revisar l’article abans d’emprar-los com a interpretació científica. Les cerques són públiques a `scripts/update_publications.py`.", ""]
     OUT.parent.mkdir(exist_ok=True)
-    OUT.write_text('\n'.join(lines), encoding='utf-8')
+    with OUT.open('w', encoding='utf-8', newline='\n') as handle:
+        handle.write('\n'.join(lines))
 
 if __name__ == '__main__':
     main()
