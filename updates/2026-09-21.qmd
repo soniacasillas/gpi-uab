@@ -1,3 +1,17 @@
+---
+title: "Butlletí de genòmica · 21/09/2026"
+subtitle: "Publicacions seleccionades del 13/09/2026 al 21/09/2026"
+format:
+  html:
+    theme: cosmo
+    css: ../assets/site.css
+    toc: true
+    toc-depth: 2
+    link-external-newwindow: true
+---
+
+[← Tots els butlletins](../actualitzacions.html) · [⭐ Actualitzacions destacades](../destacades.html)
+
 *Selecció automàtica: 13/09/2026–21/09/2026. Font: Europe PMC.*
 
 ### Tema 2 · Seqüenciació
