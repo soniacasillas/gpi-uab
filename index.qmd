@@ -49,6 +49,11 @@ Models, selecció, homologia, duplicacions i sintènia.
 
 Diversitat, LD, GWAS, variació estructural i paleogenòmica.
 :::
+::: {.topic-card}
+### [Simulacions interactives](simulacions.html)
+
+Seqüenciació i assemblatge: genoteques, Phred, cobertura, repeticions i N50.
+:::
 ::: {.topic-card .news-card}
 ### [Actualitzacions científiques](actualitzacions.html)
 
