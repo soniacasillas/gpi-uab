@@ -1,41 +1,73 @@
-*Selecció automàtica: 14/09/2026–22/09/2026. Font: Europe PMC.*
+*Selecció automàtica: 20/09/2026–28/09/2026. Font: Europe PMC.*
 
 ### Tema 2 · Seqüenciació
 
-No s’han recuperat publicacions noves amb aquesta consulta.
+::: {.weekly-paper}
+#### [Long-Read sequencing in psychiatric omics: a systematic review of current evidence.](https://doi.org/10.1038/s41380-026-03909-5)
+
+<p class="weekly-citation">Real Karia BT, Ota V, Polimanti R, Leite Santoro M, Belangero S, Muniz Carvalho C. <em>Molecular psychiatry</em> (2026).</p>
+
+**Abstract summary (English)**
+
+Objective We synthesize current evidence on the application of LRS technologies across genomic, transcriptomic, and methylomic studies of mental disorders. Results and discussion The literature search yielded 2,166 articles, and 14 were included in the review after applying inclusion and exclusion criteria. Crucially, LRS demonstrated that psychiatric risk is often conferred by dysregulated alternative splicing leading to isoform-specific imbalances, rather than altered total gene expression. Overall, LRS represents a significant technological advancement, providing the high-resolution molecular detail necessary to begin characterizing the complex relationships between genetic variation, splicing dynamics, and epigenetic modifications, thereby helping to contextualize psychiatric risk associations for future translational research.
+
+:::
+
+::: {.weekly-paper}
+#### [Unified long-read panel for Parkinson&#x27;s and repeat expansion disorders.](https://doi.org/10.1038/s41531-026-01585-4)
+
+<p class="weekly-citation">Fienemann A, Prietzsche JC, Laβ J, Much C, Schaake S, Lüth T, Gabbert C, Zimprich A, Stögmann E, König T, Ganos C, Gül-Demirkale T, Başak AN, Jamora RDG, Rosales RL, Saranza G, Diesta CCE, Möller M, Borsche M, Kleinz T, Balck A, Brüggemann N, Seibler P, Klein C, Trinh J. <em>NPJ Parkinson&#x27;s disease</em> (2026).</p>
+
+**Abstract summary (English)**
+
+In this study, we designed a gene panel based on Nanopore long-read sequencing using adaptive sampling, targeting n = 564 genes associated with Parkinson's disease (PD) and repeat expansion disorders. We investigated its diagnostic utility in n = 18 patients with (1) pathogenic variants in LRRK2, PRKN, SNCA, and RAB32 (n = 7); (2) idiopathic PD or FTD negative for known genetic causes (n = 3); (3) repeat expansions in ATXN1, ATXN2, ATXN3, C9orf72, DAB1, FGF14, HTT, and TAF1-SVA (n = 8). Adaptive sampling is a versatile genetic diagnostic tool in neurodegenerative disorders, while enabling cost-effective multiplexing. Further validation and improvements in bioinformatic analysis are needed.
+
+:::
+
+::: {.weekly-paper}
+#### [Viral haplotype reconstruction from long reads with virCHap.](https://doi.org/10.1101/gr.281975.126)
+
+<p class="weekly-citation">Gao Y, Liu B, Li G, Yu T. <em>Genome research</em> (2026).</p>
+
+**Abstract summary (English)**
+
+Resolving genomes at the haplotype level for viral populations is crucial for understanding the prevalence of viral diseases and for the development of effective therapeutic treatments. Here, we develop virCHap, a new reference-based haplotype phasing algorithm for viruses, which applies graph partitioning followed by iteratively quantifiable cluster merging on long-read sequencing data. Benchmarking on simulated and real datasets demonstrates that virCHap outperforms current tools in terms of recall, accurate abundance estimates and read clustering accuracy. On a real 6-strain SARS-CoV-2 dataset, virCHap achieves >96.7% accuracy, and the most accurate abundance estimates within the spike gene.
+
+:::
+
 
 ### Tema 3 · Assemblatge
 
 ::: {.weekly-paper}
-#### [Chromosome-level genome assembly of the Endangered scaly-sided merganser Mergus squamatus with insight into its demographic history.](https://doi.org/10.1093/g3journal/jkag268)
+#### [A bacterial pangenome association study identifies a role for polyamine metabolism and alkaline tolerance in middle ear infections.](https://doi.org/10.1371/journal.ppat.1014649)
 
-<p class="weekly-citation">Wright JJ, De Weerd H, Lees AC, Shaw KJ, Griffiths SM. <em>G3 (Bethesda, Md.)</em> (2026).</p>
+<p class="weekly-citation">Hammond JA, Ehrlich RL, Gonzalez A, Euba B, Raible KM, Lawrence JM, Gordon AB, Williams E, Marino MC, Limbo J, Lang S, Sen B, Balashov SV, Ahmed A, Garmendia J, Beld J, Ehrlich GD, Pichichero ME, Kaur R, Mell JC. <em>PLoS pathogens</em> (2026).</p>
 
 **Abstract summary (English)**
 
-In this study, we present the first fully annotated, chromosome-level genome for the scaly-sided merganser, generated using Oxford Nanopore long reads, Illumina short reads, and Hi-C sequencing. The assembly shows high contiguity (N50 = 84.3Mb) and completeness, with a Benchmarking Universal Single-Copy Ortholog (BUSCO) score of 98%. Synteny analysis revealed strong chromosomal conservation across the wider Anatidae family, with evidence of lineage-specific rearrangements. Our high-quality genome provides an essential resource for conservation genomic and evolutionary studies of the scaly-sided merganser, supporting ongoing efforts to manage and protect this globally threatened species.
+Measurements of human middle ear fluid pH found higher alkalinity in specimens where H. influenzae was collected over those with other OM pathogens, supporting the hypothesis that the alkaline middle ear microenvironment in OM arises from or selects for H. influenzae infection. Experiments using a mouse OM model found that absence of potE-speF caused a ~ 63-fold increase in bacterial disease burden in middle ear washes. By contrast, a mouse lung infection model showed no significant difference. We conclude that H. influenzae lacking potE-speF have a selective advantage in OM disease pathogenesis, because these strains thrive in the otherwise hostile alkaline environment that occurs in the middle ears of children.
 
 :::
 
 ::: {.weekly-paper}
-#### [SVPG: a pangenome-based structural variant detection approach and rapid augmentation of pangenome graphs with new samples.](https://doi.org/10.1038/s41592-026-03219-2)
+#### [Highly contiguous draft nuclear genome assembly of Teratoramularia sp. strain RD051456 isolated from plant debris in Yamanashi Prefecture, Japan.](https://doi.org/10.1128/mra.00921-26)
 
-<p class="weekly-citation">Jiang T, Hu H, Gao R, Cao S, Jiang Z, Zhou M, Gao W, Zhou S, Wang G. <em>Nature methods</em> (2026).</p>
+<p class="weekly-citation">Izumi M, Oka T. <em>Microbiology resource announcements</em> (2026).</p>
 
 **Abstract summary (English)**
 
-Breakthrough advances in long-read sequencing have opened unprecedented opportunities to study genetic variations through pangenome analysis, yet tools that effectively leverage such frameworks for structural variant (SV) detection remain limited. Here we present SVPG, an approach that leverages haplotype-resolved pangenome reference for accurate SV detection and rapid pangenome graph augmentation from long-read sequencing data. Furthermore, in a benchmark involving 20 samples, SVPG accelerated pangenome graph augmentation by nearly tenfold compared with traditional augmentation strategies. These results indicate that SVPG has the potential to improve SV detection and serve as an effective tool, offering new possibilities for advancing pangenomic research.
+We report a highly contiguous draft nuclear genome assembly of Teratoramularia sp. strain RD051456, isolated from plant debris in Yamanashi Prefecture, Japan. PacBio HiFi sequencing and hifiasm assembly produced a 26.26-Mb nuclear genome comprising 17 contigs, providing a resource for taxonomic, phylogenetic, and comparative genomic studies of Teratoramularia.
 
 :::
 
 ::: {.weekly-paper}
-#### [Comparative oligo-FISH validates genome assemblies and delivers a precise karyotype for Lens Mill. species.](https://doi.org/10.1371/journal.pone.0354141)
+#### [Interpolating and Extrapolating Node Counts in Colored Compacted de Bruijn Graphs for Pangenome Diversity.](https://doi.org/10.1177/15578666261486474)
 
-<p class="weekly-citation">Silvestrini AJA, Ramsay L, von Wettberg EB, Bett KE. <em>PloS one</em> (2026).</p>
+<p class="weekly-citation">Parmigiani L, Peterlongo P. <em>Journal of computational biology : a journal of computational molecular cell biology</em> (2026).</p>
 
 **Abstract summary (English)**
 
-Using gene synteny analysis between the cultivated Lens species and six wild relatives, we developed cross-species oligo-FISH (Fluorescent in situ hybridization) probes to in situ confirm genome assemblies and synteny. The combination of both oligo sets/probes resulted in a distinct pattern for each Lens spp. chromosome, allowing the inference of a more robust karyotype for six Lens species. The results attest to a higher sequence-level similarity among the closest related species despite the occurrence of several chromosomal structural changes among them. Oligo-FISH probes can be used in conjunction with plant genome assembly projects, supporting the delivery of a precise representation of the physical chromosomes of a species.
+In our work, we focus on the colored cdBG (ccdBG), where each node is associated with a set of colors that indicate the genomes traversing it. In response to the evolution of pangenome representation, we introduce a novel method for comparing pangenomes by their node counts, addressing two main challenges: the variability in node counts arising from graphs constructed with different numbers of genomes and the large influence of rare genomic sequences. We propose an approach for interpolating and extrapolating node counts in ccdBGs, adjusting for the number of genomes. To tackle the influence of rare genomic sequences, we apply Hill numbers, a well-established diversity index previously utilized in ecology and metagenomics for similar purposes, to proportionally weight both rare and common nodes according to the frequency of genomes traversing them.
 
 :::
 
@@ -43,35 +75,35 @@ Using gene synteny analysis between the cultivated Lens species and six wild rel
 ### Tema 4 · Anotació i transcriptòmica
 
 ::: {.weekly-paper}
-#### [An Exploratory Analysis of Potential Core Targets and Signaling Pathways Linking Dexmedetomidine to Diabetes Insipidus: Integration of FAERS Pharmacovigilance Data, Network Toxicology and Clinical Transcriptomics.](https://doi.org/10.2147/dddt.s625211)
+#### [DUET-seq: An Open-Source Droplet Platform for High-Fidelity Joint Chromatin and Transcriptome Profiling Reveals Temporal Regulatory Decoupling in Single Cells.](https://doi.org/10.1002/advs.77986)
 
-<p class="weekly-citation">Ming S, Wu Z, Li J, Su Y, Yu J, Liu H, Zhang Y. <em>Drug design, development and therapy</em> (2026).</p>
+<p class="weekly-citation">Cheng D, Meng Z, Wei L, Yang P, Zhang F, Luo Z, Lai T, Li C, Zhao M, Xu M, Wang J, Li L, Chen H, Li J, Huang A, Bu Y, Zhao L. <em>Advanced science (Weinheim, Baden-Wurttemberg, Germany)</em> (2026).</p>
 
 **Abstract summary (English)**
 
-Dexmedetomidine is widely used for clinical sedation, while clinical data suggest a potential correlation between its administration and diabetes insipidus. Enrichment revealed enriched MAPK cascade, kinase activity and PI3K/AKT pathways, which may correlate with abnormal AQP2 function. This study combined FAERS pharmacovigilance analysis, network toxicology, molecular docking and transcriptome sequencing to explore potential mechanisms of dexmedetomidine-induced diabetes insipidus. These findings facilitate high-risk population management and individualized sedation, and supply molecular candidates for future validation studies.
+Joint profiling of chromatin accessibility and gene expression in the same cell enables direct linkage of regulatory elements to transcriptional output, but existing approaches remain limited by low co-capture sensitivity, proprietary platforms, and high costs. Here we present DUET-seq, an open-source droplet microfluidic platform for joint profiling of chromatin accessibility and gene expression from the same nucleus. We demonstrate the platform's versatility by mapping over 14,000 cis-regulatory element-to-gene linkages in adult mouse brain and by profiling ∼29,000 nuclei across six stages of postnatal spermatogenesis, where paired measurements reveal two modes of temporal regulatory decoupling-epigenetic priming and chromatin inertia-that are inaccessible to unimodal assays. DUET-seq thus provides an accessible, cost-effective framework for joint single-nucleus multi-omic profiling, with broad applicability across developmental biology, disease epigenomics, and functional genomics.
 
 :::
 
 ::: {.weekly-paper}
-#### [Betulinic acid alleviates ankylosing spondylitis and remodels Th17/Treg-associated immune landscapes revealed by single-cell transcriptomics.](https://doi.org/10.1007/s00210-026-05935-0)
+#### [Comparative transcriptome profiling and functional analysis of GmRAMOSA1 as a key regulator of adventitious shoot regeneration in soybean.](https://doi.org/10.1007/s00299-026-03996-2)
 
-<p class="weekly-citation">Shi Y, Guan S, Zeng G, Wang S, Li M, Yu Y, Wang Y, Liu J, Yang W, Wang Z. <em>Naunyn-Schmiedeberg&#x27;s archives of pharmacology</em> (2026).</p>
+<p class="weekly-citation">Liu Y, Zhang X, Jiang H, Mu D, Qin Q, Wu W, Zhou Y, Zhang Y, Gu J, Yang H, He J, Huang Y, Sun X, Du J. <em>Plant cell reports</em> (2026).</p>
 
 **Abstract summary (English)**
 
-Single-cell transcriptomic analysis revealed pronounced Th17/Treg imbalance and activation of IL6-STAT3, MAPK/Ras, and TGF-β/SMAD signaling pathways in AS, whereas BA treatment reshaped T-cell developmental trajectories by reducing Rorc-associated differentiation while enhancing Foxp3-related dynamics. Virtual knockout analysis revealed that Smad2-associated regulatory networks were substantially influenced by the immune microenvironment. BA treatment was associated to decreased expression of inflammatory mediators and changed expression of a number of signaling molecules found through single-cell transcriptome investigations, such as ERK1/2, KRAS, MAPK14, and SMAD2, according to experimental validation (P < 0.05). BA exerts anti-inflammatory and immunomodulatory effects in AS and is associated with modulation of mitochondrial oxidative stress and multiple immune-related signaling signatures, thereby reshaping T cell developmental trajectories and contributing to partial restoration of immune homeostasis.
+This study identifies GmRAMOSA1 as a key regulator of adventitious shoot regeneration in soybean and uncovers its regulatory network via comparative transcriptome profiling, providing new insights into the molecular mechanism of soybean shoot organogenesis. Here, we compared the highly regenerable cultivar Dongnong 50 (DN50) with the low regenerative capacity Sichuan landrace Gongqiudou 5 (GQD5) using a cotyledonary node-based adventitious shoot induction system. Overexpression of GmRA1 in the GQD5 background significantly increased adventitious shoot regeneration and was associated with elevated expression of several meristem-identity and hormone-responsive genes. This study highlights a promising molecular target for enhancing soybean regeneration and transformation efficiency.
 
 :::
 
 ::: {.weekly-paper}
-#### [Single cell RNA-sequencing reveals neuron type-specific vulnerabilities in a model of STXBP1-related disorder.](https://doi.org/10.1038/s41380-026-03869-w)
+#### [A newly discovered 5&#x27; translation-regulatory element with a unique three stem-loop structure in sweet potato feathery mottle virus.](https://doi.org/10.1016/j.ijbiomac.2026.154622)
 
-<p class="weekly-citation">Roig Adam A, van Berkel AA, Vanheusden M, Bast L, Smit AB, Sullivan PF, Hjerling-Leffler J, Verhage M. <em>Molecular psychiatry</em> (2026).</p>
+<p class="weekly-citation">Liu L, Lv X, Liu M, Geng G. <em>International journal of biological macromolecules</em> (2026).</p>
 
 **Abstract summary (English)**
 
-Here, we used single-cell RNA-sequencing to characterize the effect of Stxbp1 haploinsufficiency across all brain cell types in the somatosensory cortex of a validated mouse model. Differentially expressed genes showed little overlap between neuronal types but accumulated in synaptic and translation-related GO terms. Excitatory neurons showed greater synaptic dysregulation than inhibitory neurons. Overall, our study provides a cellular-resolution map of the transcriptomic changes in STXBP1-related disorders, providing potential new therapeutic targets.
+Sweet potato feathery mottle virus (SPFMV), a member of the Potyviridae family and Potyvirus genus, severely affects the yield and quality of sweet potato. Herein, we show that the 5' untranslated region (UTR) of SPFMV possesses IRES activity and contains the complete IRES sequence. The top loop of H1 interacts with the 3'UTR through RNA-RNA interaction between 10850GUG and 42CAC, thereby enhancing IRES activity of the 5'UTR. The top loops of H2 and H3 serve as binding sites for eukaryotic translation initiation factor 4E (eIF4E) or its complex, while their stem structures provide essential structural support. in conclusion, we discovered a unique three-stem-loop IRES element within the SPFMV 5'UTR, providing a potential target for the prevention and control of sweet potato virus disease caused by SPFMV.
 
 :::
 
@@ -79,35 +111,24 @@ Here, we used single-cell RNA-sequencing to characterize the effect of Stxbp1 ha
 ### Tema 5 · Evolució genòmica
 
 ::: {.weekly-paper}
-#### [Comparative genomics of Sympodiorosea identifies genome evolution mediated through selective pressure on the metabolic gene repertoire.](https://doi.org/10.1093/g3journal/jkag251)
+#### [Comparative Genomics of the Enterobacter cloacae Mobilome: Prophage Diversity and Anti-Phage Defense Systems in Phage Satellites.](https://doi.org/10.3390/v18091045)
 
-<p class="weekly-citation">Robinson JC, Berasategui A, Montoya QV, Rodrigues A, Sosa-Calvo J, Zimmerman Z, Christoper Y, Fernández-Marín H, Read TD, Gerardo NM. <em>G3 (Bethesda, Md.)</em> (2026).</p>
+<p class="weekly-citation">Alrafaie A, Alqurainy N. <em>Viruses</em> (2026).</p>
 
 **Abstract summary (English)**
 
-Here, we conducted a phylogenomic investigation of Sympodiorosea, ascomycetes commonly found in basal fungus-growing ant gardens. However, outcomes of in vitro host interactions were diverse and predictable based on the antagonist's ant-species-of-origin, suggesting functional diversification. Furthermore, Sympodiorosea exhibits protease gene expansions and contractions discordant with a strictly mycoparasitic lifestyle, suggesting either an alternative lifestyle within ant gardens or recent evolution from other niches. These results provide novel insights into fungal genome evolution and the chemistry of the fungus-growing ant symbiosis.
+To address this gap, we analyzed 35 complete E. cloacae genomes, identifying 139 intact prophages (10.8-85.7 kb) with an average GC content (~52%) close to that of the host (54-55%). Most prophages (86.6%) were assigned to the families Peduoviridae and Drexlerviridae within the class Caudoviricetes, and proteome-based clustering showed strong relatedness to phages infecting Enterobacteriaceae. Virulence profiling revealed universal presence of ompA and high prevalence of csgG (94%), while the only confirmed prophage-encoded virulence determinants were the Shiga toxin genes stxA and stx1B. Overall, prophages and phage satellites drive genome diversification in E. cloacae, with satellites notably serving as reservoirs of anti-phage defense, whereas resistance and virulence genes are located outside prophage and satellite regions.
 
 :::
 
 ::: {.weekly-paper}
-#### [Comparative Genomics and Heterologous Complementation Reveal Sequence and Structural Divergence of Selected Transcription Factors From Spathaspora passalidarum.](https://doi.org/10.1002/yea.70046)
+#### [The Drosophila FET ortholog Cabeza is an essential cofactor for ETV4-mediated activation of GGAA microsatellite neoenhancers.](https://doi.org/10.1093/g3journal/jkag265)
 
-<p class="weekly-citation">Albuini FM, de Castro AG, Ribeiro LE, de Oliveira Figueiredo Gazolla LC, Rosa CA, de Oliveira Mendes TA, Fietto LG. <em>Yeast (Chichester, England)</em> (2026).</p>
-
-**Abstract summary (English)**
-
-The yeast Spathaspora passalidarum is considered promising for domestication and use in second-generation ethanol production because it ferments xylose and glucose with yields above 70%. While most stress-related proteins were conserved between the two species, more than 70% of Sp. passalidarum transcription factors showed less than 30% sequence identity, lacked recognizable domains, or diverged within functional domains. Gene complementation assays showed that the Sp. passalidarum YAP1 and MSN-like genes showed limited or incomplete complementation of oxidative stress tolerance in S. cerevisiae mutant strains compared with the corresponding native genes. Together, these findings support functional divergence of the analyzed transcription factors in the heterologous S. cerevisiae system and suggest that regulatory divergence may contribute to stress-response differences between Spathaspora passalidarum and Saccharomyces cerevisiae.
-
-:::
-
-::: {.weekly-paper}
-#### [Comparative Genomics-Guided Epitope Prioritization and in Silico Design of a Multi-Epitope DNA Vaccine Candidate Against Megalocytivirus pagrus 1.](https://doi.org/10.1007/s10126-026-10707-1)
-
-<p class="weekly-citation">Moon SB, Sohn MY, Kang G, Roh H, Lee Y, Kim MJ, Kim KI, Hwang SD, Park CI, Kim KH. <em>Marine biotechnology (New York, N.Y.)</em> (2026).</p>
+<p class="weekly-citation">Molnar C, Reina J, Mora J, Gonzalez C. <em>G3 (Bethesda, Md.)</em> (2026).</p>
 
 **Abstract summary (English)**
 
-Megalocytivirus pagrus 1 infection is a World Organisation for Animal Health-listed aquatic animal disease caused by a virus species comprising the RSIV, ISKNV, and TRBIV genogroups. Here, we integrated comparative genomics and immunoinformatics to prioritize a multi-epitope protein construct, pMEV, and to design a DNA vaccine candidate encoding it, with emphasis on RSIV-type infection relevant to rock bream aquaculture. Finally, the pMEV coding sequence was codon-optimized and incorporated into an in silico pcDNA3.1(+)-based DNA vaccine design. Collectively, this study provides a comparative genomics-guided framework for prioritizing an experimentally testable multi-epitope DNA vaccine candidate against M. pagrus 1, while construct expression, immunogenicity, and protective efficacy remain to be evaluated experimentally.
+The conversion of transcriptionally silent GGAA microsatellites (GGAAµSats) into functional enhancers by FET::ETS oncogenic fusions is a hallmark of Ewing sarcoma. Evaluating the in vivo transcriptional requirements of various human ETS factors in Drosophila, we found that human ETV4 associates with and robustly activates GGAAµSats in a tissue-specific manner. Taking advantage of low genetic redundancy in Drosophila, we identified Cabeza (Caz), the single fly FET ortholog, as a necessary cofactor for ETV4-mediated transcription at GGAAµSats. Collectively, our findings provide in vivo evidence that non-fused ETS factors cooperate with endogenous FET proteins to drive transcription from silent GGAA repeats, mechanistically validating this regulatory transformation known to operate as an oncogenic mechanism beyond Ewing sarcoma.
 
 :::
 
@@ -115,37 +136,37 @@ Megalocytivirus pagrus 1 infection is a World Organisation for Animal Health-lis
 ### Tema 6 · Variació i paleogenòmica
 
 ::: {.weekly-paper}
-#### [Deep-Learning-Based Profiling of Mouse Sperm Head and Neck Morphology Reveals Coordinated Structural Variation.](https://doi.org/10.1111/andr.70380)
+#### [Identification of Fscn2 as a candidate gene regulating endothelial cytoskeletal organization and angiogenic competence through a genome-wide association study (GWAS) in mice.](https://doi.org/10.1016/j.mvr.2026.105024)
 
-<p class="weekly-citation">Han G, Hong SP, Lee SJ, Cho C. <em>Andrology</em> (2026).</p>
+<p class="weekly-citation">Marik B, Bielenberg DR, Birsner AE, Fu H, D&#x27;Amato RJ. <em>Microvascular research</em> (2026).</p>
 
 **Abstract summary (English)**
 
-Materials and methods We developed ADAM-net (Anomaly-aware Deep-learning Architecture for Morphology), a machine-learning system for mouse sperm head and neck structures. Results ADAM-net-BF enables simultaneous analysis of the head and neck using noninvasively acquired BF images. Atypical head shapes were frequently associated with a neck in which the tail is attached perpendicular to the head axis, revealing a specific relationship between head shape and tail attachment pattern. Conclusion ADAM-net provides a standard and facile tool that will have applications in various reproductive studies, extending to the exploration of subtle structural dynamics such as the sperm head-tail alignment.
+In this study, we hypothesized that genetic diversity among inbred mouse strains could be compared using GWAS to identify candidate genes associated with differences in VEGFA-induced angiogenic phenotypes. Functional experiments in human endothelial cells and in vivo validation show that FSCN2 supports endothelial proliferation, migration, tube formation, and cytoskeletal organization. These findings expand the biological role of FSCN2 beyond sensory tissues and suggest that fascin-dependent cytoskeletal regulation contributes to endothelial angiogenic competence. Direct effects of FSCN2 in VEGFA signaling remains to be established.
 
 :::
 
 ::: {.weekly-paper}
-#### [Evaluating the Zero-Markup Drug Policy&#x27;s Effects on Financial Burden and Pharmaceutical Channel Migration: A Structural Variation and Interrupted Time Series Analysis from Hubei, China.](https://doi.org/10.2147/jhl.s606732)
+#### [Genome-wide association study of morphometric and metabolic characteristics in European populations of the sugar kelp Saccharina latissima.](https://doi.org/10.1111/jpy.70239)
 
-<p class="weekly-citation">Zhou Y, Lin K, Xiang L. <em>Journal of healthcare leadership</em> (2026).</p>
+<p class="weekly-citation">Mauger S, Avia K, Jaugeon L, Ruggeri P, Nehr Z, Issaka Salia O, Coudret J, Gouhier E, Baud A, Loisel S, Fort A, Sulpice R, Destombe C, Potin P, Cock JM, Valero M. <em>Journal of phycology</em> (2026).</p>
 
 **Abstract summary (English)**
 
-Objective This study evaluates the impact of China's zero-markup drug policy (ZMDP) on patients' financial burden and pharmaceutical purchasing channel migration, using Yichang City in Hubei Province as a case study. For healthcare leaders, these findings suggest that vertical price regulation without horizontal integration across care settings may simply relocate costs. Strengths and limitations of this study This study has several strengths. The study period ends in 2019 due to the COVID-19 pandemic, constraining long-term observation.
+The sugar kelp Saccharina latissima is a promising candidate for sustainable aquaculture in the North Atlantic and Northeast Pacific, but genetic improvement has been hindered by a limited understanding of the genetic basis of economically important traits. We conducted a genome-wide association study (GWAS) for this species using 202 self-fertilized pseudo-F1 individuals derived from 12 of 13 sampled populations spanning northern and southern European genetic clusters. We identified 18 significant marker-trait associations, with individual loci explaining 1.37% to 10.93% of phenotypic variance (PVE). Overall, these results indicate a mixed genetic architecture, comprising moderate-effect loci amenable to marker-assisted selection and polygenic traits better suited to genomic selection, and they provide a foundation for genomics-assisted breeding in kelp aquaculture.
 
 :::
 
 ::: {.weekly-paper}
-#### [Shared genetic basis of sarcopenia and osteoporosis: insights from GWAS and multi-omics analyses.](https://doi.org/10.1007/s00774-026-01757-5)
+#### [Genetic Susceptibility to NSAID-Related Gastrointestinal Adverse Events in Korean Patients: An Exploratory Genome-Wide Association Study.](https://doi.org/10.3390/jcm15187301)
 
-<p class="weekly-citation">Ding K, Zhao Y, Jiang W, Lei M, Ren Q, Gao Y. <em>Journal of bone and mineral metabolism</em> (2026).</p>
+<p class="weekly-citation">Kim JH, Gil JY, Min KH, Kim HJ, Yang S, Chang SY, Cho BK, Kim HA, Kim W, Kim J, Choi IA, Song N, Han JM, Lee KE. <em>Journal of clinical medicine</em> (2026).</p>
 
 **Abstract summary (English)**
 
-Key genes were analyzed with functional annotation, predicted expression, Mendelian randomization, and colocalization, and integrated with single-cell and spatial transcriptomics to reveal cell-type-specific expression and spatial patterns. Sarcopenia and osteoporosis showed a significant positive genetic correlation (rg = 0.1104, P = 1.76E-09). Genetic signals were enriched in bone- and muscle-related tissues, and CCND2 (cartilage primordium) and GRB10 (muscle) showed high tissue-specific expression for both traits. Genetic effects mainly act through bone- and muscle-related tissues, supporting a shared genetic basis and potential mechanisms of bone-muscle comorbidity.
+The exploratory GWAS identified 20 suggestive variants associated with NSAID-related GI-AEs at p -5, although no variant reached genome-wide significance. The KoGES-derived polygenic risk score was significantly associated with GI-AE status in the NSAID cohort, and 10 suggestive variants overlapped with SNPs included in the best-fit PRS model. rs1925245 maintained a consistent association in multivariable Firth penalized logistic regression. These findings suggest that NSAID-related GI-AEs in Korean patients may reflect a multifactorial susceptibility pattern involving both clinical context and polygenic risk. Although exploratory, this study provides candidate genetic signals for future replication and supports the need for larger ancestry-matched pharmacogenomic studies of NSAID-related GI toxicity.
 
 :::
 
 
-S’han recuperat **12** referències no duplicades. Cada resum és una selecció automàtica de 3–4 frases de l’abstract en anglès. Els recursos complementaris només s’afegeixen quan estan registrats i vinculats inequívocament a l’article. Les cerques són públiques a `scripts/update_publications.py`.
+S’han recuperat **14** referències no duplicades. Cada resum és una selecció automàtica de 3–4 frases de l’abstract en anglès. Els recursos complementaris només s’afegeixen quan estan registrats i vinculats inequívocament a l’article. Les cerques són públiques a `scripts/update_publications.py`.

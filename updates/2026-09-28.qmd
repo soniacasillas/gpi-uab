@@ -1,0 +1,186 @@
+---
+title: "Butlletí de genòmica · 28/09/2026"
+subtitle: "Publicacions seleccionades del 20/09/2026 al 28/09/2026"
+format:
+  html:
+    theme: cosmo
+    css: ../assets/site.css
+    toc: true
+    toc-depth: 2
+    link-external-newwindow: true
+---
+
+[← Tots els butlletins](../actualitzacions.html) · [⭐ Actualitzacions destacades](../destacades.html)
+
+*Selecció automàtica: 20/09/2026–28/09/2026. Font: Europe PMC.*
+
+### Tema 2 · Seqüenciació
+
+::: {.weekly-paper}
+#### [Long-Read sequencing in psychiatric omics: a systematic review of current evidence.](https://doi.org/10.1038/s41380-026-03909-5)
+
+<p class="weekly-citation">Real Karia BT, Ota V, Polimanti R, Leite Santoro M, Belangero S, Muniz Carvalho C. <em>Molecular psychiatry</em> (2026).</p>
+
+**Abstract summary (English)**
+
+Objective We synthesize current evidence on the application of LRS technologies across genomic, transcriptomic, and methylomic studies of mental disorders. Results and discussion The literature search yielded 2,166 articles, and 14 were included in the review after applying inclusion and exclusion criteria. Crucially, LRS demonstrated that psychiatric risk is often conferred by dysregulated alternative splicing leading to isoform-specific imbalances, rather than altered total gene expression. Overall, LRS represents a significant technological advancement, providing the high-resolution molecular detail necessary to begin characterizing the complex relationships between genetic variation, splicing dynamics, and epigenetic modifications, thereby helping to contextualize psychiatric risk associations for future translational research.
+
+:::
+
+::: {.weekly-paper}
+#### [Unified long-read panel for Parkinson&#x27;s and repeat expansion disorders.](https://doi.org/10.1038/s41531-026-01585-4)
+
+<p class="weekly-citation">Fienemann A, Prietzsche JC, Laβ J, Much C, Schaake S, Lüth T, Gabbert C, Zimprich A, Stögmann E, König T, Ganos C, Gül-Demirkale T, Başak AN, Jamora RDG, Rosales RL, Saranza G, Diesta CCE, Möller M, Borsche M, Kleinz T, Balck A, Brüggemann N, Seibler P, Klein C, Trinh J. <em>NPJ Parkinson&#x27;s disease</em> (2026).</p>
+
+**Abstract summary (English)**
+
+In this study, we designed a gene panel based on Nanopore long-read sequencing using adaptive sampling, targeting n = 564 genes associated with Parkinson's disease (PD) and repeat expansion disorders. We investigated its diagnostic utility in n = 18 patients with (1) pathogenic variants in LRRK2, PRKN, SNCA, and RAB32 (n = 7); (2) idiopathic PD or FTD negative for known genetic causes (n = 3); (3) repeat expansions in ATXN1, ATXN2, ATXN3, C9orf72, DAB1, FGF14, HTT, and TAF1-SVA (n = 8). Adaptive sampling is a versatile genetic diagnostic tool in neurodegenerative disorders, while enabling cost-effective multiplexing. Further validation and improvements in bioinformatic analysis are needed.
+
+:::
+
+::: {.weekly-paper}
+#### [Viral haplotype reconstruction from long reads with virCHap.](https://doi.org/10.1101/gr.281975.126)
+
+<p class="weekly-citation">Gao Y, Liu B, Li G, Yu T. <em>Genome research</em> (2026).</p>
+
+**Abstract summary (English)**
+
+Resolving genomes at the haplotype level for viral populations is crucial for understanding the prevalence of viral diseases and for the development of effective therapeutic treatments. Here, we develop virCHap, a new reference-based haplotype phasing algorithm for viruses, which applies graph partitioning followed by iteratively quantifiable cluster merging on long-read sequencing data. Benchmarking on simulated and real datasets demonstrates that virCHap outperforms current tools in terms of recall, accurate abundance estimates and read clustering accuracy. On a real 6-strain SARS-CoV-2 dataset, virCHap achieves >96.7% accuracy, and the most accurate abundance estimates within the spike gene.
+
+:::
+
+
+### Tema 3 · Assemblatge
+
+::: {.weekly-paper}
+#### [A bacterial pangenome association study identifies a role for polyamine metabolism and alkaline tolerance in middle ear infections.](https://doi.org/10.1371/journal.ppat.1014649)
+
+<p class="weekly-citation">Hammond JA, Ehrlich RL, Gonzalez A, Euba B, Raible KM, Lawrence JM, Gordon AB, Williams E, Marino MC, Limbo J, Lang S, Sen B, Balashov SV, Ahmed A, Garmendia J, Beld J, Ehrlich GD, Pichichero ME, Kaur R, Mell JC. <em>PLoS pathogens</em> (2026).</p>
+
+**Abstract summary (English)**
+
+Measurements of human middle ear fluid pH found higher alkalinity in specimens where H. influenzae was collected over those with other OM pathogens, supporting the hypothesis that the alkaline middle ear microenvironment in OM arises from or selects for H. influenzae infection. Experiments using a mouse OM model found that absence of potE-speF caused a ~ 63-fold increase in bacterial disease burden in middle ear washes. By contrast, a mouse lung infection model showed no significant difference. We conclude that H. influenzae lacking potE-speF have a selective advantage in OM disease pathogenesis, because these strains thrive in the otherwise hostile alkaline environment that occurs in the middle ears of children.
+
+:::
+
+::: {.weekly-paper}
+#### [Highly contiguous draft nuclear genome assembly of Teratoramularia sp. strain RD051456 isolated from plant debris in Yamanashi Prefecture, Japan.](https://doi.org/10.1128/mra.00921-26)
+
+<p class="weekly-citation">Izumi M, Oka T. <em>Microbiology resource announcements</em> (2026).</p>
+
+**Abstract summary (English)**
+
+We report a highly contiguous draft nuclear genome assembly of Teratoramularia sp. strain RD051456, isolated from plant debris in Yamanashi Prefecture, Japan. PacBio HiFi sequencing and hifiasm assembly produced a 26.26-Mb nuclear genome comprising 17 contigs, providing a resource for taxonomic, phylogenetic, and comparative genomic studies of Teratoramularia.
+
+:::
+
+::: {.weekly-paper}
+#### [Interpolating and Extrapolating Node Counts in Colored Compacted de Bruijn Graphs for Pangenome Diversity.](https://doi.org/10.1177/15578666261486474)
+
+<p class="weekly-citation">Parmigiani L, Peterlongo P. <em>Journal of computational biology : a journal of computational molecular cell biology</em> (2026).</p>
+
+**Abstract summary (English)**
+
+In our work, we focus on the colored cdBG (ccdBG), where each node is associated with a set of colors that indicate the genomes traversing it. In response to the evolution of pangenome representation, we introduce a novel method for comparing pangenomes by their node counts, addressing two main challenges: the variability in node counts arising from graphs constructed with different numbers of genomes and the large influence of rare genomic sequences. We propose an approach for interpolating and extrapolating node counts in ccdBGs, adjusting for the number of genomes. To tackle the influence of rare genomic sequences, we apply Hill numbers, a well-established diversity index previously utilized in ecology and metagenomics for similar purposes, to proportionally weight both rare and common nodes according to the frequency of genomes traversing them.
+
+:::
+
+
+### Tema 4 · Anotació i transcriptòmica
+
+::: {.weekly-paper}
+#### [DUET-seq: An Open-Source Droplet Platform for High-Fidelity Joint Chromatin and Transcriptome Profiling Reveals Temporal Regulatory Decoupling in Single Cells.](https://doi.org/10.1002/advs.77986)
+
+<p class="weekly-citation">Cheng D, Meng Z, Wei L, Yang P, Zhang F, Luo Z, Lai T, Li C, Zhao M, Xu M, Wang J, Li L, Chen H, Li J, Huang A, Bu Y, Zhao L. <em>Advanced science (Weinheim, Baden-Wurttemberg, Germany)</em> (2026).</p>
+
+**Abstract summary (English)**
+
+Joint profiling of chromatin accessibility and gene expression in the same cell enables direct linkage of regulatory elements to transcriptional output, but existing approaches remain limited by low co-capture sensitivity, proprietary platforms, and high costs. Here we present DUET-seq, an open-source droplet microfluidic platform for joint profiling of chromatin accessibility and gene expression from the same nucleus. We demonstrate the platform's versatility by mapping over 14,000 cis-regulatory element-to-gene linkages in adult mouse brain and by profiling ∼29,000 nuclei across six stages of postnatal spermatogenesis, where paired measurements reveal two modes of temporal regulatory decoupling-epigenetic priming and chromatin inertia-that are inaccessible to unimodal assays. DUET-seq thus provides an accessible, cost-effective framework for joint single-nucleus multi-omic profiling, with broad applicability across developmental biology, disease epigenomics, and functional genomics.
+
+:::
+
+::: {.weekly-paper}
+#### [Comparative transcriptome profiling and functional analysis of GmRAMOSA1 as a key regulator of adventitious shoot regeneration in soybean.](https://doi.org/10.1007/s00299-026-03996-2)
+
+<p class="weekly-citation">Liu Y, Zhang X, Jiang H, Mu D, Qin Q, Wu W, Zhou Y, Zhang Y, Gu J, Yang H, He J, Huang Y, Sun X, Du J. <em>Plant cell reports</em> (2026).</p>
+
+**Abstract summary (English)**
+
+This study identifies GmRAMOSA1 as a key regulator of adventitious shoot regeneration in soybean and uncovers its regulatory network via comparative transcriptome profiling, providing new insights into the molecular mechanism of soybean shoot organogenesis. Here, we compared the highly regenerable cultivar Dongnong 50 (DN50) with the low regenerative capacity Sichuan landrace Gongqiudou 5 (GQD5) using a cotyledonary node-based adventitious shoot induction system. Overexpression of GmRA1 in the GQD5 background significantly increased adventitious shoot regeneration and was associated with elevated expression of several meristem-identity and hormone-responsive genes. This study highlights a promising molecular target for enhancing soybean regeneration and transformation efficiency.
+
+:::
+
+::: {.weekly-paper}
+#### [A newly discovered 5&#x27; translation-regulatory element with a unique three stem-loop structure in sweet potato feathery mottle virus.](https://doi.org/10.1016/j.ijbiomac.2026.154622)
+
+<p class="weekly-citation">Liu L, Lv X, Liu M, Geng G. <em>International journal of biological macromolecules</em> (2026).</p>
+
+**Abstract summary (English)**
+
+Sweet potato feathery mottle virus (SPFMV), a member of the Potyviridae family and Potyvirus genus, severely affects the yield and quality of sweet potato. Herein, we show that the 5' untranslated region (UTR) of SPFMV possesses IRES activity and contains the complete IRES sequence. The top loop of H1 interacts with the 3'UTR through RNA-RNA interaction between 10850GUG and 42CAC, thereby enhancing IRES activity of the 5'UTR. The top loops of H2 and H3 serve as binding sites for eukaryotic translation initiation factor 4E (eIF4E) or its complex, while their stem structures provide essential structural support. in conclusion, we discovered a unique three-stem-loop IRES element within the SPFMV 5'UTR, providing a potential target for the prevention and control of sweet potato virus disease caused by SPFMV.
+
+:::
+
+
+### Tema 5 · Evolució genòmica
+
+::: {.weekly-paper}
+#### [Comparative Genomics of the Enterobacter cloacae Mobilome: Prophage Diversity and Anti-Phage Defense Systems in Phage Satellites.](https://doi.org/10.3390/v18091045)
+
+<p class="weekly-citation">Alrafaie A, Alqurainy N. <em>Viruses</em> (2026).</p>
+
+**Abstract summary (English)**
+
+To address this gap, we analyzed 35 complete E. cloacae genomes, identifying 139 intact prophages (10.8-85.7 kb) with an average GC content (~52%) close to that of the host (54-55%). Most prophages (86.6%) were assigned to the families Peduoviridae and Drexlerviridae within the class Caudoviricetes, and proteome-based clustering showed strong relatedness to phages infecting Enterobacteriaceae. Virulence profiling revealed universal presence of ompA and high prevalence of csgG (94%), while the only confirmed prophage-encoded virulence determinants were the Shiga toxin genes stxA and stx1B. Overall, prophages and phage satellites drive genome diversification in E. cloacae, with satellites notably serving as reservoirs of anti-phage defense, whereas resistance and virulence genes are located outside prophage and satellite regions.
+
+:::
+
+::: {.weekly-paper}
+#### [The Drosophila FET ortholog Cabeza is an essential cofactor for ETV4-mediated activation of GGAA microsatellite neoenhancers.](https://doi.org/10.1093/g3journal/jkag265)
+
+<p class="weekly-citation">Molnar C, Reina J, Mora J, Gonzalez C. <em>G3 (Bethesda, Md.)</em> (2026).</p>
+
+**Abstract summary (English)**
+
+The conversion of transcriptionally silent GGAA microsatellites (GGAAµSats) into functional enhancers by FET::ETS oncogenic fusions is a hallmark of Ewing sarcoma. Evaluating the in vivo transcriptional requirements of various human ETS factors in Drosophila, we found that human ETV4 associates with and robustly activates GGAAµSats in a tissue-specific manner. Taking advantage of low genetic redundancy in Drosophila, we identified Cabeza (Caz), the single fly FET ortholog, as a necessary cofactor for ETV4-mediated transcription at GGAAµSats. Collectively, our findings provide in vivo evidence that non-fused ETS factors cooperate with endogenous FET proteins to drive transcription from silent GGAA repeats, mechanistically validating this regulatory transformation known to operate as an oncogenic mechanism beyond Ewing sarcoma.
+
+:::
+
+
+### Tema 6 · Variació i paleogenòmica
+
+::: {.weekly-paper}
+#### [Identification of Fscn2 as a candidate gene regulating endothelial cytoskeletal organization and angiogenic competence through a genome-wide association study (GWAS) in mice.](https://doi.org/10.1016/j.mvr.2026.105024)
+
+<p class="weekly-citation">Marik B, Bielenberg DR, Birsner AE, Fu H, D&#x27;Amato RJ. <em>Microvascular research</em> (2026).</p>
+
+**Abstract summary (English)**
+
+In this study, we hypothesized that genetic diversity among inbred mouse strains could be compared using GWAS to identify candidate genes associated with differences in VEGFA-induced angiogenic phenotypes. Functional experiments in human endothelial cells and in vivo validation show that FSCN2 supports endothelial proliferation, migration, tube formation, and cytoskeletal organization. These findings expand the biological role of FSCN2 beyond sensory tissues and suggest that fascin-dependent cytoskeletal regulation contributes to endothelial angiogenic competence. Direct effects of FSCN2 in VEGFA signaling remains to be established.
+
+:::
+
+::: {.weekly-paper}
+#### [Genome-wide association study of morphometric and metabolic characteristics in European populations of the sugar kelp Saccharina latissima.](https://doi.org/10.1111/jpy.70239)
+
+<p class="weekly-citation">Mauger S, Avia K, Jaugeon L, Ruggeri P, Nehr Z, Issaka Salia O, Coudret J, Gouhier E, Baud A, Loisel S, Fort A, Sulpice R, Destombe C, Potin P, Cock JM, Valero M. <em>Journal of phycology</em> (2026).</p>
+
+**Abstract summary (English)**
+
+The sugar kelp Saccharina latissima is a promising candidate for sustainable aquaculture in the North Atlantic and Northeast Pacific, but genetic improvement has been hindered by a limited understanding of the genetic basis of economically important traits. We conducted a genome-wide association study (GWAS) for this species using 202 self-fertilized pseudo-F1 individuals derived from 12 of 13 sampled populations spanning northern and southern European genetic clusters. We identified 18 significant marker-trait associations, with individual loci explaining 1.37% to 10.93% of phenotypic variance (PVE). Overall, these results indicate a mixed genetic architecture, comprising moderate-effect loci amenable to marker-assisted selection and polygenic traits better suited to genomic selection, and they provide a foundation for genomics-assisted breeding in kelp aquaculture.
+
+:::
+
+::: {.weekly-paper}
+#### [Genetic Susceptibility to NSAID-Related Gastrointestinal Adverse Events in Korean Patients: An Exploratory Genome-Wide Association Study.](https://doi.org/10.3390/jcm15187301)
+
+<p class="weekly-citation">Kim JH, Gil JY, Min KH, Kim HJ, Yang S, Chang SY, Cho BK, Kim HA, Kim W, Kim J, Choi IA, Song N, Han JM, Lee KE. <em>Journal of clinical medicine</em> (2026).</p>
+
+**Abstract summary (English)**
+
+The exploratory GWAS identified 20 suggestive variants associated with NSAID-related GI-AEs at p -5, although no variant reached genome-wide significance. The KoGES-derived polygenic risk score was significantly associated with GI-AE status in the NSAID cohort, and 10 suggestive variants overlapped with SNPs included in the best-fit PRS model. rs1925245 maintained a consistent association in multivariable Firth penalized logistic regression. These findings suggest that NSAID-related GI-AEs in Korean patients may reflect a multifactorial susceptibility pattern involving both clinical context and polygenic risk. Although exploratory, this study provides candidate genetic signals for future replication and supports the need for larger ancestry-matched pharmacogenomic studies of NSAID-related GI toxicity.
+
+:::
+
+
+S’han recuperat **14** referències no duplicades. Cada resum és una selecció automàtica de 3–4 frases de l’abstract en anglès. Els recursos complementaris només s’afegeixen quan estan registrats i vinculats inequívocament a l’article. Les cerques són públiques a `scripts/update_publications.py`.
