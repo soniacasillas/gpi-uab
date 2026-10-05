@@ -1,5 +1,6 @@
 ### Butlletins publicats
 
+- [05/10/2026](updates/2026-10-05.html) · 15 articles
 - [28/09/2026](updates/2026-09-28.html) · 14 articles
 - [22/09/2026](updates/2026-09-22.html) · 12 articles
 - [21/09/2026](updates/2026-09-21.html) · 15 articles
